@@ -1,0 +1,20 @@
+/* The purpose of this file is defining global variables that are going to be used across the whole website,
+like the colors and fonts */
+:root {
+	/* Override fonts from bootstrap to match Nerdearla fonts */
+	--bs-body-font-family: 'Roboto', sans-serif;
+	/* Definition of Nerdearla colors */
+	/* PS: I named the colors myself, maybe their names are not exactly right */
+	--nerd-red: #FF323C;
+	--nerd-orange:#FF5A00;
+	--nerd-mustard:#FF8D00;
+	--nerd-yellow:#FFB500;
+	--nerd-persian-green: #00A7A3;
+	--nerd-light-blue: #00AFFF;
+	--nerd-blue:#226EDB;
+	--nerd-purple: #7A00DB;
+	--nerd-black: #000000;
+	--nerd-dark-blue:#34485E;
+	--nerd-gray: #819896;
+	--nerd-green: #00AB52;
+}
