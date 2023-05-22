@@ -1,8 +1,6 @@
 /* The purpose of this file is defining global variables that are going to be used across the whole website,
 like the colors and fonts */
 :root {
-	/* Override fonts from bootstrap to match Nerdearla fonts */
-	--bs-body-font-family: 'Roboto', sans-serif;
 	/* Definition of Nerdearla colors */
 	/* PS: I named the colors myself, maybe their names are not exactly right */
 	--nerd-red: #FF323C;

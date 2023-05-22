@@ -1,50 +1,75 @@
-section#hero{
-	background: url(../img/hero-background.jpeg) no-repeat center center; 
+section#hero {
+	background: url(../img/hero-background.jpeg) no-repeat center center;
 	background-size: cover;
 	height: 80vh;
 }
-#about{
-	background-color: rgb(203, 195, 195,0.1);
+#about {
+	background-color: rgb(203, 195, 195, 0.1);
 	border-bottom: solid var(--nerd-red);
-	transition: 200ms linear
+	transition: 200ms linear;
 }
-#about:hover{
-	background-color: rgb(203, 195, 195,0.2);
+#about:hover {
+	background-color: rgb(203, 195, 195, 0.2);
 }
 /* Call to action button */
-/* CSS */
 button#cta {
-  background-color: var(--nerd-red);
-  border: 2px solid var(--nerd-red);
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 16px;
-  min-height: 40px;
-  outline: 0;
-  padding: 12px 14px;
-  text-align: center;
-  text-rendering: geometricprecision;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
+	background-color: var(--nerd-red);
+	border: 2px solid var(--nerd-red);
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 16px;
+	min-height: 40px;
+	outline: 0;
+	padding: 12px 14px;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
 }
-
 button#cta:hover,
 button#cta:active {
-  background-color: #da2d36;
-  border-color: #da2d36;
-  background-position: 0 0;
+	background-color: #da2d36;
+	border-color: #da2d36;
+	background-position: 0 0;
+}
+button#cta:active {
+	opacity: 0.9;
 }
 
-button#cta:active {
-  opacity: .5;
+.title, .subtitle
+{
+	font-family: "Rift Soft";
+}
+.title {
+	font-style: italic;
+}
+
+/* An animation used in the title */
+.bar-scan-effect {
+	--b: 0.1em; /* the thickness of the line */
+	--c: var(--nerd-red); /* the color */
+
+	color: #0000;
+	padding-block: var(--b);
+	background: linear-gradient(var(--c) 50%, #000 0) 0%
+			calc(100% - var(--_p, 0%)) / 100% 200%,
+		linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
+			no-repeat;
+	-webkit-background-clip: text, padding-box;
+	background-clip: text, padding-box;
+	transition: 0.25s var(--_s, 0s) linear,
+		background-size 0.25s calc(0.25s - var(--_s, 0s));
+}
+.bar-scan-effect:hover {
+	--_p: 100%;
+	--_s: 0.25s;
 }

@@ -1,0 +1,33 @@
+{# This section #}
+<section id="faq">
+	<div class="container my-4">
+		<div class="row">
+			<div class="col-sm-3">
+				<h1 class="m-3">
+					Preguntas frecuentes sobre <strong>Nerdearla</strong>
+				</h1>
+			</div>
+			<div class="col-sm-9">
+				{# Acordeón con el contenido de las FAQ #}
+				<div class="accordion">
+					{% for item in accordion_dataset %}
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panel-{{ item.number }}" aria-expanded="false"
+								aria-controls="panel-{{ item.number }}">
+								{{ item.title }}
+							</button>
+						</h2>
+						<div id="panel-{{ item.number }}" class="accordion-collapse collapse">
+							<div class="accordion-body">
+								{{ item.description }}
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

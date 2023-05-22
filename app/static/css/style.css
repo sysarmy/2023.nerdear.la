@@ -1,0 +1,4 @@
+body{
+	/* Override fonts from bootstrap to match Nerdearla fonts */
+	--bs-body-font-family: 'Roboto', sans-serif;
+}
