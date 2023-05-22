@@ -1,7 +1,14 @@
 # Readme
 
+## How to run the project
+
+1. Source the python virtual enviroment with `source env/bin/active`
+2. Run flask with `flask run`
+3. Enjoy
+
+## Important info and helpful links
+
 Use black formatter for python
-Dont forget to do `source env/bin/active`
 Understanding Flask: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world **(READ FIRST)**
 
 Understanding multilanguage: https://medium.com/@nicolas_84494/flask-create-a-multilingual-web-application-with-language-specific-urls-5d994344f5fd
