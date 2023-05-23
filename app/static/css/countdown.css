@@ -1,0 +1,38 @@
+.timer-item{
+	margin: 0px 20px
+}
+
+.timer-number{
+	width: 100px;
+	height: 110px;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 110px;
+	font-weight: bolder;
+	color:white;
+	font-size:48px;
+	margin-bottom: 15px;
+	overflow: hidden;
+	user-select: none;
+}
+.timer-info{
+	text-transform: uppercase;
+	color:black;
+	text-align: center;
+	opacity: 0.6;
+	font-size: 14px;
+	user-select: none;
+	letter-spacing: 1px;
+}
+.timer-number.days {
+	background: var(--nerd-red); /*TODO: Cambiar esto por las tramas*/
+}
+.timer-number.hours {
+	background: var(--nerd-green);
+}
+.timer-number.minutes {
+	background: var(--nerd-yellow);
+}
+.timer-number.seconds {
+	background: var(--nerd-light-blue);
+}

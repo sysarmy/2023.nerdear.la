@@ -1,1 +1,47 @@
-<section id="countdown"></section>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/countdown.css') }}">
+<section id="countdown">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-3">
+				<h1 class="m-3">
+					Cuanto Falta para la Nerdearla?
+				</h1>
+			</div>
+			<div class="col-sm-9">
+
+				<div class="timer d-flex flex-column flex-sm-row align-items-center justify-content-center">
+					<div class="timer-item">
+						<div class="timer-number days">
+						</div>
+						<div class="timer-info">
+							Days
+						</div>
+					</div>
+					<div class="timer-item">
+						<div class="timer-number hours">
+						</div>
+						<div class="timer-info">
+							Hours
+						</div>
+					</div>
+					<div class="timer-item">
+						<div class="timer-number minutes">
+						</div>
+						<div class="timer-info">
+							Minutes
+						</div>
+					</div>
+					<div class="timer-item">
+						<div class="timer-number seconds">
+						</div>
+						<div class="timer-info">
+							Seconds
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="{{ url_for('static', filename='js/countdown.js') }}"></script>
+</section>

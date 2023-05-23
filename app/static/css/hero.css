@@ -3,12 +3,12 @@ section#hero {
 	background-size: cover;
 	height: 80vh;
 }
-#about {
+#event-info {
 	background-color: rgb(203, 195, 195, 0.1);
 	border-bottom: solid var(--nerd-red);
 	transition: 200ms linear;
 }
-#about:hover {
+#event-info:hover {
 	background-color: rgb(203, 195, 195, 0.2);
 }
 /* Call to action button */
