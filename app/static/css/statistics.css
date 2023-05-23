@@ -1,0 +1,8 @@
+div#participants{
+	height: 300px;
+	width: 300px;
+	background: url(../img/svg/orange.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}

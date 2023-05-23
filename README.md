@@ -20,36 +20,18 @@ This is the repository for Nerdearla, the Sysarmy event
     │   ├── img # images
     │   │   └── logos
     │   └── js # javascript code
-    └── templates # jinja-html code, divided into several parts
+    └── templates # jinja-html code
+			└── components # jinja-html components
 ```
 
 ### How does the `templates/` directory work
 
-Every file inside `templates/` (except `base.html`) is included inside the body of `base.html`, for example:
-
-```jinja-html
-<body>
-	{% include "navbar.html" %} {# Navbar #}
-	{% include "hero.html" %} {# Hero with the title and a CTA #}
-	{% include "about.html" %} {# About section with introductory info about the event #}
-	{% include "countdown.html" %} {# Countdown till the start of the event #}
-	{% include "statistics.html" %} {# Nerdearla in numbers (atendees, n of speakers, sponsors, exhibitors, etc...) #}
-	{% include "speakers.html" %} {# About the speakers #}
-	{% include "ubication.html" %} {# Google maps iframe #}
-	{% include "sponsors.html" %} {# Sponsors of Nerdearla #}
-	{% include "faq.html" %} {# This generates the FAQ #}
-	{% include "contact.html" %} {# Contact form like https://productschool.com/productcon/london-2024 #}
-	{% include "footer.html" %} {# Footer #}
-	{# Load Bootstrap JS#}
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-		</script>
-</body>
-```
+Every file inside `templates/` (except `base.html`) is rendered in `routes.py`.
+Each file inherits from `base.html`, and uses the components in `components/` using `{% include "components/component_name_here.html" %}`
 
 **This is done for the purpose of clean and tidy code**
 
-An example of an included file could be:
+An example of a component could be:
 
 ```html
 <!-- This file holds the section that talks about the speakers -->

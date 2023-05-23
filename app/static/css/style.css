@@ -2,3 +2,6 @@ body{
 	/* Override fonts from bootstrap to match Nerdearla fonts */
 	--bs-body-font-family: 'Roboto', sans-serif;
 }
+h1 {
+	font-family: 'Rift Soft';
+}

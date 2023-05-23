@@ -3,15 +3,16 @@
 }
 
 .timer-number{
-	width: 100px;
-	height: 110px;
+	width: 130px;
+	height: 140px;
 	border-radius: 10px;
 	text-align: center;
-	line-height: 110px;
+	line-height: 140px;
 	font-weight: bolder;
 	color:white;
-	font-size:48px;
-	margin-bottom: 15px;
+	font-size:4rem;
+	margin-bottom: 5px;
+	margin-top: 15px;
 	overflow: hidden;
 	user-select: none;
 }

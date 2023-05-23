@@ -3,8 +3,9 @@ from flask import render_template
 
 
 @app.route("/")
+@app.route("/index")
+@app.route("/home")
 def index():
-    user = {"username": "this is a test :) "}
     accordion_dataset = [
         {
             "number": 1,
@@ -23,5 +24,15 @@ def index():
         },
     ]
     return render_template(
-        "base.html", title="Home", accordion_dataset=accordion_dataset
+        "index.html", title="Home", accordion_dataset=accordion_dataset
     )
+
+
+@app.route("/sponsors")
+def sponsors():
+    return render_template("sponsors.html", title="Sponsors")
+
+
+@app.route("/code_of_conduct")
+def code_of_conduct():
+    return render_template("code_of_conduct.html", title="Code of Conduct")

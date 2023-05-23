@@ -13,9 +13,9 @@
 			<div class="collapse navbar-collapse" id="collapsable-navbar-menu">
 				<div class="navbar-nav">
 					{# Put the items (apart of brand) of the navbar here #}
-					<a class="nav-link" href="#">Home</a>
-					<a class="nav-link" href="#">Hola Jolo</a>
-					<a class="nav-link" href="#">Mint > Slackware</a>
+					<a class="nav-link nav-item" href="{{ url_for('index') }}">Home</a>
+					<a class="nav-link nav-item" href="{{ url_for('sponsors') }}">Sponsors</a>
+					<a class="nav-link nav-item" href="{{ url_for('code_of_conduct') }}">Code of Conduct</a>
 				</div>
 
 				{# Social icons #} {# ms-auto sets the margin from the start
