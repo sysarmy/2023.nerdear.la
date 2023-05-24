@@ -13,11 +13,19 @@
 			entre las calles Dr. Tomás Manuel de Anchorena y Jean Jaures,
 			a unas cuadras de la estación de Once.
 		</p>
-
-		<div class="ratio ratio-21x9">
+		{# Explanation for why the iframe is repeated https://stackoverflow.com/a/72136495/15965186 #}
+		{# Display me when more than sm #}
+		<div class="d-none d-sm-block ratio ratio-21x9">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.89734498243035!2d-58.41085572832852!3d-34.60650718698052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb577e34f9e55%3A0x6dd823092cb367d9!2sCiudad%20Cultural%20Konex!5e0!3m2!1sen!2sar!4v1684864716542!5m2!1sen!2sar"
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		{# Display me when less than sm#}
+		<div class="d-block d-sm-none ratio ratio-1x1">
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d434.89734498243035!2d-58.41085572832852!3d-34.60650718698052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb577e34f9e55%3A0x6dd823092cb367d9!2sCiudad%20Cultural%20Konex!5e0!3m2!1sen!2sar!4v1684864716542!5m2!1sen!2sar"
 				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
+
 </section>

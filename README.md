@@ -66,6 +66,8 @@ Understanding multilanguage: https://medium.com/@nicolas_84494/flask-create-a-mu
 
 Jinja formatter: https://stackoverflow.com/questions/60175608/visual-studio-code-and-jinja-templates
 
+Using Flask, Flask-WTF, and AJAX for forms https://blog.carsonevans.ca/2019/08/20/validating-ajax-requests-with-wtforms-in-flask/
+
 ### recommended settings for `settings.json` in Visual Studio Code
 
 ```json

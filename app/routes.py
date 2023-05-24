@@ -1,11 +1,17 @@
 from app import app
-from flask import render_template
+from app.forms import ContactForm
+from flask import render_template, request, flash, redirect, url_for
+
+# TODO: Please for the love of god change this
+import os
+
+SECRET_KEY = os.urandom(32)
+app.config["SECRET_KEY"] = SECRET_KEY
 
 
 @app.route("/")
-@app.route("/index")
-@app.route("/home")
 def index():
+    # The data to put in the faq accordion
     accordion_dataset = [
         {
             "number": 1,
@@ -24,7 +30,9 @@ def index():
         },
     ]
     return render_template(
-        "index.html", title="Home", accordion_dataset=accordion_dataset
+        "index.html",
+        title="Home",
+        accordion_dataset=accordion_dataset,
     )
 
 
@@ -36,3 +44,8 @@ def sponsors():
 @app.route("/code_of_conduct")
 def code_of_conduct():
     return render_template("code_of_conduct.html", title="Code of Conduct")
+
+
+@app.route("/contact", methods=["GET", "POST"])
+def contact():
+    return "To be Implemented"
