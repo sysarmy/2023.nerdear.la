@@ -8,4 +8,3 @@ class ContactForm(FlaskForm):
     name = StringField("Nombre", validators=[DataRequired()])
     surname = StringField("Apellido", validators=[DataRequired()])
     email = EmailField("Email", validators=[DataRequired()])
-    submit = SubmitField("Enviar")
