@@ -1,8 +1,86 @@
-div#participants{
-	height: 300px;
-	width: 300px;
-	background: url(../img/svg/orange.svg);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+.bg-c-blue {
+	background: linear-gradient(90deg, var(--nerd-light-blue), var(--nerd-blue));
+}
+
+.bg-c-green {
+	background: linear-gradient(
+		90deg,
+		var(--nerd-green),
+		var(--nerd-persian-green)
+	);
+}
+
+.bg-c-purple {
+	background: linear-gradient(90deg, var(--nerd-dark-blue), var(--nerd-purple));
+}
+
+.bg-c-red {
+	background: linear-gradient(90deg, var(--nerd-orange), var(--nerd-red));
+}
+
+.card {
+	height: 200px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+	box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+	border: none;
+	margin-bottom: 30px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.card-body {
+	padding: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-body * {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-body .row i {
+	margin-right: 10px;
+}
+
+.card-icon-number {
+	font-family: "Barlow Condensed", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.02rem;
+	font-size: 3rem;
+	color: white;
+}
+
+.card-description {
+	text-align: right;
+	font-size: 1.35rem;
+	color: white;
+	font-weight: 500;
+}
+
+@media (min-width: 360px) {
+	.card-number {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.card-body {
+		padding: 20px 40px 20px 20px;
+	}
+	.card-number {
+		font-size: 3.75rem;
+	}
+}
+@media (min-width: 992px) {
+	.chopped-right {
+		border-bottom-right-radius: 15%75px;
+		border-top-right-radius: 15%75px;
+	}
+	.chopped-left {
+		border-bottom-left-radius: 15%75px;
+		border-top-left-radius: 15%75px;
+	}
 }

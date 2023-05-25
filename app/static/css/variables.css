@@ -3,16 +3,16 @@ like the colors and fonts */
 :root {
 	/* Definition of Nerdearla colors */
 	/* PS: I named the colors myself, maybe their names are not exactly right */
-	--nerd-red: #FF323C;
-	--nerd-orange:#FF5A00;
-	--nerd-mustard:#FF8D00;
-	--nerd-yellow:#FFB500;
-	--nerd-persian-green: #00A7A3;
-	--nerd-light-blue: #00AFFF;
-	--nerd-blue:#226EDB;
-	--nerd-purple: #7A00DB;
+	--nerd-red: #ff323c;
+	--nerd-orange: #ff5a00;
+	--nerd-mustard: #ff8d00;
+	--nerd-yellow: #ffb500;
+	--nerd-persian-green: #00a7a3;
+	--nerd-light-blue: #00afff;
+	--nerd-blue: #226edb;
+	--nerd-purple: #7a00db;
 	--nerd-black: #000000;
-	--nerd-dark-blue:#34485E;
+	--nerd-dark-blue: #34485e;
 	--nerd-gray: #819896;
-	--nerd-green: #00AB52;
+	--nerd-green: #00ab52;
 }

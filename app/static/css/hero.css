@@ -45,8 +45,8 @@ button#cta:active {
 	opacity: 0.9;
 }
 
-.title, .subtitle
-{
+.title,
+.subtitle {
 	font-family: "Rift Soft";
 }
 .title {
