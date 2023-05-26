@@ -50,6 +50,7 @@ def index():
     )
 
 
+
 @app.route("/sponsors")
 def sponsors():
     category_order = {
@@ -67,8 +68,17 @@ def sponsors():
     sponsors = sorted(
         sponsors, key=lambda x: category_order[x["category"]], reverse=True
     )
-    print(sponsors[1])
-    return render_template("sponsors.html", title="Sponsors", sponsors=sponsors)
+    grouped_sponsors = {}
+    for sponsor in sponsors:
+        category = sponsor["category"]
+        if category in grouped_sponsors:
+            grouped_sponsors[category].append(sponsor)
+        else:
+            grouped_sponsors[category] = [sponsor]
+    print(grouped_sponsors)
+    return render_template(
+        "sponsors.html", title="Sponsors", grouped_sponsors=grouped_sponsors
+    )
 
 
 @app.route("/code_of_conduct")

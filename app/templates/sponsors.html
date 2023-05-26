@@ -1,12 +1,71 @@
 {#
-	This code expects a list of dictionaries like the following:
-	[
-		{'name': 'icbc', 'category': 'adamantium', 'file': 'icbc.png', 'link': 'https://www.icbc.com.ar'},
-		{'name': 'openqube', 'category': 'adamantium', 'file': 'openqube.png', 'link': 'https://openqube.io/'},
-		{'name': 'example', 'category': 'vibranium', 'file': 'example.png', 'link': 'https://www.example.com'}
-	]
-
+	This code expects a dictionary with multiple list of dictionaries.
 	It is gonna take that list of dicts, group it by the category value, and display it separatelly for every category it finds
+
+	It expects the dictionaries to be already sorted.
+
+	If you want a version of this code that automatically sorts a list of dictionaries and consumes that,
+	look for commit 66ec7bc90494a84472add4a44075da630359a510.
+	It was discarded because it looked messy
+	
+	The grouped_sponsors variable should look like this:
+{
+    "adamantium": [
+        {
+            "name": "icbc",
+            "category": "adamantium",
+            "file": "icbc.png",
+            "link": "https://www.icbc.com.ar",
+        },
+        {
+            "name": "openqube",
+            "category": "adamantium",
+            "file": "openqube.png",
+            "link": "https://openqube.io/",
+        },
+        {
+            "name": "google cloud platform",
+            "category": "adamantium",
+            "file": "googlecloud.png",
+            "link": "https://cloud.google.com/",
+        },
+    ],
+    "diamond": [
+        {
+            "name": "cognizant",
+            "category": "diamond",
+            "file": "cognizant.png",
+            "link": "https://sysar.my/cognizantsoftvision",
+        },
+        {
+            "name": "cognizant soft vision",
+            "category": "diamond",
+            "file": "cognizantsoftvision.png",
+            "link": "https://sysar.my/cognizantsoftvision",
+        },
+        {
+            "name": "cognizant soft vision",
+            "category": "diamond",
+            "file": "cognizantsoftvision.png",
+            "link": "https://sysar.my/cognizantsoftvision",
+        },
+    ],
+    "silver": [
+        {
+            "name": "openqube",
+            "category": "silver",
+            "file": "openqube.png",
+            "link": "https://openqube.io/",
+        },
+        {
+            "name": "openqube",
+            "category": "silver",
+            "file": "openqube.png",
+            "link": "https://openqube.io/",
+        },
+    ],
+}
+
 #}
 {% extends "base.html" %}
 {% block content %}
@@ -14,25 +73,18 @@
       <link rel="stylesheet"
             href="{{ url_for('static', filename='css/sponsors.css') }}">
       <div class="container">
-         <h1 class="display-1 text-center mt-5">Nuestros Sponsors</h1>
-         {#
-			####################################################################
-			RECOMENDATION: Carefully read the code and the commentaries to understand whats going on
-			####################################################################
-			#}
-         {# Group the sponsors by category #}
-         {% set grouped_sponsors = sponsors|groupby('category') %}
-         {# Get a category and the sponsors that belongs to that category #}
-         {% for category, sponsors_in_category in grouped_sponsors %}
-            {# Display the category title #}
-            <h1 class="text-center display-3 mt-5 fw-medium">{{ category }}</h1>
-            {# Create a new centered row for every category #}
+         {# Get the category and the sponsors for that category#}
+         {% for category, sponsors in grouped_sponsors.items() %}
+            {# For every category:
+					* Show the category as an h1
+					* Create a row with every sponsor as a column
+				#}
+            <h1 class="text-center display-3 mt-5 fw-medium text-capitalize">{{ category }}</h1>
             <div class="row">
                <div class="d-flex flex-wrap justify-content-center align-items-center">
-                  {# Display every sponsor in the current category #}
-                  {% for sponsor in sponsors_in_category %}
+                  {% for sponsor in sponsors %}
                      {% set file = 'img/sponsors/' ~ sponsor['file'] %}
-                     <!--Sponsor card-->
+                     {# Generate the sponsor card using the provided links, file, and name #}
                      <div class="col-8 col-md-6 col-lg-3 mt-1">
                         <div class="card sponsor-card">
                            <div class="card-img-block">
