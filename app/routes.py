@@ -52,6 +52,12 @@ def index():
 
 @app.route("/sponsors")
 def sponsors():
+    featured_categories = [
+        "adamantium",
+        "diamond",
+        "platinum",
+        "gold",
+    ]
     category_order = {
         "bronze": 1,
         "silver": 2,
@@ -136,7 +142,10 @@ def sponsors():
         else:
             grouped_sponsors[category] = [sponsor]
     return render_template(
-        "sponsors.html", title="Sponsors", grouped_sponsors=grouped_sponsors
+        "sponsors.html",
+        title="Sponsors",
+        grouped_sponsors=grouped_sponsors,
+        featured_categories=featured_categories,
     )
 
 
