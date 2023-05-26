@@ -50,7 +50,6 @@ def index():
     )
 
 
-
 @app.route("/sponsors")
 def sponsors():
     category_order = {
@@ -64,10 +63,71 @@ def sponsors():
     sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
     # Convert key values to lowercase, just in case the input in the CSV is in caps
     convert_key_values_to_lowercase(sponsors, "category")
-    # Sort the sponsors by the category order dictionary
+    # Sort the sponsors by the category_order dictionary
+    # This makes the category with the highest number appear first
     sponsors = sorted(
         sponsors, key=lambda x: category_order[x["category"]], reverse=True
     )
+    # Group the sponsors by category.
+    # grouped_sponsors ends up looking like this:
+    """
+{
+    "adamantium": [
+        {
+            "name": "icbc",
+            "category": "adamantium",
+            "file": "icbc.png",
+            "link": "https://www.icbc.com.ar",
+        },
+        {
+            "name": "openqube",
+            "category": "adamantium",
+            "file": "openqube.png",
+            "link": "https://openqube.io/",
+        },
+        {
+            "name": "google cloud platform",
+            "category": "adamantium",
+            "file": "googlecloud.png",
+            "link": "https://cloud.google.com/",
+        },
+    ],
+    "diamond": [
+        {
+            "name": "cognizant",
+            "category": "diamond",
+            "file": "cognizant.png",
+            "link": "https://sysar.my/cognizantsoftvision",
+        },
+        {
+            "name": "cognizant soft vision",
+            "category": "diamond",
+            "file": "cognizantsoftvision.png",
+            "link": "https://sysar.my/cognizantsoftvision",
+        },
+        {
+            "name": "cognizant soft vision",
+            "category": "diamond",
+            "file": "cognizantsoftvision.png",
+            "link": "https://sysar.my/cognizantsoftvision",
+        },
+    ],
+    "silver": [
+        {
+            "name": "openqube",
+            "category": "silver",
+            "file": "openqube.png",
+            "link": "https://openqube.io/",
+        },
+        {
+            "name": "openqube",
+            "category": "silver",
+            "file": "openqube.png",
+            "link": "https://openqube.io/",
+        },
+    ],
+}
+    """
     grouped_sponsors = {}
     for sponsor in sponsors:
         category = sponsor["category"]
@@ -75,7 +135,6 @@ def sponsors():
             grouped_sponsors[category].append(sponsor)
         else:
             grouped_sponsors[category] = [sponsor]
-    print(grouped_sponsors)
     return render_template(
         "sponsors.html", title="Sponsors", grouped_sponsors=grouped_sponsors
     )
