@@ -1,56 +1,59 @@
 <section id="statistics" class="my-5">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/statistics.css') }}">
-	<div class="container d-flex flex-column">
-		<h1 class="display-1 mx-auto">Nerdearla en numeros</h1>
-		<h2 class="mx-auto mb-5 text-muted">Estos fueron los números de nuestra última edición</h2>
-
-		{# TODO: Cambiar los colores para que matchee el estilo de Nerdearla #}
-		<div class="row">
-			<div class="col-lg-6 ">
-				<div class="card bg-trama bg-trama-blue-3 chopped-right">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5 card-icon-number"> <i class="fa-solid fa-user-group"></i>7k</div>
-							<div class="col card-description">Más de 700 participantes presenciales en Buenos Aires.</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 ">
-				<div class="card bg-trama bg-trama-red-1 chopped-left">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5 card-icon-number"> <i class="fa-solid fa-globe"></i>20K</div>
-							<div class="col card-description">
-								En total, más de 20000 participantes via online durante las conferencias.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 ">
-				<div class="card bg-trama bg-trama-purple-1 chopped-right">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5 card-icon-number"> <i class="fa-solid fa-person-chalkboard"></i>200</div>
-							<div class="col card-description">Más de 200 conferencistas de más de 20 paises</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 ">
-				<div class="card bg-trama bg-trama-green-4 chopped-left">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-5 card-icon-number"> <i class="fa-solid fa-money-bills"></i>100%</div>
-							<div class="col card-description">
-								El evento es 100% gratuito para los participantes, desde el día 1
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
+   <link rel="stylesheet"
+         href="{{ url_for('static', filename='css/statistics.css') }}">
+   <div class="container d-flex flex-column">
+      <h1 class="display-1 mx-auto">Nerdearla en numeros</h1>
+      <h2 class="mx-auto mb-5 text-muted">Estos fueron los números de nuestra última edición</h2>
+      {# TODO: Cambiar los colores para que matchee el estilo de Nerdearla #}
+      <div class="row">
+         <div class="col-lg-6 ">
+            <div class="card bg-trama bg-trama-blue-3 card-chopped-right">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col-5 card-icon-number">
+                        <i class="fa-solid fa-user-group"></i>7k
+                     </div>
+                     <div class="col card-description">Más de 700 participantes presenciales en Buenos Aires.</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6 ">
+            <div class="card bg-trama bg-trama-red-1 card-chopped-left">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col-5 card-icon-number">
+                        <i class="fa-solid fa-globe"></i>20K
+                     </div>
+                     <div class="col card-description">En total, más de 20000 participantes via online durante las conferencias.</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6 ">
+            <div class="card bg-trama bg-trama-purple-1 card-chopped-right">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col-5 card-icon-number">
+                        <i class="fa-solid fa-person-chalkboard"></i>200
+                     </div>
+                     <div class="col card-description">Más de 200 conferencistas de más de 20 paises</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6 ">
+            <div class="card bg-trama bg-trama-green-4 card-chopped-left">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col-5 card-icon-number">
+                        <i class="fa-solid fa-money-bills"></i>100%
+                     </div>
+                     <div class="col card-description">El evento es 100% gratuito para los participantes, desde el día 1</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 </section>

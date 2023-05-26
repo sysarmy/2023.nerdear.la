@@ -55,11 +55,11 @@
 	}
 }
 @media (min-width: 992px) {
-	.chopped-right {
+	.card-chopped-right {
 		border-bottom-right-radius: 15%75px;
 		border-top-right-radius: 15%75px;
 	}
-	.chopped-left {
+	.card-chopped-left {
 		border-bottom-left-radius: 15%75px;
 		border-top-left-radius: 15%75px;
 	}

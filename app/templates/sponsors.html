@@ -1,8 +1,55 @@
+{#
+	This code expects a list of dictionaries like the following:
+	[
+		{'name': 'icbc', 'category': 'adamantium', 'file': 'icbc.png', 'link': 'https://www.icbc.com.ar'},
+		{'name': 'openqube', 'category': 'adamantium', 'file': 'openqube.png', 'link': 'https://openqube.io/'},
+		{'name': 'example', 'category': 'vibranium', 'file': 'example.png', 'link': 'https://www.example.com'}
+	]
+
+	It is gonna take that list of dicts, group it by the category value, and display it separatelly for every category it finds
+#}
 {% extends "base.html" %}
 {% block content %}
-<section id="sponsors">
-	<div class="container">
-		<h1>Nuestros Sponsors</h1>
-	</div>
-</section>
+   <section id="sponsors">
+      <link rel="stylesheet"
+            href="{{ url_for('static', filename='css/sponsors.css') }}">
+      <div class="container">
+         <h1 class="display-1 text-center mt-5">Nuestros Sponsors</h1>
+         {#
+			####################################################################
+			RECOMENDATION: Carefully read the code and the commentaries to understand whats going on
+			####################################################################
+			#}
+         {# Group the sponsors by category #}
+         {% set grouped_sponsors = sponsors|groupby('category') %}
+         {# Get a category and the sponsors that belongs to that category #}
+         {% for category, sponsors_in_category in grouped_sponsors %}
+            {# Display the category title #}
+            <h1 class="text-center display-3 mt-5 fw-medium">{{ category }}</h1>
+            {# Create a new centered row for every category #}
+            <div class="row">
+               <div class="d-flex flex-wrap justify-content-center align-items-center">
+                  {# Display every sponsor in the current category #}
+                  {% for sponsor in sponsors_in_category %}
+                     {% set file = 'img/sponsors/' ~ sponsor['file'] %}
+                     <!--Sponsor card-->
+                     <div class="col-8 col-md-6 col-lg-3 mt-1">
+                        <div class="card sponsor-card">
+                           <div class="card-img-block">
+                              <a href="{{ sponsor['link'] }}"
+                                 target="_blank"
+                                 rel="noopener noreferrer">
+                                 <img class="card-img-top"
+                                      src="{{ url_for('static', filename=file) }}"
+                                      alt="{{ sponsor['name'] }}">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  {% endfor %}
+               </div>
+            </div>
+         {% endfor %}
+      </div>
+   </section>
 {% endblock content %}

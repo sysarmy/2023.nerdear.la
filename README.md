@@ -102,6 +102,9 @@ If you are confused about how contact.html, submit_contact/ and contact.js work,
 		"svelte"
 	],
 	// Add jinja-html to css extension
-	"css.enabledLanguages": ["jinja-html", "django-html", "html"]
+	"css.enabledLanguages": ["jinja-html", "django-html", "html"],
+	"[jinja-html]": {
+		"editor.defaultFormatter": "monosans.djlint"
+	}
 }
 ```

@@ -10,8 +10,10 @@ from flask import (
     abort,
     make_response,
 )
+import csv
+from app.functions import *
 
-
+SPONSORS_FILE = "sponsors.csv"
 # TODO: Please for the love of god change the secret key generation
 import os
 
@@ -50,7 +52,23 @@ def index():
 
 @app.route("/sponsors")
 def sponsors():
-    return render_template("sponsors.html", title="Sponsors")
+    category_order = {
+        "bronze": 1,
+        "silver": 2,
+        "gold": 3,
+        "diamond": 4,
+        "adamantium": 5,
+    }
+    # Get a list of dictionaries based on a CSV file
+    sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
+    # Convert key values to lowercase, just in case the input in the CSV is in caps
+    convert_key_values_to_lowercase(sponsors, "category")
+    # Sort the sponsors by the category order dictionary
+    sponsors = sorted(
+        sponsors, key=lambda x: category_order[x["category"]], reverse=True
+    )
+    print(sponsors[1])
+    return render_template("sponsors.html", title="Sponsors", sponsors=sponsors)
 
 
 @app.route("/code_of_conduct")

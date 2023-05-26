@@ -1,0 +1,23 @@
+{# Basado en la introduccion de https://productschool.com/productcon/london-2024 #}
+<section id="intro">
+   <link rel="stylesheet"
+         href="{{ url_for('static', filename='css/intro.css') }}">
+   <div class="container">
+      <div class="row d-flex flex-column flex-md-row align-items-center">
+         <div class="col-4 align-items-center">
+            <h1 class="display-4 fw-medium">3 veces más grande que cualquier otra conferencia en Buenos Aires (verso?)</h1>
+            <p>
+               Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London,
+               organized by Product School. Get the European perspective on Product during a time when the field is
+               spreading throughout the continent
+            </p>
+         </div>
+         <div class="col d-flex align-items-center">
+            <img src="{{ url_for('static', filename='img/stage.jpeg') }}"
+                 id="stage-image"
+                 alt="stage"
+                 height="300px">
+         </div>
+      </div>
+   </div>
+</section>
