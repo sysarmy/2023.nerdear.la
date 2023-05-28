@@ -23,6 +23,12 @@ app.config["SECRET_KEY"] = SECRET_KEY
 
 @app.route("/", methods=["POST", "GET"])
 def index():
+    """
+    Shows the index page
+
+    Returns:
+        flask.Response: The rendered index HTML template.
+    """
     # The data to put in the faq accordion
     accordion_dataset = [
         {
@@ -52,6 +58,29 @@ def index():
 
 @app.route("/sponsors")
 def sponsors():
+    """
+    Shows the sponsors page.
+    It expects a csv file to exist inside the root of the project, with the information about the sponsors.
+
+    The featured categories and the order of the categories shown in the webpage can be changed modifyng the
+    featured_categories and category_order variables
+    The csv file should look like this
+
+    ############## sponsors.csv #############
+
+    name,category,file,link
+    cognizant,diamond,cognizant.png,https://sysar.my/cognizantsoftvision
+    icbc,adamantium,icbc.png,https://www.icbc.com.ar
+    openqube,adamantium,openqube.png,https://openqube.io/
+    cognizant soft vision,diamond,cognizantsoftvision.png,https://sysar.my/cognizantsoftvision
+    google cloud platform,adamantium,googlecloud.png,https://cloud.google.com/
+    rappi,silver,rappi.png,https://rappi.io/
+
+    ###########################
+
+    Returns:
+        flask.Response: The rendered sponsors HTML template.
+    """
     featured_categories = [
         "adamantium",
         "diamond",
@@ -91,12 +120,7 @@ def sponsors():
             "file": "openqube.png",
             "link": "https://openqube.io/",
         },
-        {
-            "name": "google cloud platform",
-            "category": "adamantium",
-            "file": "googlecloud.png",
-            "link": "https://cloud.google.com/",
-        },
+
     ],
     "diamond": [
         {
@@ -111,12 +135,7 @@ def sponsors():
             "file": "cognizantsoftvision.png",
             "link": "https://sysar.my/cognizantsoftvision",
         },
-        {
-            "name": "cognizant soft vision",
-            "category": "diamond",
-            "file": "cognizantsoftvision.png",
-            "link": "https://sysar.my/cognizantsoftvision",
-        },
+
     ],
     "silver": [
         {
@@ -124,13 +143,7 @@ def sponsors():
             "category": "silver",
             "file": "openqube.png",
             "link": "https://openqube.io/",
-        },
-        {
-            "name": "openqube",
-            "category": "silver",
-            "file": "openqube.png",
-            "link": "https://openqube.io/",
-        },
+        }
     ],
 }
     """
@@ -151,9 +164,16 @@ def sponsors():
 
 @app.route("/code_of_conduct")
 def code_of_conduct():
+    """
+    Shows the code of conduct page
+
+    Returns:
+        flask.Response: The rendered code of conduct HTML template.
+    """
     return render_template("code_of_conduct.html", title="Code of Conduct")
 
 
+# TODO: Start using the embed contact form
 @app.route("/submit_contact", methods=["POST"])
 def contact():
     # Parse the incoming request body (a JSON Object) and convert it to a dictionary

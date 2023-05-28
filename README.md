@@ -29,7 +29,19 @@ This is the repository for Nerdearla, the Sysarmy event
 			└── components # jinja-html components
 ```
 
-### How does the `templates/` directory work
+## FAQ
+
+### I want to change how something is displayed in the webpage!
+
+First, try to look which component defines that part of the webpage (if you dont know how that works, see the **"How does the `templates/` directory work?"** section).
+
+Next, try to identify if what you are trying to modify is related to **the data that is shown** (backend related, probably inside routes.py),
+or **how the data is shown** (frontend related, probably inside your component or a .html file isnide templates/)
+
+If the problem is backend related, try to look for the route that renders the template you are looking at.
+For example, if you want to change how data is collected at the sponsors page, look for the definition of the `sponsors/` route
+
+### How does the `templates/` directory work?
 
 Every file inside `templates/` (except `base.html`) is rendered using render_template in an specific route defined in `routes.py`.
 Each file inherits from `base.html`, and uses the components in `components/` using `{% include "components/component_name_here.html" %}`
