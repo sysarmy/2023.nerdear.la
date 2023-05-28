@@ -1,4 +1,25 @@
-{# This section #}
+{# This component displays a Frequently Asked Questions section.
+For each element inside the accorion_dataset variable, a question is generated 
+accordion_dataset should be a list of dictionaries with number, title and description, like the following example:
+
+accordion_dataset = [
+	{
+			"number": 1,
+			"title": "Que es Nerdearla",
+			"description": "Nerdearla es lorem ipsum bla bla bla",
+	},
+	{
+			"number": 2,
+			"title": "Cuando se hace la Nerdearla",
+			"description": "La respuesta esta en tu corazon",
+	},
+	{
+			"number": 3,
+			"title": "Cúanto sale?",
+			"description": "Paga Jolo",
+	},
+]
+#}
 <section id="faq" class="my-5">
    <div class="container my-4">
       <div class="row">

@@ -2,6 +2,13 @@
 
 This is the repository for Nerdearla, the Sysarmy event
 
+## How to configure the enviroment for the project
+
+1. Install python-virtualenv
+2. Create a virtual enviroment in a folder called env/
+3. Source that virtual enviroment with `source /env/bin/activate`
+4. Install the packages in `requirements.txt`
+
 ## How to run the project
 
 1. Source the python virtual enviroment with `source env/bin/active`
@@ -16,9 +23,7 @@ This is the repository for Nerdearla, the Sysarmy event
     ├── static # static files (the css, the fonts, the images and the javascript files)
     │   ├── css # styling
     │   ├── fonts # fonts that are not in Google Fonts
-    │   │   └── RiftSoft
     │   ├── img # images
-    │   │   └── logos
     │   └── js # javascript code
     └── templates # jinja-html code
 			└── components # jinja-html components
@@ -26,7 +31,7 @@ This is the repository for Nerdearla, the Sysarmy event
 
 ### How does the `templates/` directory work
 
-Every file inside `templates/` (except `base.html`) is rendered in `routes.py`.
+Every file inside `templates/` (except `base.html`) is rendered using render_template in an specific route defined in `routes.py`.
 Each file inherits from `base.html`, and uses the components in `components/` using `{% include "components/component_name_here.html" %}`
 
 **This is done for the purpose of clean and tidy code**
@@ -59,7 +64,6 @@ An example of a component could be:
 
 ### helpful links
 
-Use black formatter for python
 Understanding Flask: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world **(READ FIRST)**
 
 Understanding multilanguage: https://medium.com/@nicolas_84494/flask-create-a-multilingual-web-application-with-language-specific-urls-5d994344f5fd
@@ -71,40 +75,11 @@ If you are confused about how contact.html, submit_contact/ and contact.js work,
 
 ### recommended settings for `settings.json` in Visual Studio Code
 
+You should add this line in your User settings.json.
+The reason for that is because that specific line is not available for workspace specific configuration, which is defined in the `.vscode/settings.json` file
+
 ```json
 {
-	// If after associating .html files with jinja-html the icon breaks, add this to your `settings.json` (if you are using Material Icon Theme):
-	"material-icon-theme.languages.associations": {
-		"jinja-html": "html"
-	},
-	// Associate jinja-html with html
-	"files.associations": {
-		"*.html": "jinja-html"
-	},
-	// Add support for emmet in jinja-html
-	"emmet.includeLanguages": {
-		"jinja-html": "html"
-	},
-	// Add jinja-html to css class completion extension
-	"html-css-class-completion.HTMLLanguages": [
-		"jinja-html",
-		"html",
-		"vue",
-		"razor",
-		"blade",
-		"handlebars",
-		"twig",
-		"django-html",
-		"php",
-		"markdown",
-		"erb",
-		"ejs",
-		"svelte"
-	],
-	// Add jinja-html to css extension
-	"css.enabledLanguages": ["jinja-html", "django-html", "html"],
-	"[jinja-html]": {
-		"editor.defaultFormatter": "monosans.djlint"
-	}
+	"css.enabledLanguages": ["jinja-html", "django-html", "html"]
 }
 ```

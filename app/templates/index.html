@@ -1,13 +1,25 @@
+{# This is the index. This page takes the desired components from components/ and displays them
+This is done for code manteinability and readability
+#}
 {% extends "base.html" %}
 {% block content %}
-{% include "components/hero.html" %} {# Hero with the title and a CTA #}
-{% include "components/about.html" %} {# About section with introductory info about the event #}
-{# {% include "components/intro.html" %} <!-- Intro with cool image--> #}
-{% include "components/countdown.html" %} {# Countdown till the start of the event #}
-{% include "components/statistics.html" %} {# Nerdearla in numbers (atendees, speakers, sponsors, exhibitors, etc...) #}
-{% include "components/speakers.html" %} {# About the speakers #}
-{% include "components/ubication.html" %} {# Google maps iframe #}
-{% include "components/recap.html" %}
-{% include "components/faq.html" %} {# This generates the FAQ #}
-{% include "components/contact.html" %} {# Contact form like https://productschool.com/productcon/london-2024 #}
+   {# Hero with the title and a CTA #}
+   {% include "components/hero.html" %}
+   {# About section with introductory info about the event #}
+   {% include "components/about.html" %}
+   {# {% include "components/intro.html" %} <!-- Intro with cool image--> #}
+   {# Countdown till the start of the event #}
+   {% include "components/countdown.html" %}
+   {# Nerdearla in numbers (atendees, speakers, sponsors, exhibitors, etc...) #}
+   {% include "components/statistics.html" %}
+   {# About the speakers #}
+   {% include "components/speakers.html" %}
+   {# Directions to the event and Google maps iframe #}
+   {% include "components/ubication.html" %}
+   {# Recap 2022 Youtube video  #}
+   {% include "components/recap.html" %}
+   {# This generates the FAQ #}
+   {% include "components/faq.html" %}
+   {# Contact form like https://productschool.com/productcon/london-2024 #}
+   {% include "components/contact.html" %}
 {% endblock content %}

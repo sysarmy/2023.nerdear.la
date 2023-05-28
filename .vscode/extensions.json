@@ -1,0 +1,16 @@
+{
+	"recommendations": [
+		"samuelcolvin.jinjahtml",
+		"ms-python.black-formatter",
+		"monosans.djlint",
+		"ecmel.vscode-html-css",
+		"visualstudioexptteam.vscodeintellicode",
+		"zignd.html-css-class-completion",
+		"wholroyd.jinja",
+		"noxiz.jinja-snippets",
+		"christian-kohler.path-intellisense",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"gruntfuggly.todo-tree"
+	]
+}

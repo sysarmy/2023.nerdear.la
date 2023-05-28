@@ -1,15 +1,17 @@
+{# This page displays the sponsors of the event, divided into multiple categories #}
 {#
-	This code expects a dictionary with multiple list of dictionaries.
-	It is gonna take that list of dicts, group it by the category value, and display it separatelly for every category it finds
+	This code takes a variable with the information about each sponsor, and displays it separated by the sponsor category (which are, basically, tiers)
 
-	It expects the dictionaries to be already sorted.
+	It expects the variable to be a dictionary with lists of dictionaries, just like the example.
+	It also expects the dictionaries to be already sorted.
 
-	If you want a version of this code that automatically sorts a list of dictionaries and consumes that,
+	If you want a version of this code that automatically sorts and groups that list of dictionaries and consumes that,
 	look for commit 66ec7bc90494a84472add4a44075da630359a510.
 	It was discarded because it looked messy
-	
-	The grouped_sponsors variable should look like this:
-{
+
+EXAMPLE OF GROUPED SPONSORS:
+
+grouped sponsors = {
     "adamantium": [
         {
             "name": "icbc",
@@ -22,13 +24,7 @@
             "category": "adamantium",
             "file": "openqube.png",
             "link": "https://openqube.io/",
-        },
-        {
-            "name": "google cloud platform",
-            "category": "adamantium",
-            "file": "googlecloud.png",
-            "link": "https://cloud.google.com/",
-        },
+        }
     ],
     "diamond": [
         {
@@ -42,13 +38,7 @@
             "category": "diamond",
             "file": "cognizantsoftvision.png",
             "link": "https://sysar.my/cognizantsoftvision",
-        },
-        {
-            "name": "cognizant soft vision",
-            "category": "diamond",
-            "file": "cognizantsoftvision.png",
-            "link": "https://sysar.my/cognizantsoftvision",
-        },
+        }
     ],
     "silver": [
         {
@@ -80,7 +70,7 @@
 				#}
             <h1 class="text-center display-3 mt-5 fw-medium text-capitalize">{{ category }}</h1>
             {# Define the sizes that the columns that hold the cards are going to have depending if they are featured categories or not.
-Also define sizes for responsiveness#}
+				Also define sizes for responsiveness#}
             {% if category in featured_categories %}
                {% set col_class = "col-6 col-lg-3" %}
             {% else %}
