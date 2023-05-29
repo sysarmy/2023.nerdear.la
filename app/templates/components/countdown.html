@@ -1,15 +1,15 @@
 {# This component displays a countdown till the start of the event.
 The start date is defined inside countdown.js
  #}
-<section id="countdown" class="my-5">
+<section id="countdown" class="y-spaced-section">
    <link rel="stylesheet"
          href="{{ url_for('static', filename='css/countdown.css') }}">
    <div class="container">
       <div class="row">
          <div class="col-lg-3 d-flex justify-content-center align-items-sm-center">
-            <h1>Cuanto Falta para la Nerdearla?</h1>
+            <h1 class="display-4">Cuanto Falta para la Nerdearla?</h1>
          </div>
-         <div class="col-lg-9">
+         <div class="col-lg-9 d-flex align-items-center justify-content-center">
             <div class="timer d-flex flex-column flex-sm-row align-items-center justify-content-center">
                <div class="timer-item">
                   <div class="timer-number days"></div>

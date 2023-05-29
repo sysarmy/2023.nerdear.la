@@ -14,6 +14,9 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 	background-position: center;
 	background-size: 100% auto;
 }
+.bg-trama-fit {
+	background-size: cover;
+}
 /* BLACK */
 .bg-trama-black-1 {
 	background-image: url(../img/svg/tramas/trama-black-1.svg);

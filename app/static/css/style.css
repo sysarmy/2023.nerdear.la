@@ -5,3 +5,15 @@ body {
 h1 {
 	font-family: "Rift Soft";
 }
+.responsive-image {
+	max-width: 100%;
+	height: auto;
+}
+.extending-underline {
+	border-bottom: 1px solid black;
+}
+
+.y-spaced-section {
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+}

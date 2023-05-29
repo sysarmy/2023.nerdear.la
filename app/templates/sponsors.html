@@ -61,6 +61,24 @@ grouped sponsors = {
    <section id="sponsors">
       <link rel="stylesheet"
             href="{{ url_for('static', filename='css/sponsors.css') }}">
+      <div class="container-fluid bg-trama bg-trama-fit bg-trama-green-3"
+           id="sponsors-thanks">
+         <div class="row d-flex flex-row-reverse align-items-center justify-content-center py-4">
+            <div class="col-6 col-md-4">
+               <img src="{{ url_for('static', filename='img/logos/nerd-square-detailed.png') }}"
+                    alt="Nerd logo cuadrado"
+                    class="responsive-image">
+            </div>
+            <div class="col-12 col-md-8 text-center text-md-start">
+               <h1 class="display-1 fw-bold text-white">Nerdearla is brought to you thanks to our wonderful sponsors</h1>
+               <h3 class="text-white">
+                  {# TODO: Add a contact link to Become one today! #}
+                  {# TODO: Translate this text #}
+                  Since 2014 our goal has been to organize a world-class event for people in Latin America, with a 100% free ticket. That wouldn't be possible without our sponsors and supporting organizations. Become one today!
+               </h3>
+            </div>
+         </div>
+      </div>
       <div class="container">
          {# Get the category and the sponsors for that category#}
          {% for category, sponsors in grouped_sponsors.items() %}
@@ -68,7 +86,7 @@ grouped sponsors = {
 					* Show the category as an h1
 					* Create a row with every sponsor as a column
 				#}
-            <h1 class="text-center display-3 mt-5 fw-medium text-capitalize">{{ category }}</h1>
+            <h1 class="text-center display-3 mt-5 fw-medium text-capitalize extending-underline mx-5">{{ category }}</h1>
             {# Define the sizes that the columns that hold the cards are going to have depending if they are featured categories or not.
 				Also define sizes for responsiveness#}
             {% if category in featured_categories %}
