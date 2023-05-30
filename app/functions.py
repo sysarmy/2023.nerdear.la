@@ -5,6 +5,91 @@ import json
 # I think the try except should be done in routes.py to display error pages or error messages with flash()
 
 
+def process_sponsors(sponsors, config):
+    """
+    Process the sponsors by performing various operations on the input sponsors data.
+
+    Args:
+        sponsors (list): A list of dictionaries representing the sponsors.
+        config (dict): A configuration dictionary containing the category order.
+
+    Returns:
+        dict: A dictionary with the sponsors grouped by category.
+
+    Example:
+        sponsors = [
+            {
+                "name": "icbc",
+                "category": "adamantium",
+                "file": "icbc.png",
+                "link": "https://www.icbc.com.ar",
+            },
+            {
+                "name": "openqube",
+                "category": "adamantium",
+                "file": "openqube.png",
+                "link": "https://openqube.io/",
+            },
+            ...
+        ]
+
+        config = {
+            "category_order": ["adamantium", "diamond", "silver"]
+        }
+
+        grouped_sponsors = process_sponsors(sponsors, config)
+
+        Output:
+        {
+            "adamantium": [
+                {
+                    "name": "icbc",
+                    "category": "adamantium",
+                    "file": "icbc.png",
+                    "link": "https://www.icbc.com.ar",
+                },
+                {
+                    "name": "openqube",
+                    "category": "adamantium",
+                    "file": "openqube.png",
+                    "link": "https://openqube.io/",
+                }
+            ],
+            "diamond": [
+                ...
+            ],
+            "silver": [
+                ...
+            ]
+        }
+    """
+    # Get the configuration from the config file
+    category_order = config["category_order"]
+
+    # Removes trailing whitespace from the keys
+    sponsors = remove_trailing_whitespace(sponsors)
+    # Convert key values to lowercase, just in case the input in the CSV is in caps
+    convert_key_values_to_lowercase(sponsors, "category")
+
+    # Sort the sponsors by the category_order list
+    sponsors = sorted(
+        sponsors,
+        key=lambda x: category_order.index(x["category"])
+        if x["category"] in category_order
+        else len(category_order),
+    )
+
+    # Convert the sponsors into a dictionary with the sponsors grouped by category
+    grouped_sponsors = {}
+    for sponsor in sponsors:
+        category = sponsor["category"]
+        if category in grouped_sponsors:
+            grouped_sponsors[category].append(sponsor)
+        else:
+            grouped_sponsors[category] = [sponsor]
+    return grouped_sponsors
+
+
 def convert_key_values_to_lowercase(dictionary_list, key):
     """
     Convert the values of a specified key in a list of dictionaries to lowercase.

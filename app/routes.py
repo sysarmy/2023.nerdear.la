@@ -14,9 +14,9 @@ import csv
 from app.functions import *
 
 FAQ_FILE = "datasets/faq.json"
+AGENDA_FILE = "datasets/agenda.json"
 SPONSORS_FILE = "datasets/sponsors.csv"
 SPONSORS_CONFIG_FILE = "datasets/sponsors_config.json"
-AGENDA_FILE = "datasets/agenda.json"
 
 # TODO: Please for the love of god change the secret key generation
 import os
@@ -35,12 +35,18 @@ def index():
     """
     # The data to put in the faq accordion
     accordion_dataset = read_json_file(FAQ_FILE)
-    contact_form = ContactForm()
+    config = read_json_file(SPONSORS_CONFIG_FILE)
+    sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
+    sponsors = process_sponsors(sponsors, config)
+
+    # Render the template
     return render_template(
         "index.html",
         title="Home",
         accordion_dataset=accordion_dataset,
-        form=contact_form,
+        grouped_sponsors=sponsors,
+        featured_categories=config["featured_categories"],
+        featured_categories_only=True,
     )
 
 
@@ -70,87 +76,19 @@ def sponsors():
         flask.Response: The rendered sponsors HTML template.
     """
     # FIXME: Add error handling
-    # Get the configuration from the config file
-    sponsors_config = read_json_file(SPONSORS_CONFIG_FILE)
-    featured_categories = sponsors_config["featured_categories"]
-    category_order = sponsors_config["category_order"]
 
     # Get a list of dictionaries based on the sponsors CSV file
+    config = read_json_file(SPONSORS_CONFIG_FILE)
     sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
+    sponsors = process_sponsors(sponsors, config)
 
-    # Removes trailing whitespace from the keys
-    sponsors = remove_trailing_whitespace(sponsors)
-    print(sponsors)
-    # Convert key values to lowercase, just in case the input in the CSV is in caps
-    convert_key_values_to_lowercase(sponsors, "category")
-
-    # Sort the sponsors by the category_order list
-    sponsors = sorted(
-        sponsors,
-        key=lambda x: category_order.index(x["category"])
-        if x["category"] in category_order
-        else len(category_order),
-    )
-
-    # Group the sponsors by category.
-    # grouped_sponsors ends up looking like this:
-    """
-{
-    "adamantium": [
-        {
-            "name": "icbc",
-            "category": "adamantium",
-            "file": "icbc.png",
-            "link": "https://www.icbc.com.ar",
-        },
-        {
-            "name": "openqube",
-            "category": "adamantium",
-            "file": "openqube.png",
-            "link": "https://openqube.io/",
-        },
-
-    ],
-    "diamond": [
-        {
-            "name": "cognizant",
-            "category": "diamond",
-            "file": "cognizant.png",
-            "link": "https://sysar.my/cognizantsoftvision",
-        },
-        {
-            "name": "cognizant soft vision",
-            "category": "diamond",
-            "file": "cognizantsoftvision.png",
-            "link": "https://sysar.my/cognizantsoftvision",
-        },
-
-    ],
-    "silver": [
-        {
-            "name": "openqube",
-            "category": "silver",
-            "file": "openqube.png",
-            "link": "https://openqube.io/",
-        }
-    ],
-}
-    """
-
-    # Convert the sponsors into a dictionary with the sponsors grouped by category
-    grouped_sponsors = {}
-    for sponsor in sponsors:
-        category = sponsor["category"]
-        if category in grouped_sponsors:
-            grouped_sponsors[category].append(sponsor)
-        else:
-            grouped_sponsors[category] = [sponsor]
     # Render the template
     return render_template(
         "sponsors.html",
         title="Sponsors",
-        grouped_sponsors=grouped_sponsors,
-        featured_categories=featured_categories,
+        grouped_sponsors=sponsors,
+        featured_categories=config["featured_categories"],
+        featured_categories_only=False,
     )
 
 
@@ -169,25 +107,3 @@ def code_of_conduct():
 def agenda():
     agenda = read_json_file(AGENDA_FILE)
     return render_template("agenda.html", title="Agenda", agenda=agenda)
-
-
-# TODO: Start using the embed contact form
-@app.route("/submit_contact", methods=["POST"])
-def contact():
-    # Parse the incoming request body (a JSON Object) and convert it to a dictionary
-    print("Got a submit contact request")
-    req = request.get_json()
-    print(req)
-
-    res = make_response(
-        jsonify(
-            {
-                "message": "JSON recieved successfully",
-                "name": req["name"],
-                "surname": req["surname"],
-            }
-        ),
-        200,
-    )
-
-    return res

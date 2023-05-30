@@ -21,16 +21,18 @@ accordion_dataset = [
 ]
 #}
 <section id="faq" class="y-spaced-section">
+   <link rel="stylesheet"
+         href=" {{ url_for('static', filename='css/faq.css') }}  ">
    <div class="container">
       <div class="row">
          <div class="col-sm-3">
-            <h1 class="me-3">
+            <h1 class="me-3 text-white text-center">
                Preguntas frecuentes sobre <strong>Nerdearla</strong>
             </h1>
          </div>
          <div class="col-sm-9 bg-">
             {# Acordeón con el contenido de las FAQ #}
-            <div class="accordion">
+            <div class="accordion borderless-accordion">
                {% for item in accordion_dataset %}
                   <div class="accordion-item">
                      <h2 class="accordion-header">
@@ -53,4 +55,5 @@ accordion_dataset = [
          </div>
       </div>
    </div>
+   <div class="container"></div>
 </section>

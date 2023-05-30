@@ -1,12 +1,16 @@
 {# This component displays a section that explains what is Nerdearla #}
 <section id="about" class="y-spaced-section">
+   <link rel="stylesheet"
+         href="{{ url_for('static', filename='css/custom_button_2.css') }}">
    <div class="container">
-      <div class="d-flex flex-column flex-xl-row justify-content-center align-items-center ">
+      <div class="d-flex flex-column flex-xl-row justify-content-center align-items-center">
          <div>
-            <h1 class="display-1">Sobre Nerdearla</h1>
+            <h1 class="text-white fw-bold"
+                style="font-size: 4rem;
+                       text-align: center">Sobre Nerdearla</h1>
          </div>
-         <div class="h5 d-flex text-center text-xl-end px-lg-5">
-            <p class="mb-0">
+         <div class="h5 d-flex text-center text-xl-start px-lg-5">
+            <p class="mb-0 text-white">
                Desde nuestra fundación en 2014, Nerdearla se ha dedicado a ofrecer una conferencia de clase mundial,
                completamente gratuita, con contenido de vanguardia en ciencia y tecnología.
                <br>
@@ -15,6 +19,16 @@
                plataformas y paradigmas diseñados para impulsar tu carrera profesional
             </p>
          </div>
+         {# TODO: Boton conoce mas sobre nerdearla #}
+      </div>
+      <div class="d-flex align-items-center justify-content-center">
+         <a href="https://www.youtube-nocookie.com/embed/LEvRHxyekKQ?rel=0"
+            data-toggle="lightbox"
+            class="custom_button my-3">
+            <div class="button__line"></div>
+            <div class="button__line"></div>
+            <span class="button__text">Conoce más!</span>
+         </a>
       </div>
    </div>
 </section>

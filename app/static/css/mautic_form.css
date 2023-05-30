@@ -1,0 +1,27 @@
+.mauticform-label {
+	color: white;
+}
+.mauticform-errormsg,
+.mauticform-error,
+.mauticform-message {
+	font-weight: bold;
+}
+.mauticform-message {
+	color: --var(--nerd-green);
+}
+
+.mauticform-button-wrapper {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.mauticform-button {
+	display: block;
+	width: 60%;
+	font-size: 1rem !important;
+	padding: 8px 12px !important;
+	border-radius: 6px !important;
+	margin-left: auto;
+	margin-right: auto;
+}
