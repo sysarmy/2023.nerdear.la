@@ -1,0 +1,11 @@
+{
+	"featured_categories": ["adamantium", "diamond", "platinum", "gold"],
+	"category_order": [
+		"adamantium",
+		"diamond",
+		"platinum",
+		"gold",
+		"silver",
+		"bronze"
+	]
+}

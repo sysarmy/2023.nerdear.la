@@ -21,7 +21,7 @@ accordion_dataset = [
 ]
 #}
 <section id="faq" class="y-spaced-section">
-   <div class="container my-4">
+   <div class="container">
       <div class="row">
          <div class="col-sm-3">
             <h1 class="me-3">
@@ -37,13 +37,14 @@ accordion_dataset = [
                         <button class="accordion-button collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#panel-{{ item.number }}"
+                                data-bs-target="#panel-{{ item.title|whitespace_to_dash }}"
                                 aria-expanded="false"
-                                aria-controls="panel-{{ item.number }}">
+                                aria-controls="panel-{{ item.title|whitespace_to_dash }}">
                            {{ item.title }}
                         </button>
                      </h2>
-                     <div id="panel-{{ item.number }}" class="accordion-collapse collapse">
+                     <div id="panel-{{ item.title|whitespace_to_dash }}"
+                          class="accordion-collapse collapse">
                         <div class="accordion-body">{{ item.description }}</div>
                      </div>
                   </div>

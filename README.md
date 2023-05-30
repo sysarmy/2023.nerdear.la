@@ -29,6 +29,88 @@ This is the repository for Nerdearla, the Sysarmy event
 			└── components # jinja-html components
 ```
 
+## BACKLOG
+
+### Frontend
+
+#### Components
+
+- [ ] Navbar
+  - [ ] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [ ] Hero
+  - [x] Basic structure and operation
+  - [ ] Responsiveness
+  - [ ] Final styling
+- [ ] About
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [ ] Countdown
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [x] Nerdearla in numbers (statistics)
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [x] Final styling
+- [ ] Speakers
+  - [ ] Basic structure and operation
+  - [ ] Responsiveness
+  - [ ] Final styling
+- [x] Ubication
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [x] Recap
+  - [x] Basic structure and operation
+  - [ ] Responsiveness
+  - [ ] Final styling
+- [x] FAQ
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [ ] Contact
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [ ] Footer
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+
+#### Pages
+
+- [ ] Index
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [ ] Final styling
+- [x] Sponsors
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [x] Final styling
+- [x] Code of Conduct
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [x] Final styling
+- [ ] Agenda
+  - [ ] Basic structure and operation
+  - [ ] Responsiveness
+  - [ ] Final styling
+
+### Backend
+
+- [ ] Logging
+- [ ] Error handling
+  - [ ] functions.py
+  - [ ] routes.py
+  - [x] filters.py
+- [ ] Testing
+- [ ] Multilanguage support
+  - [ ] en
+  - [ ] es
+
 ## FAQ
 
 ### I want to change how something is displayed in the webpage!

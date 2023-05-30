@@ -4,7 +4,7 @@
  * The start of the event is in the deadlineDate
  */
 
-const deadlineDate = "2023-01-13T11:19:30";
+const deadlineDate = "2023-07-13T11:19:30";
 /**
  * This function gets the remaning time till the date parameter
  * @param {string} date The date which you want to get the remaining time
