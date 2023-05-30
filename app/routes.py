@@ -78,6 +78,9 @@ def sponsors():
     # Get a list of dictionaries based on the sponsors CSV file
     sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
 
+    # Removes trailing whitespace from the keys
+    sponsors = remove_trailing_whitespace(sponsors)
+    print(sponsors)
     # Convert key values to lowercase, just in case the input in the CSV is in caps
     convert_key_values_to_lowercase(sponsors, "category")
 

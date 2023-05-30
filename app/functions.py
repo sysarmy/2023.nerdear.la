@@ -111,3 +111,38 @@ def read_json_file(json_file_path):
         print(f"Error parsing JSON file: {e}")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+
+def remove_trailing_whitespace(dictionary_list):
+    """
+    Removes initial and final trailing whitespaces from keys and values of each dictionary in a list.
+
+    Args:
+        dictionary_list (list): List of dictionaries.
+
+    Returns:
+        list: List of dictionaries with updated keys and values.
+    """
+    processed_list = []
+
+    try:
+        for dictionary in dictionary_list:
+            processed_dict = {}
+
+            for key, value in dictionary.items():
+                try:
+                    processed_key = (
+                        key.strip()
+                    )  # Remove trailing whitespaces from the key
+                    processed_dict[processed_key] = value.strip()
+                except AttributeError:
+                    # Handle exception if key is not a string
+                    print(f"Warning: Invalid key type encountered: {key}")
+
+            processed_list.append(processed_dict)
+
+    except TypeError:
+        # Handle exception if dictionary_list is not iterable
+        print("Error: Invalid input. Expected a list of dictionaries.")
+
+    return processed_list

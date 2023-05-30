@@ -171,6 +171,54 @@ Other files are for general usage, like `style.css`, which defines general css t
 - `trama_backgrounds.css` defines classes for generating backgrounds using the tramas inside img/svg/tramas
 - `variables.css` defines global variables, for example the Nerderla colors.
 
+### What is inside `datasets/`?
+
+Datasets is a folder which contains files that modify what and how data is displayed in the page.
+**The purpose of this folder was to hold files that modify the webpage without needing to touch the code**
+
+For example, the `sponsors_config.json` file sets the order in which the sponsors are displayed in `sponsors.html`, among other things.
+This json file is accessed using `read_json_file()` from `functions.py`
+The sponsors are defined inside `sponsors.csv`
+
+### How are the sponsors displayed?
+
+The sponsors are defined in `datasets/sponsors.csv`
+`sponsors.csv` should look like this:
+
+```csv
+name                  ,category   ,file            ,link
+cognizant             ,diamond    ,cognizant.png   ,https://sysar.my/cognizantsoftvision
+icbc                  ,adamantium ,icbc.png        ,https://www.icbc.com.ar
+openqube              ,adamantium ,openqube.png    ,https://openqube.io/
+google cloud platform ,adamantium ,googlecloud.png ,https://cloud.google.com/
+rappi                 ,silver     ,rappi.png       ,https://rappi.io/
+rappi                 ,silver     ,rappi.png       ,https://rappi.io/
+rappi                 ,silver     ,rappi.png       ,https://rappi.io/
+```
+
+You can use whitespaces because the `sponsors/` route automatically removes trailing whitespaces
+
+### How can I modify the FAQ?
+
+In the `datasets/` folder, create or modify a `faq.json` file with FAQ's like the following:
+
+```json
+[
+	{
+		"title": "Que es Nerdearla",
+		"description": "Nerdearla es lorem ipsum bla bla bla"
+	},
+	{
+		"title": "Cuando se hace la Nerdearla",
+		"description": "La respuesta esta en tu corazon"
+	},
+	{
+		"title": "Cúanto sale?",
+		"description": "Paga Jolo"
+	}
+]
+```
+
 ## Helpful information
 
 ### helpful links
