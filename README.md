@@ -35,22 +35,22 @@ This is the repository for Nerdearla, the Sysarmy event
 
 #### Components
 
-- [ ] Navbar
-  - [ ] Basic structure and operation
+- [x] Navbar
+  - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
+  - [x] Final styling
 - [ ] Hero
   - [x] Basic structure and operation
-  - [ ] Responsiveness
-  - [ ] Final styling
-- [ ] About
-  - [x] Basic structure and operation
   - [x] Responsiveness
   - [ ] Final styling
-- [ ] Countdown
+- [x] About
   - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
+  - [x] Final styling
+- [x] Countdown
+  - [x] Basic structure and operation
+  - [x] Responsiveness
+  - [x] Final styling
 - [x] Nerdearla in numbers (statistics)
   - [x] Basic structure and operation
   - [x] Responsiveness
@@ -62,30 +62,26 @@ This is the repository for Nerdearla, the Sysarmy event
 - [x] Ubication
   - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
-- [x] Recap
-  - [x] Basic structure and operation
-  - [ ] Responsiveness
-  - [ ] Final styling
+  - [x] Final styling
 - [x] FAQ
   - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
-- [ ] Contact
+  - [x] Final styling
+- [x] Contact
   - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
-- [ ] Footer
+  - [x] Final styling
+- [x] Footer
   - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
+  - [x] Final styling
 
 #### Pages
 
 - [ ] Index
   - [x] Basic structure and operation
   - [x] Responsiveness
-  - [ ] Final styling
+  - [x] Final styling
 - [x] Sponsors
   - [x] Basic structure and operation
   - [x] Responsiveness

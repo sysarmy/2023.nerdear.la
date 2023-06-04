@@ -23,11 +23,8 @@
             <div class="navbar-nav me-auto">
                {# Put the items (apart of brand) of the navbar here #}
                <a class="nav-link nav-item" href="{{ url_for('index') }}">Home</a>
-               {# <a class="nav-link nav-item" href="{{ url_for('sponsors') }}">Sponsors</a> #}
-               {# HACK: Recordar que el code of conduct en el Navbar se reemplaza for la agenda #}
-               <a class="nav-link nav-item" href="{{ url_for('code_of_conduct') }}">Code of Conduct</a>
-               {# TODO: Recordar reactivar la agenda #}
-               {# <a class="nav-link nav-item" href="{{ url_for('agenda') }}">Agenda</a> #}
+               <a class="nav-link nav-item" href="{{ url_for('sponsors') }}">Sponsors</a>
+               <a class="nav-link nav-item" href="{{ url_for('agenda') }}">Agenda</a>
                {# TODO: Add the "Registrate" button #}
                {# <a class="nav-link nav-item" href="registro.nerd.la">Registrate</a> #}
             </div>
@@ -37,7 +34,7 @@
                <a href="{{ url_for('sponsors') }}" class="custom_button">
                   <div class="button__line"></div>
                   <div class="button__line"></div>
-                  <span class="button__text">Conviertete en Sponsor!</span>
+                  <span class="button__text">¡Convertite en Sponsor!</span>
                </a>
             </div>
             <div class="navbar-nav ms-auto d-flex align-items-center flex-row gap-4 gap-sm-2 gap-lg-1">
