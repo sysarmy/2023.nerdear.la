@@ -1,5 +1,4 @@
 from app import app
-from app.forms import ContactForm
 from flask import (
     render_template,
     request,
@@ -11,7 +10,9 @@ from flask import (
     make_response,
 )
 import csv
-from app.functions import *
+
+from app.classes.DatasetsUtils import DatasetsUtils as Datasets
+from app.classes.SponsorProcessor import SponsorProcessor
 
 FAQ_FILE = "datasets/faq.json"
 AGENDA_FILE = "datasets/agenda.json"
@@ -34,10 +35,10 @@ def index():
         flask.Response: The rendered index HTML template.
     """
     # The data to put in the faq accordion
-    accordion_dataset = read_json_file(FAQ_FILE)
-    config = read_json_file(SPONSORS_CONFIG_FILE)
-    sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
-    sponsors = process_sponsors(sponsors, config)
+    accordion_dataset = Datasets.read_json_file(FAQ_FILE)
+    config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
+    sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
+    sponsors = SponsorProcessor.process_sponsors(sponsors, config)
 
     # Render the template
     return render_template(
@@ -78,9 +79,9 @@ def sponsors():
     # FIXME: Add error handling
 
     # Get a list of dictionaries based on the sponsors CSV file
-    config = read_json_file(SPONSORS_CONFIG_FILE)
-    sponsors = csv_to_list_of_dicts(SPONSORS_FILE)
-    sponsors = process_sponsors(sponsors, config)
+    config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
+    sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
+    sponsors = SponsorProcessor.process_sponsors(sponsors, config)
 
     # Render the template
     return render_template(
@@ -105,5 +106,5 @@ def code_of_conduct():
 
 @app.route("/agenda")
 def agenda():
-    agenda = read_json_file(AGENDA_FILE)
+    agenda = Datasets.read_json_file(AGENDA_FILE)
     return render_template("agenda.html", title="Agenda", agenda=agenda)

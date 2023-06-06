@@ -78,7 +78,7 @@ This is the repository for Nerdearla, the Sysarmy event
 
 #### Pages
 
-- [ ] Index
+- [x] Index
   - [x] Basic structure and operation
   - [x] Responsiveness
   - [x] Final styling
@@ -91,7 +91,7 @@ This is the repository for Nerdearla, the Sysarmy event
   - [x] Responsiveness
   - [x] Final styling
 - [ ] Agenda
-  - [ ] Basic structure and operation
+  - [x] Basic structure and operation
   - [ ] Responsiveness
   - [ ] Final styling
 
