@@ -1,7 +1,7 @@
 from .DatasetsUtils import DatasetsUtils
 
 
-class ProcessSponsorError(Exception):
+class SponsorProcessorError(Exception):
     """Custom exception class for errors encountered during sponsor processing."""
 
     pass
@@ -25,7 +25,7 @@ class SponsorProcessor:
             dict: A dictionary with the sponsors grouped by category.
 
         Raises:
-            ProcessSponsorError: If there is an error encountered during sponsor processing.
+            SponsorProcessorError: If there is an error encountered during sponsor processing.
         """
 
         try:
@@ -61,5 +61,5 @@ class SponsorProcessor:
                 else:
                     grouped_sponsors[category] = [sponsor]
         except Exception as e:
-            raise ProcessSponsorError(str(e))
+            raise SponsorProcessorError(str(e))
         return grouped_sponsors
