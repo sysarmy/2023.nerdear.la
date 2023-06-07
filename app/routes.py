@@ -11,8 +11,8 @@ from flask import (
 )
 import csv
 
-from app.classes.DatasetsUtils import DatasetsUtils as Datasets
-from app.classes.SponsorProcessor import SponsorProcessor
+from app.classes.DatasetsUtils import DatasetsUtils as Datasets, DatasetError
+from app.classes.SponsorProcessor import SponsorProcessor, SponsorProcessorError
 
 FAQ_FILE = "datasets/faq.json"
 AGENDA_FILE = "datasets/agenda.json"
@@ -34,20 +34,32 @@ def index():
     Returns:
         flask.Response: The rendered index HTML template.
     """
-    # The data to put in the faq accordion
-    accordion_dataset = Datasets.read_json_file(FAQ_FILE)
-    config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
-    sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
-    sponsors = SponsorProcessor.process_sponsors(sponsors, config)
-
+    sponsors_error = False
+    try:
+        # The data to put in the faq accordion
+        accordion_dataset = Datasets.read_json_file(FAQ_FILE)
+        config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
+        sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
+        sponsors = SponsorProcessor.process_sponsors(sponsors, config)
+    # TODO: Handle errors correctly
+    except DatasetError as e:
+        print(f"Dataset error: {str(e)}")
+        flash("Dataset error!")
+        sponsors_error = True
+    except SponsorProcessorError as e:
+        print(f"Sponsor error: {str(e)}")
+        flash("Sponsor error!")
+        sponsors_error = True
     # Render the template
+    # FIXME: Is the if in grouped sponsors ok?
     return render_template(
         "index.html",
         title="Home",
         accordion_dataset=accordion_dataset,
-        grouped_sponsors=sponsors,
+        grouped_sponsors=sponsors if not sponsors_error else None,
         featured_categories=config["featured_categories"],
         featured_categories_only=True,
+        sponsors_error=sponsors_error,
     )
 
 
@@ -76,12 +88,16 @@ def sponsors():
     Returns:
         flask.Response: The rendered sponsors HTML template.
     """
-    # FIXME: Add error handling
-
+    # TODO: Handle errors correctly
     # Get a list of dictionaries based on the sponsors CSV file
-    config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
-    sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
-    sponsors = SponsorProcessor.process_sponsors(sponsors, config)
+    try:
+        config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
+        sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
+        sponsors = SponsorProcessor.process_sponsors(sponsors, config)
+    except DatasetError:
+        flash("Dataset error!")  # TODO: Add good flash errors
+    except SponsorProcessorError:
+        flash("Sponsor error!")
 
     # Render the template
     return render_template(
@@ -108,3 +124,6 @@ def code_of_conduct():
 def agenda():
     agenda = Datasets.read_json_file(AGENDA_FILE)
     return render_template("agenda.html", title="Agenda", agenda=agenda)
+
+
+# TODO: Add 404 page

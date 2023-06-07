@@ -61,5 +61,7 @@ class SponsorProcessor:
                 else:
                     grouped_sponsors[category] = [sponsor]
         except Exception as e:
-            raise SponsorProcessorError(str(e))
+            raise SponsorProcessorError(
+                f"An error occurred while processing the sponsors: {e}"
+            ) from e
         return grouped_sponsors

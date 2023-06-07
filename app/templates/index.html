@@ -26,5 +26,9 @@ This is done for code manteinability and readability
       {% include "components/contact.html" %}
    </div>
    <h1 class="text-center display-1 fw-bold mt-5 text-decoration-underline">Conoce a nuestros sponsors</h1>
-   {% include "components/sponsors_generator.html" %}
+   {% if sponsors_error %}
+      <h1>OOPS</h1>
+   {% else %}
+      {% include "components/sponsors_generator.html" %}
+   {% endif %}
 {% endblock content %}
