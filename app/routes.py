@@ -103,6 +103,7 @@ def sponsors():
         grouped_sponsors=sponsors if not sponsors_error else None,
         featured_categories=config["featured_categories"],
         featured_categories_only=False,
+        sponsors_error=sponsors_error,
     )
 
 

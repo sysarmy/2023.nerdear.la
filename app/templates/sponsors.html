@@ -81,6 +81,8 @@ grouped sponsors = {
             </div>
          </div>
       </div>
-      {% include "components/sponsors_generator.html" %}
+      {% if not sponsors_error %}
+         {% include "components/sponsors_generator.html" %}
+      {% endif %}
    </section>
 {% endblock content %}

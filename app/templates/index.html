@@ -25,10 +25,8 @@ This is done for code manteinability and readability
       {# Contact form like https://productschool.com/productcon/london-2024 #}
       {% include "components/contact.html" %}
    </div>
-   <h1 class="text-center display-1 fw-bold mt-5 text-decoration-underline">Conoce a nuestros sponsors</h1>
-   {% if sponsors_error %}
-      <h1>OOPS</h1>
-   {% else %}
+   {% if not sponsors_error %}
+      <h1 class="text-center display-1 fw-bold mt-5 text-decoration-underline">Conoce a nuestros sponsors</h1>
       {% include "components/sponsors_generator.html" %}
    {% endif %}
 {% endblock content %}
