@@ -27,7 +27,6 @@ class SponsorProcessor:
         Raises:
             SponsorProcessorError: If there is an error encountered during sponsor processing.
         """
-
         try:
             # Get the configuration from the config file
             category_order = config.get("category_order")
@@ -61,7 +60,6 @@ class SponsorProcessor:
                 else:
                     grouped_sponsors[category] = [sponsor]
         except Exception as e:
-            raise SponsorProcessorError(
-                f"An error occurred while processing the sponsors: {e}"
-            ) from e
+            raise SponsorProcessorError(f"An error occurred while processing the sponsors: {e}")
+
         return grouped_sponsors

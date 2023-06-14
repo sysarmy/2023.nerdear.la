@@ -24,10 +24,13 @@ import os
 
 SECRET_KEY = os.urandom(32)
 app.config["SECRET_KEY"] = SECRET_KEY
+logger = app.logger
 
 
 @app.route("/", methods=["POST", "GET"])
 def index():
+    app.logger.info("Info level log")
+    app.logger.warning("Warning level log")
     """
     Shows the index page
 
@@ -43,13 +46,14 @@ def index():
         sponsors = SponsorProcessor.process_sponsors(sponsors, config)
     # TODO: Handle errors correctly
     except DatasetError as e:
-        print(f"Dataset error: {str(e)}")
-        flash("Dataset error!")
+        # Change to logger.exception if you want the whole traceback
+        logger.error(f"Exception occurred {e}")
         sponsors_error = True
     except SponsorProcessorError as e:
-        print(f"Sponsor error: {str(e)}")
-        flash("Sponsor error!")
+        logger.error(f"Exception occurred {e}")
         sponsors_error = True
+    except Exception as e:
+        logger.error(f"Unexpected exception: {e}")
     # Render the template
     # FIXME: Is the if in grouped sponsors ok?
     return render_template(

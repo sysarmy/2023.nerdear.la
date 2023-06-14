@@ -1,4 +1,5 @@
-import json, csv
+import json
+import csv
 
 
 class DatasetError(Exception):
@@ -38,9 +39,7 @@ class DatasetsUtils:
 
             return processed_list
         except Exception as e:
-            raise DatasetError(
-                f"An error occurred while processing the dictionary list: {e}"
-            ) from e
+            raise DatasetError(f"An error occurred while processing the dictionary list: {e}")
 
     @staticmethod
     def convert_key_values_to_lowercase(dictionary_list, key):
@@ -67,9 +66,7 @@ class DatasetsUtils:
                     raise TypeError(f"Value for key '{key}' is not a string.")
                 item[key] = value.lower()
         except Exception as e:
-            raise DatasetError(
-                f"An error occurred while converting key values to lowercase: {e}"
-            ) from e
+            raise DatasetError(f"An error occurred while converting key values to lowercase: {e}")
 
     @staticmethod
     def csv_to_list_of_dicts(csv_file_path):
@@ -94,17 +91,13 @@ class DatasetsUtils:
                     data.append(row)
             return data
         except FileNotFoundError as e:
-            raise DatasetError(f"File not found: {csv_file_path}") from e
+            raise DatasetError(f"File not found: {csv_file_path}")
         except IsADirectoryError as e:
-            raise DatasetError(
-                f"Expected a file, but got a directory: {csv_file_path}"
-            ) from e
+            raise DatasetError(f"Expected a file, but got a directory: {csv_file_path}")
         except PermissionError as e:
-            raise DatasetError(
-                f"Permission denied to access file: {csv_file_path}"
-            ) from e
+            raise DatasetError(f"Permission denied to access file: {csv_file_path}")
         except csv.Error as e:
-            raise DatasetError(f"Error parsing CSV file: {e}") from e
+            raise DatasetError(f"Error parsing CSV file: {e}")
 
     @staticmethod
     def read_json_file(json_file_path):
@@ -125,16 +118,12 @@ class DatasetsUtils:
                 data = json.load(json_file)
             return data
         except FileNotFoundError as e:
-            raise DatasetError(f"File not found: {json_file_path}") from e
+            raise DatasetError(f"File not found: {json_file_path}")
         except IsADirectoryError as e:
-            raise DatasetError(
-                f"Expected a file, but got a directory: {json_file_path}"
-            ) from e
+            raise DatasetError(f"Expected a file, but got a directory: {json_file_path}")
         except PermissionError as e:
-            raise DatasetError(
-                f"Permission denied to access file: {json_file_path}"
-            ) from e
+            raise DatasetError(f"Permission denied to access file: {json_file_path}")
         except json.JSONDecodeError as e:
-            raise DatasetError(f"Error parsing JSON file: {e}") from e
+            raise DatasetError(f"Error parsing JSON file: {e}")
         except Exception as e:
-            raise DatasetError(f"An error occurred: {e}") from e
+            raise DatasetError(f"An error occurred: {e}")
