@@ -1,3 +1,4 @@
+import os
 import logging
 from flask import Flask
 
@@ -34,27 +35,43 @@ def configure_logger(app: Flask):
     console_handler.setFormatter(console_formatter)
     logger.addHandler(console_handler)
 
+    # Create the 'logs/' folder if it doesn't exist
+    if not os.path.exists("logs/"):
+        try:
+            os.makedirs("logs/")
+        except PermissionError:
+            logger.error("Failed to create 'logs/' folder. Check permissions.")
+
     # Create a file handler for Werkzeug logs
-    werkzeug_handler = logging.FileHandler("werkzeug.log")
-    werkzeug_handler.setLevel(logging.INFO)  # Set the desired level for Werkzeug logs
-    werkzeug_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    werkzeug_handler.setFormatter(werkzeug_formatter)
-    werkzeug_logger = logging.getLogger("werkzeug")
-    werkzeug_logger.setLevel(logging.INFO)  # Set the desired level for Werkzeug logs
-    werkzeug_logger.addHandler(werkzeug_handler)
+    try:
+        werkzeug_handler = logging.FileHandler("logs/werkzeug.log")
+        werkzeug_handler.setLevel(logging.INFO)  # Set the desired level for Werkzeug logs
+        werkzeug_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+        werkzeug_handler.setFormatter(werkzeug_formatter)
+        werkzeug_logger = logging.getLogger("werkzeug")
+        werkzeug_logger.setLevel(logging.INFO)  # Set the desired level for Werkzeug logs
+        werkzeug_logger.addHandler(werkzeug_handler)
+    except PermissionError:
+        logger.error("Failed to create 'werkzeug.log' file. Check permissions.")
 
     # Create a file handler for general logs (INFO and higher, excluding Werkzeug)
-    general_handler = logging.FileHandler("general.log")
-    general_handler.setLevel(logging.INFO)
-    general_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    general_handler.setFormatter(general_formatter)
-    logger.addHandler(general_handler)
+    try:
+        general_handler = logging.FileHandler("logs/general.log")
+        general_handler.setLevel(logging.INFO)
+        general_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+        general_handler.setFormatter(general_formatter)
+        logger.addHandler(general_handler)
+    except PermissionError:
+        logger.error("Failed to create 'general.log' file. Check permissions.")
 
     # Create a file handler for error logs (ERROR and higher)
-    error_handler = logging.FileHandler("errors.log")
-    error_handler.setLevel(logging.ERROR)
-    error_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    error_handler.setFormatter(error_formatter)
-    logger.addHandler(error_handler)
+    try:
+        error_handler = logging.FileHandler("logs/errors.log")
+        error_handler.setLevel(logging.ERROR)
+        error_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+        error_handler.setFormatter(error_formatter)
+        logger.addHandler(error_handler)
+    except PermissionError:
+        logger.error("Failed to create 'errors.log' file. Check permissions.")
 
     return logger
