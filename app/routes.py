@@ -1,16 +1,6 @@
 from app import app
-from flask import (
-    render_template,
-    request,
-    flash,
-    redirect,
-    url_for,
-    jsonify,
-    abort,
-    make_response,
-)
-import csv
-
+from flask import render_template
+import os
 from app.classes.DatasetsUtils import DatasetsUtils as Datasets, DatasetError
 from app.classes.SponsorProcessor import SponsorProcessor, SponsorProcessorError
 
@@ -20,19 +10,20 @@ SPONSORS_FILE = "datasets/sponsors.csv"
 SPONSORS_CONFIG_FILE = "datasets/sponsors_config.json"
 
 # TODO: Please for the love of god change the secret key generation
-import os
-
 SECRET_KEY = os.urandom(32)
 app.config["SECRET_KEY"] = SECRET_KEY
+
+# Get the logger
 logger = app.logger
 
 
 @app.route("/", methods=["POST", "GET"])
 def index():
-    app.logger.info("Info level log")
-    app.logger.warning("Warning level log")
     """
-    Shows the index page
+    Shows the index page.
+
+    Retrieves data from JSON and CSV files, processes it, and renders the index HTML template.
+    If any errors occur during data retrieval or processing, appropriate error messages are logged.
 
     Returns:
         flask.Response: The rendered index HTML template.
@@ -44,18 +35,16 @@ def index():
         config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
         sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
         sponsors = SponsorProcessor.process_sponsors(sponsors, config)
-    # TODO: Handle errors correctly
     except DatasetError as e:
         # Change to logger.exception if you want the whole traceback
-        logger.error(f"Exception occurred {e}")
+        logger.error(f"Exception occurred: {e}")
         sponsors_error = True
     except SponsorProcessorError as e:
-        logger.error(f"Exception occurred {e}")
+        logger.error(f"Exception occurred: {e}")
         sponsors_error = True
     except Exception as e:
         logger.error(f"Unexpected exception: {e}")
     # Render the template
-    # FIXME: Is the if in grouped sponsors ok?
     return render_template(
         "index.html",
         title="Home",
@@ -92,22 +81,26 @@ def sponsors():
     Returns:
         flask.Response: The rendered sponsors HTML template.
     """
-    # TODO: Handle errors correctly
-    # Get a list of dictionaries based on the sponsors CSV file
+    sponsors_error = False
     try:
         config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
         sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
         sponsors = SponsorProcessor.process_sponsors(sponsors, config)
-    except DatasetError:
-        flash("Dataset error!")  # TODO: Add good flash errors
-    except SponsorProcessorError:
-        flash("Sponsor error!")
+    except DatasetError as e:
+        # Change to logger.exception if you want the whole traceback
+        logger.error(f"Exception occurred {e}")
+        sponsors_error = True
+    except SponsorProcessorError as e:
+        logger.error(f"Exception occurred {e}")
+        sponsors_error = True
+    except Exception as e:
+        logger.error(f"Unexpected exception: {e}")
 
     # Render the template
     return render_template(
         "sponsors.html",
         title="Sponsors",
-        grouped_sponsors=sponsors,
+        grouped_sponsors=sponsors if not sponsors_error else None,
         featured_categories=config["featured_categories"],
         featured_categories_only=False,
     )
