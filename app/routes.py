@@ -84,7 +84,7 @@ def index(lang_code):
     )
 
 
-@app.route("/<lang_code>/sponsors")
+@app.route("/<lang_code>/sponsors/")
 def sponsors(lang_code):
     """
     Renders the sponsors page.
@@ -136,7 +136,7 @@ def sponsors(lang_code):
     )
 
 
-@app.route("/<lang_code>/code_of_conduct")
+@app.route("/<lang_code>/code_of_conduct/")
 def code_of_conduct(lang_code):
     """
     Shows the code of conduct page
@@ -147,7 +147,7 @@ def code_of_conduct(lang_code):
     return render_template("code_of_conduct.html", title="Code of Conduct")
 
 
-@app.route("/<lang_code>/agenda")
+@app.route("/<lang_code>/agenda/")
 def agenda(lang_code):
     agenda = Datasets.read_json_file(AGENDA_FILE)
     return render_template(
