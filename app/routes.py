@@ -1,5 +1,5 @@
 from app import app, babel
-from flask import render_template, request, session, jsonify
+from flask import render_template, request, session, jsonify, redirect
 from flask_babel import _, gettext
 import os
 from app.classes.DatasetsUtils import DatasetsUtils as Datasets, DatasetError
@@ -18,8 +18,16 @@ app.config["SECRET_KEY"] = SECRET_KEY
 logger = app.logger
 
 
-@app.route("/", methods=["POST", "GET"])
-def index():
+@app.before_request
+def extract_locale_from_url():
+    # Extract the language code from the URL and set it as the locale
+    lang_code = request.path.split("/")[1]
+    if lang_code in app.config["BABEL_LANGUAGES"]:
+        babel.locale = lang_code
+
+
+@app.route("/<lang_code>/")
+def index(lang_code):
     """
     Shows the index page.
 
@@ -54,11 +62,12 @@ def index():
         featured_categories=config["featured_categories"],
         featured_categories_only=True,
         sponsors_error=sponsors_error,
+        lang_code=lang_code,
     )
 
 
-@app.route("/sponsors")
-def sponsors():
+@app.route("/<lang_code>/sponsors")
+def sponsors(lang_code):
     """
     Renders the sponsors page.
 
@@ -105,11 +114,12 @@ def sponsors():
         featured_categories=config["featured_categories"],
         featured_categories_only=False,
         sponsors_error=sponsors_error,
+        lang_code=lang_code,
     )
 
 
-@app.route("/code_of_conduct")
-def code_of_conduct():
+@app.route("/<lang_code>/code_of_conduct")
+def code_of_conduct(lang_code):
     """
     Shows the code of conduct page
 
@@ -119,20 +129,15 @@ def code_of_conduct():
     return render_template("code_of_conduct.html", title="Code of Conduct")
 
 
-@app.route("/agenda")
-def agenda():
+@app.route("/<lang_code>/agenda")
+def agenda(lang_code):
     agenda = Datasets.read_json_file(AGENDA_FILE)
-    return render_template("agenda.html", title="Agenda", agenda=agenda)
-
-
-@app.route("/set-language", methods=["POST"])
-def set_language():
-    language = request.json["language"]
-    if language in app.config["LANGUAGES"]:
-        session["language"] = language
-        return jsonify(success=True)
-    else:
-        return jsonify(success=False)
+    return render_template(
+        "agenda.html",
+        title="Agenda",
+        agenda=agenda,
+        lang_code=lang_code,
+    )
 
 
 # TODO: Add 404 page

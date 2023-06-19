@@ -12,16 +12,20 @@ babel = Babel(app)
 from app import filters
 from app import routes
 
-app.config["LANGUAGES"] = {
+app.config["BABEL_LANGUAGES"] = {
     "en": "English",
     "es": "Español",
 }
 
 
 def get_locale():
-    if "language" in session:
-        return session["language"]
-    return request.accept_languages.best_match(["en", "es"])
+    # Use the language code from the URL prefix if available
+    lang_code = request.path.split("/")[1]
+    if lang_code in app.config["BABEL_LANGUAGES"]:
+        return lang_code
+
+    # Fall back to the default locale
+    return request.accept_languages.best_match(app.config["BABEL_LANGUAGES"])
 
 
 babel.init_app(app, locale_selector=get_locale)
