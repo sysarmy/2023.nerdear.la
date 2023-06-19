@@ -2,15 +2,15 @@
 {# TODO: Change background to a video #}
 <section id="hero">
    <link rel="stylesheet"
-         href=" {{ url_for('static', filename='css/hero.css') }} "/>
+         href="{{ url_for('static', filename='css/hero.css') }}"/>
    <div class="container">
       <div class="d-flex  justify-content-center">
          <div id="event-info" class="p-5 text-white d-inline-block">
             <h1 id="title" class="title d-inline fw-bold display-1 my-3">
-               Décima edición
+               {{ _('Décima edición') }}
                <br>
                <br>
-               27 al 30 de Septiembre, 2023
+               {{ _('27 al 30 de Septiembre, 2023') }}
             </h1>
          </div>
       </div>

@@ -3,8 +3,8 @@
    <link rel="stylesheet"
          href="{{ url_for('static', filename='css/statistics.css') }}">
    <div class="container d-flex flex-column">
-      <h1 class="display-1 mx-auto">Nerdearla en numeros</h1>
-      <h2 class="mx-auto mb-5 text-muted">Estos fueron los números de nuestra última edición</h2>
+      <h1 class="display-1 mx-auto">{{ _('Nerdearla en numeros') }}</h1>
+      <h2 class="mx-auto mb-5 text-muted">{{ _('Estos fueron los números de nuestra última edición') }}</h2>
       <div class="row">
          <div class="col-lg-6 ">
             <div class="card bg-trama bg-trama-blue-3 card-chopped-right">
@@ -13,7 +13,7 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-user-group"></i>7k
                      </div>
-                     <div class="col card-description">Más de 700 participantes presenciales en Buenos Aires.</div>
+                     <div class="col card-description">{{ _('Más de 700 participantes presenciales en Buenos Aires.') }}</div>
                   </div>
                </div>
             </div>
@@ -25,7 +25,9 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-globe"></i>20K
                      </div>
-                     <div class="col card-description">En total, más de 20000 participantes via online durante las conferencias.</div>
+                     <div class="col card-description">
+                        {{ _('En total, más de 20000 participantes vía online durante las conferencias.') }}
+                     </div>
                   </div>
                </div>
             </div>
@@ -37,7 +39,7 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-person-chalkboard"></i>200
                      </div>
-                     <div class="col card-description">Más de 200 conferencistas de más de 20 paises</div>
+                     <div class="col card-description">{{ _('Más de 200 conferencistas de más de 20 países') }}</div>
                   </div>
                </div>
             </div>
@@ -49,7 +51,8 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-money-bills"></i>100%
                      </div>
-                     <div class="col card-description">El evento es 100% gratuito para los participantes, desde el día 1</div>
+                     {# Hay que usar dos %%, porque flask babel usa %, y para escapar el % se usa %% #}
+                     <div class="col card-description">{{ _('El evento es 100%% gratuito para los participantes, desde el día 1') }}</div>
                   </div>
                </div>
             </div>

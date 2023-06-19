@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template
+from flask_babel import _
 import os
 from app.classes.DatasetsUtils import DatasetsUtils as Datasets, DatasetError
 from app.classes.SponsorProcessor import SponsorProcessor, SponsorProcessorError

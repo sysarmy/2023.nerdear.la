@@ -1,17 +1,15 @@
 {# This component displays the ubication of the event with a google maps embed #}
 <section id="ubication" class="y-spaced-section">
    <div class="container">
-      <h1>Nuestra ubicacion</h1>
+      <h1>{{ _('Nuestra ubicacion') }}</h1>
       <p>
-         El evento va a transcurrir en la
+         {{ _('El evento va a transcurrir en la')}}
          <a href="https://www.cckonex.org/"
             target="_blank"
-            rel="noopener noreferrer">Ciudad Cultural Konex</a>.
+            rel="noopener noreferrer">{{ _('Ciudad Cultural Konex')}}</a>.
       </p>
       <p>
-         El mismo está ubicado en la calle Sarmiento al 3131,
-         entre las calles Dr. Tomás Manuel de Anchorena y Jean Jaures,
-         a unas cuadras de la estación de Once.
+         {{ _('El mismo está ubicado en la calle Sarmiento al 3131, entre las calles Dr. Tomás Manuel de Anchorena y Jean Jaures, a unas cuadras de la estación de Once.') }}
       </p>
       {# Explanation for why the iframe is repeated https://stackoverflow.com/a/72136495/15965186 #}
       {# Display me when more than sm #}

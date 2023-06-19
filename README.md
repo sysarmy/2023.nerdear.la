@@ -94,6 +94,8 @@ This is the repository for Nerdearla, the Sysarmy event
   - [x] Basic structure and operation
   - [ ] Responsiveness
   - [ ] Final styling
+- [ ] Error pages
+  - [ ] 404 page
 
 ### Backend
 
@@ -399,13 +401,30 @@ By importing the logger from the app module's `__init__.py` file in the `__init_
 
 The idea is to divide the code to make it cleaner and easier to use
 
+### What is babel / How does translation work / Why do i see a lot of underscores \_() everywhere / How do i change translation/language?
+
+Its flask babel https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n
+
+The tutorial shows you how to do scripts integrated with flask, but i hadnt read that part at the moment of creating this scripts
+
+When you replace all text in html files with `{{ _('') }}`,
+
+1. run `sh scripts/extract_messages.sh` (if its not running, run `chmod +x extract_messages.sh` to give it permissions to run).
+
+2. run `sh scripts/generate_language_catalog.sh en`. Replace `en` with the language code you want. In this project, we are translating to english, so we use en.
+   If you get a "Please provide a language parameter." error, you forgot to pass the language as a parameter, so it means you forgot the `en` when running the file.
+
+3. Use chatGPT to fill the messages.po file or do it by hand
+
+4. Run `scripts/generate_language_output.sh`
+
 ## Helpful information
 
 ### helpful links
 
 Understanding Flask: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world **(READ FIRST)**
 
-Understanding multilanguage: https://medium.com/@nicolas_84494/flask-create-a-multilingual-web-application-with-language-specific-urls-5d994344f5fd
+Understanding multilanguage: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n and https://medium.com/@nicolas_84494/flask-create-a-multilingual-web-application-with-language-specific-urls-5d994344f5fd
 
 Jinja formatter: https://stackoverflow.com/questions/60175608/visual-studio-code-and-jinja-templates
 

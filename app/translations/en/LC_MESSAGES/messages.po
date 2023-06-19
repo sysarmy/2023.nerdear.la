@@ -1,0 +1,165 @@
+# English translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-06-19 13:09-0300\n"
+"PO-Revision-Date: 2023-06-19 13:09-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: app/templates/agenda.html:29
+msgid "Cargando agenda, por favor espere..."
+msgstr "Loading agenda, please wait..."
+
+#: app/templates/index.html:29
+msgid "Conoce a nuestros sponsors"
+msgstr "Meet our sponsors"
+
+#: app/templates/sponsors.html:74
+msgid "Nerdearla te es presentado gracias a nuestros maravillosos patrocinadores"
+msgstr "Nerdearla is brought to you thanks to our wonderful sponsors"
+
+#: app/templates/sponsors.html:78
+#, python-format
+msgid "Desde 2014, nuestro objetivo ha sido organizar un evento de clase mundial para personas en América Latina, con una entrada 100% gratuita. Eso no sería posible sin nuestros patrocinadores y organizaciones de apoyo. ¡Conviértete en uno hoy mismo!"
+msgstr "Since 2014, our goal has been to organize a world-class event for people in Latin America, with 100% free admission. That wouldn't be possible without our sponsors and supporting organizations. Become one today!"
+
+#: app/templates/components/about.html:10
+msgid "Sobre Nerdearla"
+msgstr "About Nerdearla"
+
+#: app/templates/components/about.html:14
+msgid "Desde nuestra fundación en 2014, Nerdearla se ha dedicado a ofrecer una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
+msgstr "Since our foundation in 2014, Nerdearla has been dedicated to providing a world-class conference, completely free, with cutting-edge content in science and technology."
+
+#: app/templates/components/about.html:16
+msgid "Únete a nosotros mientras celebramos nuestra décima edición y sumérgete en los últimos avances en una amplia gama de lenguajes, plataformas y paradigmas diseñados para impulsar tu carrera profesional"
+msgstr "Join us as we celebrate our tenth edition and dive into the latest advancements in a wide range of languages, platforms, and paradigms designed to boost your professional career."
+
+#: app/templates/components/about.html:26
+msgid "Conoce más!"
+msgstr "Learn more!"
+
+#: app/templates/components/contact.html:6
+msgid "Subscribite a nuestro newsletter"
+msgstr "Subscribe to our newsletter"
+
+#: app/templates/components/countdown.html:10
+msgid "Cuanto Falta para Nerdearla?"
+msgstr "How long until Nerdearla?"
+
+#: app/templates/components/countdown.html:16
+msgid "Días"
+msgstr "Days"
+
+#: app/templates/components/countdown.html:20
+msgid "Horas"
+msgstr "Hours"
+
+#: app/templates/components/countdown.html:24
+msgid "Minutos"
+msgstr "Minutes"
+
+#: app/templates/components/countdown.html:28
+msgid "Segundos"
+msgstr "Seconds"
+
+#: app/templates/components/faq.html:30
+msgid "Preguntas frecuentes sobre"
+msgstr "Frequently Asked Questions about"
+
+#: app/templates/components/faq.html:30
+msgid "Nerdearla"
+msgstr "Nerdearla"
+
+#: app/templates/components/footer.html:18
+msgid "Codigo de Conducta"
+msgstr "Code of Conduct"
+
+#: app/templates/components/hero.html:10
+msgid "Décima edición"
+msgstr "Tenth edition"
+
+#: app/templates/components/hero.html:13
+msgid "27 al 30 de Septiembre, 2023"
+msgstr "September 27th to 30th, 2023"
+
+#: app/templates/components/intro.html:10
+msgid "3 veces más grande que cualquier otra conferencia en Buenos Aires"
+msgstr "3 times larger than any other conference in Buenos Aires"
+
+#: app/templates/components/intro.html:13
+msgid "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
+msgstr "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
+
+#: app/templates/components/navbar.html:25
+msgid "Home"
+msgstr "Home"
+
+#: app/templates/components/navbar.html:26
+msgid "Sponsors"
+msgstr "Sponsors"
+
+#: app/templates/components/navbar.html:27
+msgid "Agenda"
+msgstr "Agenda"
+
+#: app/templates/components/navbar.html:37
+msgid "¡Convertite en Sponsor!"
+msgstr "Become a Sponsor!"
+
+#: app/templates/components/recap.html:4
+msgid "Recap del año pasado"
+msgstr "Recap of Last Year"
+
+#: app/templates/components/statistics.html:6
+msgid "Nerdearla en numeros"
+msgstr "Nerdearla in numbers"
+
+#: app/templates/components/statistics.html:7
+msgid "Estos fueron los números de nuestra última edición"
+msgstr "These were the numbers from our last edition"
+
+#: app/templates/components/statistics.html:16
+msgid "Más de 700 participantes presenciales en Buenos Aires."
+msgstr "More than 700 in-person participants in Buenos Aires."
+
+#: app/templates/components/statistics.html:29
+msgid "En total, más de 20000 participantes vía online durante las conferencias."
+msgstr "In total, more than 20,000 online participants during the conferences."
+
+#: app/templates/components/statistics.html:42
+msgid "Más de 200 conferencistas de más de 20 países"
+msgstr "More than 200 speakers from over 20 countries"
+
+#: app/templates/components/statistics.html:55
+#, python-format
+msgid "El evento es 100%% gratuito para los participantes, desde el día 1"
+msgstr "The event is 100%% free for participants, from day 1"
+
+#: app/templates/components/ubication.html:4
+msgid "Nuestra ubicacion"
+msgstr "Our location"
+
+#: app/templates/components/ubication.html:6
+msgid "El evento va a transcurrir en la"
+msgstr "The event will take place at"
+
+#: app/templates/components/ubication.html:9
+msgid "Ciudad Cultural Konex"
+msgstr "Ciudad Cultural Konex"
+
+#: app/templates/components/ubication.html:12
+msgid "El mismo está ubicado en la calle Sarmiento al 3131, entre las calles Dr. Tomás Manuel de Anchorena y Jean Jaures, a unas cuadras de la estación de Once."
+msgstr "It is located on Sarmiento Street 3131, between Dr. Tomás Manuel de Anchorena and Jean Jaures, a few blocks from the Once station."

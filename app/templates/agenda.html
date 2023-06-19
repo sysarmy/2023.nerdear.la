@@ -25,7 +25,9 @@ the event, using embeds from swapcard #}
                      <div id="panel-{{ item.title|whitespace_to_dash }}"
                           class="accordion-collapse collapse">
                         <div class="accordion-body">
-                           <div class="loading" id="loading~{{ item.title|whitespace_to_dash }}">Cargando agenda, por favor espere...</div>
+                           <div class="loading" id="loading~{{ item.title|whitespace_to_dash }}">
+                              {{ _('Cargando agenda, por favor espere...')}}
+                           </div>
                            <iframe id="{{ item.title|whitespace_to_dash }}"
                                    src="{{ item.iframe_url }}"
                                    height="500px"
