@@ -418,6 +418,8 @@ When you replace all text in html files with `{{ _('') }}`,
 
 4. Run `scripts/generate_language_output.sh`
 
+The language selection in the navbar is a form that uses the fetch API, and asks the route `language-selection` to set the language in the session
+
 ## Helpful information
 
 ### helpful links

@@ -1,6 +1,6 @@
-from app import app
-from flask import render_template
-from flask_babel import _
+from app import app, babel
+from flask import render_template, request, session, jsonify
+from flask_babel import _, gettext
 import os
 from app.classes.DatasetsUtils import DatasetsUtils as Datasets, DatasetError
 from app.classes.SponsorProcessor import SponsorProcessor, SponsorProcessorError
@@ -123,6 +123,16 @@ def code_of_conduct():
 def agenda():
     agenda = Datasets.read_json_file(AGENDA_FILE)
     return render_template("agenda.html", title="Agenda", agenda=agenda)
+
+
+@app.route("/set-language", methods=["POST"])
+def set_language():
+    language = request.json["language"]
+    if language in app.config["LANGUAGES"]:
+        session["language"] = language
+        return jsonify(success=True)
+    else:
+        return jsonify(success=False)
 
 
 # TODO: Add 404 page

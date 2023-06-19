@@ -1,5 +1,6 @@
 {# This component displays the navbar at the top of the page #}
 {# Navbar start #}
+{% set languages = ['en','es'] %}
 <section id="navbar">
    <link rel="stylesheet"
          href="{{ url_for('static', filename='css/custom_button.css') }}">
@@ -28,6 +29,14 @@
                {# TODO: Add the "Registrate" button #}
                {# <a class="nav-link nav-item" href="registro.nerd.la">{{ _('Registrate') }}</a> #}
             </div>
+            <select id="language-selector">
+               <option value="en">
+                  EN
+               </option>
+               <option value="es">
+                  ES
+               </option>
+            </select>
             {# Social icons #}
             <div class="navbar-nav mx-lg-auto">
                {# Register button #}
@@ -60,4 +69,4 @@
       </div>
    </nav>
 </section>
-{# Navbar end #}
+<script src="{{ url_for('static', filename='js/language_selector.js') }}"></script>

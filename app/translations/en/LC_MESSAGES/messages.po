@@ -32,8 +32,8 @@ msgstr "Nerdearla is brought to you thanks to our wonderful sponsors"
 
 #: app/templates/sponsors.html:78
 #, python-format
-msgid "Desde 2014, nuestro objetivo ha sido organizar un evento de clase mundial para personas en América Latina, con una entrada 100% gratuita. Eso no sería posible sin nuestros patrocinadores y organizaciones de apoyo. ¡Conviértete en uno hoy mismo!"
-msgstr "Since 2014, our goal has been to organize a world-class event for people in Latin America, with 100% free admission. That wouldn't be possible without our sponsors and supporting organizations. Become one today!"
+msgid "Desde 2014, nuestro objetivo ha sido organizar un evento de clase mundial para personas en América Latina, con una entrada 100%% gratuita. Eso no sería posible sin nuestros patrocinadores y organizaciones de apoyo. ¡Conviértete en uno hoy mismo!"
+msgstr "Since 2014, our goal has been to organize a world-class event for people in Latin America, with 100%% free admission. That wouldn't be possible without our sponsors and supporting organizations. Become one today!"
 
 #: app/templates/components/about.html:10
 msgid "Sobre Nerdearla"
