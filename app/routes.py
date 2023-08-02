@@ -84,56 +84,56 @@ def index(lang_code):
     )
 
 
-# @app.route("/<lang_code>/sponsors/")
-# def sponsors(lang_code):
-#     """
-#     Renders the sponsors page.
+@app.route("/<lang_code>/sponsors/")
+def sponsors(lang_code):
+    """
+    Renders the sponsors page.
 
-#     Reads the sponsors configuration from the specified JSON file and retrieves the list of sponsors from a CSV file.
-#     The sponsors are sorted and grouped based on the configuration and rendered using the 'sponsors.html' template.
+    Reads the sponsors configuration from the specified JSON file and retrieves the list of sponsors from a CSV file.
+    The sponsors are sorted and grouped based on the configuration and rendered using the 'sponsors.html' template.
 
-#     The csv file should look like this
+    The csv file should look like this
 
-#     ############## sponsors.csv #############
+    ############## sponsors.csv #############
 
-#     name,category,file,link
-#     cognizant,diamond,cognizant.png,https://sysar.my/cognizantsoftvision
-#     icbc,adamantium,icbc.png,https://www.icbc.com.ar
-#     openqube,adamantium,openqube.png,https://openqube.io/
-#     cognizant soft vision,diamond,cognizantsoftvision.png,https://sysar.my/cognizantsoftvision
-#     google cloud platform,adamantium,googlecloud.png,https://cloud.google.com/
-#     rappi,silver,rappi.png,https://rappi.io/
+    name,category,file,link
+    cognizant,diamond,cognizant.png,https://sysar.my/cognizantsoftvision
+    icbc,adamantium,icbc.png,https://www.icbc.com.ar
+    openqube,adamantium,openqube.png,https://openqube.io/
+    cognizant soft vision,diamond,cognizantsoftvision.png,https://sysar.my/cognizantsoftvision
+    google cloud platform,adamantium,googlecloud.png,https://cloud.google.com/
+    rappi,silver,rappi.png,https://rappi.io/
 
-#     ###########################
+    ###########################
 
-#     Returns:
-#         flask.Response: The rendered sponsors HTML template.
-#     """
-#     sponsors_error = False
-#     try:
-#         config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
-#         sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
-#         sponsors = SponsorProcessor.process_sponsors(sponsors, config)
-#     except DatasetError as e:
-#         # Change to logger.exception if you want the whole traceback
-#         logger.error(f"Exception occurred {e}")
-#         sponsors_error = True
-#     except SponsorProcessorError as e:
-#         logger.error(f"Exception occurred {e}")
-#         sponsors_error = True
-#     except Exception as e:
-#         logger.error(f"Unexpected exception: {e}")
+    Returns:
+        flask.Response: The rendered sponsors HTML template.
+    """
+    sponsors_error = False
+    try:
+        config = Datasets.read_json_file(SPONSORS_CONFIG_FILE)
+        sponsors = Datasets.csv_to_list_of_dicts(SPONSORS_FILE)
+        sponsors = SponsorProcessor.process_sponsors(sponsors, config)
+    except DatasetError as e:
+        # Change to logger.exception if you want the whole traceback
+        logger.error(f"Exception occurred {e}")
+        sponsors_error = True
+    except SponsorProcessorError as e:
+        logger.error(f"Exception occurred {e}")
+        sponsors_error = True
+    except Exception as e:
+        logger.error(f"Unexpected exception: {e}")
 
-#     # Render the template
-#     return render_template(
-#         "sponsors.html",
-#         title="Sponsors",
-#         grouped_sponsors=sponsors if not sponsors_error else None,
-#         featured_categories=config["featured_categories"],
-#         featured_categories_only=False,
-#         sponsors_error=sponsors_error,
-#         lang_code=lang_code,
-#     )
+    # Render the template
+    return render_template(
+        "sponsors.html",
+        title="Sponsors",
+        grouped_sponsors=sponsors if not sponsors_error else None,
+        featured_categories=config["featured_categories"],
+        featured_categories_only=False,
+        sponsors_error=sponsors_error,
+        lang_code=lang_code,
+    )
 
 
 @app.route("/<lang_code>/code_of_conduct/")

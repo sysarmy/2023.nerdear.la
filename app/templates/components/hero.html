@@ -2,22 +2,29 @@
 {# TODO: Change background to a video #}
 <section id="hero">
    <link rel="stylesheet"
-         href=" {{ url_for('static', filename='css/hero.css') }} "/>
-      <div class="d-flex  justify-content-center">
-        <div class="video-container">
-        <video autoplay loop muted playsinline>
-            <source src="/static/img/intro.webm" type="video/webm">
+         href=" {{ url_for('static', filename='css/hero.css') }} " />
+   <div class="d-flex  justify-content-center">
+      <div class="video-container">
+         <video autoplay loop muted playsinline>
+            <source src="{{ url_for('static', filename='img/intro.webm') }}"
+                    type="video/webm">
             Your browser does not support the video tag.
-        </video>
-        <div class="darken-overlay"></div>
-        <div class="logo"></div>
-                 <p class="blurb text-center"><strong>27 al 30 de septiembre, 2023</strong><br />Modalidad presencial y virtual.<br />¡Entrada gratuita próximamente!</p>
-                 {# Register button #}
-               <a href="#newsletter" class="custom_button">
-                  <div class="button__line"></div>
-                  <div class="button__line"></div>
-                  <span class="button__text">&nbsp;Recibí todas las novedades&nbsp;</span>
-               </a>
-        </div>
+         </video>
+         <div class="darken-overlay"></div>
+         <div class="logo"></div>
+         <p class="blurb text-center">
+            <strong>27 al 30 de septiembre, 2023</strong>
+            <br />
+            Modalidad presencial y virtual.
+            <br />
+            ¡Entrada gratuita próximamente!
+         </p>
+         {# Register button #}
+         <a href="#newsletter" class="custom_button">
+            <div class="button__line"></div>
+            <div class="button__line"></div>
+            <span class="button__text">&nbsp;Recibí todas las novedades&nbsp;</span>
+         </a>
       </div>
+   </div>
 </section>
