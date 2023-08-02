@@ -417,6 +417,8 @@ When you replace all text in html files with `{{ _('') }}`,
 
 5. Run `scripts/generate_language_output.sh`
 
+6. Stop flask from running and run it again. Flask does not seem to notice when the messages.po file changes, so you wont see the changes until you reload the server.
+
 ## Helpful information
 
 ### helpful links

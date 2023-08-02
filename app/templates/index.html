@@ -3,6 +3,8 @@ This is done for code manteinability and readability
 #}
 {% extends "base.html" %}
 {% block content %}
+   <link rel="stylesheet"
+         href="{{ url_for('static', filename='css/dark_custom_button.css') }}">
    {# Hero with the title and a CTA #}
    {% include "components/hero.html" %}
    {# Countdown till the start of the event #}
@@ -26,7 +28,15 @@ This is done for code manteinability and readability
       {% include "components/contact.html" %}
    </div>
    {% if not sponsors_error %}
-      <h2 class="text-center fw-bold mt-5">Nerdearla 2023 es posible gracias a</h2>
+      <h2 class="text-center fw-bold mt-5">{{ _("Nerdearla 2023 es posible gracias a") }}</h2>
       {% include "components/sponsors_generator.html" %}
+      <div class="d-flex flex-column align-items-center justify-content-center ">
+         <a href="https://www.youtube-nocookie.com/embed/LEvRHxyekKQ?rel=0"
+            class="dark_custom_button my-3">
+            <div class="dark_button__line"></div>
+            <div class="dark_button__line"></div>
+            <span class="dark_button__text">{{ _("Descubrí los sponsors!") }}</span>
+         </a>
+      </div>
    {% endif %}
 {% endblock content %}
