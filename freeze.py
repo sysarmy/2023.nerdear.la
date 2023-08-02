@@ -22,5 +22,12 @@ def code_of_conduct():
             yield url_for("code_of_conduct", lang_code=lang)
 
 
+@freezer.register_generator
+def sponsors():
+    for lang in ["en", "es"]:
+        with force_locale(lang):
+            yield url_for("sponsors", lang_code=lang)
+
+
 if __name__ == "__main__":
     freezer.freeze()
