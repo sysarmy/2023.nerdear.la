@@ -26,6 +26,11 @@ This is done for code manteinability and readability
       {# Contact form like https://productschool.com/productcon/london-2024 #}
       {% include "components/contact.html" %}
    </div>
-   {# <h1 class="text-center display-1 fw-bold mt-5 text-decoration-underline">Conoce a nuestros sponsors</h1> #}
-   {# {% include "components/sponsors_generator.html" %} #}
+   <h2 class="text-center fw-bold mt-5">Nerdearla 2023 es posible gracias a</h2>
+   {% include "components/sponsors_generator.html" %}
+   <div class="d-flex align-items-center justify-content-center">
+         <a href="/sponsors">
+            <span class="button__text" style="color:#000;text-decoration:none">Conocé todos los sponsors!</span>
+         </a>
+      </div>
 {% endblock content %}

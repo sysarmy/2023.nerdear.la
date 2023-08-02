@@ -5,6 +5,10 @@ body {
 h1 {
 	font-family: "Rift Soft";
 }
+h2 {
+	font-family: "Rift Soft";
+	font-size:2.5em;
+}
 .responsive-image {
 	max-width: 100%;
 	height: auto;
