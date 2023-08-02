@@ -1,15 +1,15 @@
-# English translations for PROJECT.
+# English translations for .
 # Copyright (C) 2023 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# This file is distributed under the same license as the project.
+# KRAPP RAMIRO <krappramiro@disroot.org>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-06-19 13:09-0300\n"
-"PO-Revision-Date: 2023-06-19 13:09-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Project-Id-Version:  1.0\n"
+"Report-Msgid-Bugs-To: krappramiro@disroot.org\n"
+"POT-Creation-Date: 2023-08-02 19:18-0300\n"
+"PO-Revision-Date: 2023-08-02 18:23-0300\n"
+"Last-Translator: Krapp Ramiro <krappramiro@disroot.org>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -22,42 +22,141 @@ msgstr ""
 msgid "Cargando agenda, por favor espere..."
 msgstr "Loading agenda, please wait..."
 
-#: app/templates/index.html:29
-msgid "Conoce a nuestros sponsors"
-msgstr "Meet our sponsors"
+#: app/templates/base.html:57
+msgid "Nerdearla 10ma edición - 27 al 30 de septiembre"
+msgstr "Nerdearla 10th edition - September 27th to 30th"
 
-#: app/templates/sponsors.html:74
+#: app/templates/code_of_conduct.html:16
+msgid "Código de Conducta"
+msgstr "Code of Conduct"
+
+#: app/templates/code_of_conduct.html:18
+msgid "INFORMACIÓN GENERAL"
+msgstr "GENERAL INFORMATION"
+
+#: app/templates/code_of_conduct.html:20
+msgid "A través de este código de conducta establecemos el marco para los fundamentos de Nerdearla."
+msgstr "Through this code of conduct, we establish the framework for the fundamentals of Nerdearla."
+
+#: app/templates/code_of_conduct.html:22
+msgid "El objetivo principal del evento es crear un espacio de intercambio colaborativo donde podamos divertirnos, aprender y compartir problemas y conocimientos."
+msgstr "The main objective of the event is to create a space for collaborative exchange where we can have fun, learn, and share problems and knowledge."
+
+#: app/templates/code_of_conduct.html:24
+msgid "CONFIAMOS EN LA DIVERSIDAD COMO PRINCIPIO ÉTICO FUNDAMENTAL DE CUALQUIER INTERCAMBIO"
+msgstr "WE TRUST DIVERSITY AS THE ETHICAL PRINCIPLE FUNDAMENTAL TO ANY EXCHANGE"
+
+#: app/templates/code_of_conduct.html:26
+msgid "Nos unimos en los esfuerzos para trazar de nuevo los caminos de la discriminación, exclusión y condena de las minorías que sufrieron y sufren más dificultades para ejercer con libertad e igualdad de oportunidades sus plenas competencias, capacidades y potencialidades."
+msgstr "We join efforts to redraw the paths of discrimination, exclusion, and condemnation of minorities who have suffered and still face greater difficulties to exercise their full competencies, capacities, and potentials with freedom and equal opportunities."
+
+#: app/templates/code_of_conduct.html:28
+msgid "NUESTRO ESPÍRITU ES FOMENTAR UN AMBIENTE LIBRE DE DISCRIMINACIÓN"
+msgstr "OUR SPIRIT IS TO PROMOTE A DISCRIMINATION-FREE ENVIRONMENT"
+
+#: app/templates/code_of_conduct.html:30
+msgid "Somos conscientes de los múltiples cruces que interfieren con el logro de este objetivo máximo, por lo que creemos que es nuestro trabajo activo y el de toda la comunidad involucrarse en este desafío."
+msgstr "We are aware of the multiple intersections that interfere with achieving this ultimate goal, so we believe it is our active duty, and that of the entire community, to engage in this challenge."
+
+#: app/templates/code_of_conduct.html:33
+msgid "Esperamos que los patrocinadores, oradores, organizadores y todas las personas que asistan al evento respeten los siguientes principios de participación y colaboración:"
+msgstr "We expect sponsors, speakers, organizers, and all event attendees to respect the following principles of participation and collaboration:"
+
+#: app/templates/code_of_conduct.html:37
+msgid "Mantener en todo momento un diálogo amigable y respetuoso que fomente la mejor versión del intercambio posible."
+msgstr "Maintain at all times a friendly and respectful dialogue that promotes the best version of the exchange possible."
+
+#: app/templates/code_of_conduct.html:40
+msgid "Respetar la diversidad en todas sus formas: cultural, género, orientación sexual, discapacidad, apariencia física, edad, profesional, religiosa, perspectivas ideológicas, etc."
+msgstr "Respect diversity in all its forms: cultural, gender, sexual orientation, disability, physical appearance, age, professional, religious, ideological perspectives, etc."
+
+#: app/templates/code_of_conduct.html:43
+msgid "No discriminar, excluir, acosar o ejercer actos que de cualquier manera menoscaben la dignidad de las personas."
+msgstr "Do not discriminate, exclude, harass, or engage in acts that in any way undermine the dignity of individuals."
+
+#: app/templates/code_of_conduct.html:45
+msgid "Responsabilizarse del espacio compartido cuidándolo."
+msgstr "Take responsibility for the shared space by taking care of it."
+
+#: app/templates/code_of_conduct.html:47
+msgid "Abstenerse de presentar material, imágenes o actividades cuyo contenido pueda dañar, disminuir u objetivar a personas o grupos."
+msgstr "Refrain from presenting material, images, or activities whose content may harm, diminish, or objectify individuals or groups."
+
+#: app/templates/code_of_conduct.html:50
+msgid "CONTACTA A LA ORGANIZACIÓN"
+msgstr "CONTACT THE ORGANIZATION"
+
+#: app/templates/code_of_conduct.html:52
+msgid "Si observas y/o experimentas que estos principios no están siendo respetados, contacta con la organización. (durante el evento proporcionaremos un número de teléfono) que garantizará la atención necesaria."
+msgstr "If you observe and/or experience that these principles are not being respected, contact the organization. (During the event, we will provide a phone number) that will ensure the necessary attention."
+
+#: app/templates/code_of_conduct.html:55
+msgid "Ante comportamientos de acoso, discriminación o agresión, se espera que cesen de inmediato. Dependiendo del caso, se procederá a sancionar, expulsar y/o revisar la permanencia en futuros eventos de la comunidad."
+msgstr "In the face of harassment, discrimination, or aggression behaviors, they are expected to cease immediately. Depending on the case, measures will be taken, which may include sanctions, expulsion, and/or reviewing future attendance to community events."
+
+#: app/templates/code_of_conduct.html:58
+msgid "Esperamos contar con la cooperación activa de cada participante para generar un espacio enriquecedor y virtuoso que acompañe estas políticas y haga de Nerdearla un lugar de encuentro heterogéneo, múltiple, amigable e inclusivo."
+msgstr "We expect to have the active cooperation of each participant to create an enriching and virtuous space that supports these policies and makes Nerdearla a place of heterogeneous, multiple, friendly, and inclusive encounters."
+
+#: app/templates/code_of_conduct.html:61
+msgid "Este código de conducta fue desarrollado por"
+msgstr "This code of conduct was developed by"
+
+#: app/templates/code_of_conduct.html:64
+msgid "DiG Encuentros"
+msgstr "DiG Encounters"
+
+#: app/templates/code_of_conduct.html:65
+msgid "y está disponible para su uso en eventos producidos por comunidades con entrada gratuita, bajo la"
+msgstr "and is available for use at events produced by communities with free entry, under the"
+
+#: app/templates/code_of_conduct.html:69
+msgid "Licencia Internacional Attribution-NonCommercial-ShareAlike 4.0 de Creative Commons"
+msgstr "Attribution-NonCommercial-ShareAlike 4.0 International License of Creative Commons"
+
+#: app/templates/sponsors.html:72
 msgid "Nerdearla te es presentado gracias a nuestros maravillosos patrocinadores"
-msgstr "Nerdearla is brought to you thanks to our wonderful sponsors"
+msgstr "Nerdearla is presented to you thanks to our wonderful sponsors"
 
-#: app/templates/sponsors.html:78
-#, python-format
-msgid "Desde 2014, nuestro objetivo ha sido organizar un evento de clase mundial para personas en América Latina, con una entrada 100%% gratuita. Eso no sería posible sin nuestros patrocinadores y organizaciones de apoyo. ¡Conviértete en uno hoy mismo!"
-msgstr "Since 2014, our goal has been to organize a world-class event for people in Latin America, with 100%% free admission. That wouldn't be possible without our sponsors and supporting organizations. Become one today!"
+#: app/templates/sponsors.html:75
+msgid "Desde 2014, nuestro objetivo ha sido organizar un evento de clase mundial para personas en América Latina, con entrada"
+msgstr "Since 2014, our goal has been to organize a world-class event for people in Latin America, with"
+
+#: app/templates/sponsors.html:77
+msgid "gratuita. Eso no sería posible sin nuestros patrocinadores y las organizaciones que nos apoyan."
+msgstr "free entry. That would not be possible without our sponsors and supporting organizations."
+
+#: app/templates/sponsors.html:80
+msgid "Convertite en sponsor hoy!"
+msgstr "Become a sponsor today!"
 
 #: app/templates/components/about.html:10
 msgid "Sobre Nerdearla"
 msgstr "About Nerdearla"
 
 #: app/templates/components/about.html:14
-msgid "Desde nuestra fundación en 2014, Nerdearla se ha dedicado a ofrecer una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
-msgstr "Since our foundation in 2014, Nerdearla has been dedicated to providing a world-class conference, completely free, with cutting-edge content in science and technology."
+msgid "Desde 2014 nos dedicamos a organizar una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
+msgstr "Since 2014, we have been dedicated to organizing a world-class conference, completely free, with cutting-edge content in science and technology."
 
 #: app/templates/components/about.html:16
-msgid "Únete a nosotros mientras celebramos nuestra décima edición y sumérgete en los últimos avances en una amplia gama de lenguajes, plataformas y paradigmas diseñados para impulsar tu carrera profesional"
-msgstr "Join us as we celebrate our tenth edition and dive into the latest advancements in a wide range of languages, platforms, and paradigms designed to boost your professional career."
+msgid "Nerdearla es una experiencia social, tanto en el formato en persona como online, con espacio de coworking y chats en vivo, charlas, talleres y muchas oportunidades para aprender de líderes de la industria."
+msgstr "Nerdearla is a social experience, both in-person and online, with coworking space and live chats, talks, workshops, and many opportunities to learn from industry leaders."
 
 #: app/templates/components/about.html:26
 msgid "Conoce más!"
 msgstr "Learn more!"
 
-#: app/templates/components/contact.html:6
-msgid "Subscribite a nuestro newsletter"
-msgstr "Subscribe to our newsletter"
+#: app/templates/components/contact.html:7
+msgid " Subscribite a nuestro newsletter "
+msgstr " Subscribe to our newsletter "
+
+#: app/templates/components/contact.html:9
+msgid "Enterate de todas las novedades del evento, speakers, registro y mucho más."
+msgstr "Get all the updates about the event, speakers, registration, and much more."
 
 #: app/templates/components/countdown.html:10
-msgid "Cuanto Falta para Nerdearla?"
-msgstr "How long until Nerdearla?"
+msgid "Cuanto Falta para Nerdearla 2023?"
+msgstr "How long until Nerdearla 2023?"
 
 #: app/templates/components/countdown.html:16
 msgid "Días"
@@ -75,25 +174,38 @@ msgstr "Minutes"
 msgid "Segundos"
 msgstr "Seconds"
 
+#: app/templates/components/countdown.html:36
+#: app/templates/components/hero.html:16
+msgid "27 al 30 de septiembre, 2023"
+msgstr "September 27th to 30th, 2023"
+
 #: app/templates/components/faq.html:30
 msgid "Preguntas frecuentes sobre"
-msgstr "Frequently Asked Questions about"
+msgstr "Frequently asked questions about"
 
 #: app/templates/components/faq.html:30
 msgid "Nerdearla"
 msgstr "Nerdearla"
 
-#: app/templates/components/footer.html:18
+#: app/templates/components/footer.html:19
 msgid "Codigo de Conducta"
 msgstr "Code of Conduct"
 
-#: app/templates/components/hero.html:10
-msgid "Décima edición"
-msgstr "Tenth edition"
+#: app/templates/components/hero.html:11
+msgid "Tu dispositivo no soporta el video de fondo :("
+msgstr "Your device does not support background video :("
 
-#: app/templates/components/hero.html:13
-msgid "27 al 30 de Septiembre, 2023"
-msgstr "September 27th to 30th, 2023"
+#: app/templates/components/hero.html:18
+msgid "Modalidad presencial y virtual."
+msgstr "In-person and virtual modality."
+
+#: app/templates/components/hero.html:20
+msgid "¡Entrada gratuita próximamente!"
+msgstr "Free entry coming soon!"
+
+#: app/templates/components/hero.html:26
+msgid "Recibí todas las novedades"
+msgstr "Receive all the updates"
 
 #: app/templates/components/intro.html:10
 msgid "3 veces más grande que cualquier otra conferencia en Buenos Aires"
@@ -103,63 +215,63 @@ msgstr "3 times larger than any other conference in Buenos Aires"
 msgid "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 msgstr "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 
-#: app/templates/components/navbar.html:25
+#: app/templates/components/navbar.html:33
 msgid "Home"
 msgstr "Home"
 
-#: app/templates/components/navbar.html:26
+#: app/templates/components/navbar.html:35
 msgid "Sponsors"
 msgstr "Sponsors"
 
-#: app/templates/components/navbar.html:27
-msgid "Agenda"
-msgstr "Agenda"
-
-#: app/templates/components/navbar.html:37
+#: app/templates/components/navbar.html:47
 msgid "¡Convertite en Sponsor!"
 msgstr "Become a Sponsor!"
 
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
-msgstr "Recap of Last Year"
+msgstr "Recap of last year"
 
 #: app/templates/components/statistics.html:6
-msgid "Nerdearla en numeros"
+msgid "Nerdearla en números"
 msgstr "Nerdearla in numbers"
 
 #: app/templates/components/statistics.html:7
-msgid "Estos fueron los números de nuestra última edición"
-msgstr "These were the numbers from our last edition"
+msgid "Así fue nuestro evento de 2022"
+msgstr "This was our event in 2022"
 
 #: app/templates/components/statistics.html:16
-msgid "Más de 700 participantes presenciales en Buenos Aires."
-msgstr "More than 700 in-person participants in Buenos Aires."
+msgid "Más de 7.000 participantes presenciales en Buenos Aires."
+msgstr "More than 7,000 in-person participants in Buenos Aires."
 
-#: app/templates/components/statistics.html:29
-msgid "En total, más de 20000 participantes vía online durante las conferencias."
-msgstr "In total, more than 20,000 online participants during the conferences."
+#: app/templates/components/statistics.html:28
+msgid "Más de 20.000 participantes online durante las conferencias."
+msgstr "More than 20,000 online participants during the conferences."
 
-#: app/templates/components/statistics.html:42
-msgid "Más de 200 conferencistas de más de 20 países"
-msgstr "More than 200 speakers from over 20 countries"
+#: app/templates/components/statistics.html:40
+msgid "Más de 200 speakers de más de 20 países."
+msgstr "More than 200 speakers from over 20 countries."
 
-#: app/templates/components/statistics.html:55
-#, python-format
-msgid "El evento es 100%% gratuito para los participantes, desde el día 1"
-msgstr "The event is 100%% free for participants, from day 1"
+#: app/templates/components/statistics.html:52
+msgid "El evento es"
+msgstr "The event is"
+
+#: app/templates/components/statistics.html:52
+msgid "gratuito, desde el día 0."
+msgstr "free, from day 0."
 
 #: app/templates/components/ubication.html:4
-msgid "Nuestra ubicacion"
-msgstr "Our location"
+msgid "Evento presencial"
+msgstr "In-person event"
 
-#: app/templates/components/ubication.html:6
-msgid "El evento va a transcurrir en la"
-msgstr "The event will take place at"
-
-#: app/templates/components/ubication.html:9
+#: app/templates/components/ubication.html:8
 msgid "Ciudad Cultural Konex"
 msgstr "Ciudad Cultural Konex"
 
-#: app/templates/components/ubication.html:12
-msgid "El mismo está ubicado en la calle Sarmiento al 3131, entre las calles Dr. Tomás Manuel de Anchorena y Jean Jaures, a unas cuadras de la estación de Once."
-msgstr "It is located on Sarmiento Street 3131, between Dr. Tomás Manuel de Anchorena and Jean Jaures, a few blocks from the Once station."
+#: app/templates/components/ubication.html:8
+msgid "con streaming en vivo para todo el mundo."
+msgstr "with live streaming for the whole world."
+
+#: app/templates/components/ubication.html:11
+msgid "Sarmiento al 3131, entre Anchorena y Jean Jaures, a unas cuadras de la estación Carlos Gardel (Abasto) del Subte B y estación Once de tren y línea A."
+msgstr "Sarmiento 3131, between Anchorena and Jean Jaures, a few blocks from Carlos Gardel subway station (Abasto) and Once train station (line A)."
+

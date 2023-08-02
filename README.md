@@ -35,77 +35,77 @@ This is the repository for Nerdearla, the Sysarmy event
 
 #### Components
 
-- [x] Navbar
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [ ] Hero
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [ ] Final styling
-- [x] About
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] Countdown
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] Nerdearla in numbers (statistics)
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [ ] Speakers
-  - [ ] Basic structure and operation
-  - [ ] Responsiveness
-  - [ ] Final styling
-- [x] Ubication
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] FAQ
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] Contact
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] Footer
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
+-  [x] Navbar
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [ ] Hero
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [ ] Final styling
+-  [x] About
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] Countdown
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] Nerdearla in numbers (statistics)
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [ ] Speakers
+   -  [ ] Basic structure and operation
+   -  [ ] Responsiveness
+   -  [ ] Final styling
+-  [x] Ubication
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] FAQ
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] Contact
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] Footer
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
 
 #### Pages
 
-- [x] Index
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] Sponsors
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [x] Code of Conduct
-  - [x] Basic structure and operation
-  - [x] Responsiveness
-  - [x] Final styling
-- [ ] Agenda
-  - [x] Basic structure and operation
-  - [ ] Responsiveness
-  - [ ] Final styling
-- [ ] Error pages
-  - [ ] 404 page
+-  [x] Index
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] Sponsors
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [x] Code of Conduct
+   -  [x] Basic structure and operation
+   -  [x] Responsiveness
+   -  [x] Final styling
+-  [ ] Agenda
+   -  [x] Basic structure and operation
+   -  [ ] Responsiveness
+   -  [ ] Final styling
+-  [ ] Error pages
+   -  [ ] 404 page
 
 ### Backend
 
-- [x] Logging
-- [x] Error handling
-  - [x] routes.py
-  - [x] filters.py
-- [ ] Multilanguage support
-  - [ ] en
-  - [ ] es
+-  [x] Logging
+-  [x] Error handling
+   -  [x] routes.py
+   -  [x] filters.py
+-  [ ] Multilanguage support
+   -  [ ] en
+   -  [ ] es
 
 ## FAQ
 
@@ -131,22 +131,19 @@ An example of a component could be:
 ```html
 <!-- This file holds the section that talks about the speakers -->
 <section id="speakers">
-  <!-- Get the css file using jinja-html syntax -->
-  <link
-    rel="stylesheet"
-    href="{{ url_for('static', filename='css/speakers.css') }}"
-  />
+	<!-- Get the css file using jinja-html syntax -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/speakers.css') }}" />
 
-  <!-- Main content of the html -->
-  <div class="container">
-    <h1>Nuestros speakers</h1>
-    <div>
-      <p>Our speakers are great because...</p>
-    </div>
-  </div>
+	<!-- Main content of the html -->
+	<div class="container">
+		<h1>Nuestros speakers</h1>
+		<div>
+			<p>Our speakers are great because...</p>
+		</div>
+	</div>
 
-  <!-- Get the javascript file using jinja-html syntax -->
-  <script src="{{ url_for('static', filename='js/speakers.js') }}"></script>
+	<!-- Get the javascript file using jinja-html syntax -->
+	<script src="{{ url_for('static', filename='js/speakers.js') }}"></script>
 </section>
 ```
 
@@ -163,9 +160,9 @@ For example, `hero.css` is used in the `hero.html` component, or `sponsors.css` 
 
 Other files are for general usage, like `style.css`, which defines general css to be used in the whole project.
 
-- `fonts.css` loads the fonts from static/fonts/
-- `trama_backgrounds.css` defines classes for generating backgrounds using the tramas inside img/svg/tramas
-- `variables.css` defines global variables, for example the Nerderla colors.
+-  `fonts.css` loads the fonts from static/fonts/
+-  `trama_backgrounds.css` defines classes for generating backgrounds using the tramas inside img/svg/tramas
+-  `variables.css` defines global variables, for example the Nerderla colors.
 
 ### What is inside `datasets/`?
 
@@ -200,18 +197,18 @@ In the `datasets/` folder, create or modify a `faq.json` file with FAQ's like th
 
 ```json
 [
-  {
-    "title": "Que es Nerdearla",
-    "description": "Nerdearla es lorem ipsum bla bla bla"
-  },
-  {
-    "title": "Cuando se hace la Nerdearla",
-    "description": "La respuesta esta en tu corazon"
-  },
-  {
-    "title": "Cúanto sale?",
-    "description": "Paga Jolo"
-  }
+	{
+		"title": "Que es Nerdearla",
+		"description": "Nerdearla es lorem ipsum bla bla bla"
+	},
+	{
+		"title": "Cuando se hace la Nerdearla",
+		"description": "La respuesta esta en tu corazon"
+	},
+	{
+		"title": "Cúanto sale?",
+		"description": "Paga Jolo"
+	}
 ]
 ```
 
@@ -392,10 +389,10 @@ By importing the logger from the app module's `__init__.py` file in the `__init_
 
 ### What logs do i have? How do them work?
 
-- Non-Werkzeug log messages at INFO level and higher are sent to the console
-  and written to the 'general.log' file.
-- ERROR and higher level non-Werkzeug messages are captured in the 'errors.log' file.
-- Werkzeug-only logs are written to the 'werkzeug.log' file.
+-  Non-Werkzeug log messages at INFO level and higher are sent to the console
+   and written to the 'general.log' file.
+-  ERROR and higher level non-Werkzeug messages are captured in the 'errors.log' file.
+-  Werkzeug-only logs are written to the 'werkzeug.log' file.
 
 ### Whats the purpose of the classes inside classes/ ?
 
@@ -411,14 +408,14 @@ When you replace all text in html files with `{{ _('') }}`,
 
 1. run `sh scripts/extract_messages.sh` (if its not running, run `chmod +x extract_messages.sh` to give it permissions to run).
 
-2. run `sh scripts/generate_language_catalog.sh en`. Replace `en` with the language code you want. In this project, we are translating to english, so we use en.
+2. **FIRST TIME** run `sh scripts/generate_language_catalog.sh en`. Replace `en` with the language code you want. In this project, we are translating to english, so we use en.
    If you get a "Please provide a language parameter." error, you forgot to pass the language as a parameter, so it means you forgot the `en` when running the file.
 
-3. Use chatGPT to fill the messages.po file or do it by hand
+3. After the first time, use `scripts/update_language_catalog.sh` instead of `scripts/generate_language_catalog.sh`
 
-4. Run `scripts/generate_language_output.sh`
+4. Use chatGPT to fill the messages.po file or do it by hand
 
-The language selection in the navbar is a form that uses the fetch API, and asks the route `language-selection` to set the language in the session
+5. Run `scripts/generate_language_output.sh`
 
 ## Helpful information
 
@@ -443,6 +440,6 @@ The reason for that is because that specific line is not available for workspace
 
 ```json
 {
-  "css.enabledLanguages": ["jinja-html", "django-html", "html"]
+	"css.enabledLanguages": ["jinja-html", "django-html", "html"]
 }
 ```
