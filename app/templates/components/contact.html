@@ -1,13 +1,13 @@
-{# TODO: remove this contact and replace it for the external form #}
 <section id="contact">
    <a name="newsletter"></a>
    <link rel="stylesheet"
-         href=" {{ url_for('static', filename='css/mautic_form.css') }}  ">
+         href="{{ url_for('static', filename='css/mautic_form.css') }}">
    <div class="container-fluid py-5 mx-0">
       <div class="container">
          <h1 class="text-center text-white mb-3 display-3 fw-semibold">Subscribite a nuestro newsletter</h1>
          <p class="text-center text-white">Enterate de todas las novedades del evento, speakers, registro y mucho más.</p>
-         <script type="text/javascript" src="https://mk4.sysarmy.com/form/generate.js?id=2"></script>
+         <script type="text/javascript"
+                 src="https://mk4.sysarmy.com/form/generate.js?id=2"></script>
       </div>
    </div>
 </section>

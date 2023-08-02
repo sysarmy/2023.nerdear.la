@@ -30,7 +30,11 @@
 	// Add jinja-html to css extension
 	// Warning: This setting has an application scope and can be set only in the user settings file.
 	// Putting it inside the workspace settings.json wont have any effect
-	"css.enabledLanguages": ["jinja-html", "django-html", "html"],
+	"css.enabledLanguages": [
+		"jinja-html",
+		"django-html",
+		"html"
+	],
 	"[jinja-html]": {
 		"editor.defaultFormatter": "monosans.djlint"
 	},
@@ -43,5 +47,6 @@
 		"editor.tabSize": 4,
 		"editor.insertSpaces": true,
 		"editor.formatOnType": true
-	}
+	},
+	"djlint.useVenv": true
 }

@@ -15,18 +15,18 @@ This is done for code manteinability and readability
    {# Nerdearla in numbers (atendees, speakers, sponsors, exhibitors, etc...) #}
    {% include "components/statistics.html" %}
    {# About the speakers #}
+   {# TODO: Speakers #}
    {# {% include "components/speakers.html" %} #}
    {# Directions to the event and Google maps iframe #}
    {% include "components/ubication.html" %}
-   {# Recap 2022 Youtube video  #}
-   {# {% include "components/recap.html" %} #}
    <div class="bg-trama bg-trama-fit bg-trama-black-1 py-5">
       {# This generates the FAQ #}
       {# {% include "components/faq.html" %} #}
       {# Contact form like https://productschool.com/productcon/london-2024 #}
       {% include "components/contact.html" %}
    </div>
-   <h2 class="text-center fw-bold mt-5">Nerdearla 2023 es posible gracias a</h2>
-   {% include "components/sponsors_generator.html" %}
-
+   {% if not sponsors_error %}
+      <h2 class="text-center fw-bold mt-5">Nerdearla 2023 es posible gracias a</h2>
+      {% include "components/sponsors_generator.html" %}
+   {% endif %}
 {% endblock content %}
