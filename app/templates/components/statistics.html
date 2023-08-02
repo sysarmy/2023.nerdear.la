@@ -1,10 +1,10 @@
-{# This component displays some statistics about Nerdearla and its numbers, including the last edition #}
+{# Este componente muestra algunas estadísticas sobre Nerdearla y sus números, incluyendo la última edición #}
 <section id="statistics" class="y-spaced-section">
    <link rel="stylesheet"
          href="{{ url_for('static', filename='css/statistics.css') }}">
    <div class="container d-flex flex-column">
-      <h1 class="display-1 mx-auto">Nerdearla en números</h1>
-      <h2 class="mx-auto mb-5 text-muted">Así fue nuestro evento de 2022</h2>
+      <h1 class="display-1 mx-auto">{{ _("Nerdearla en números") }}</h1>
+      <h2 class="mx-auto mb-5 text-muted">{{ _("Así fue nuestro evento de 2022") }}</h2>
       <div class="row">
          <div class="col-lg-6 ">
             <div class="card bg-trama bg-trama-blue-1 card-chopped-right">
@@ -13,7 +13,7 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-user-group"></i>7k
                      </div>
-                     <div class="col card-description">Más de 7.000 participantes presenciales en Buenos Aires.</div>
+                     <div class="col card-description">{{ _("Más de 7.000 participantes presenciales en Buenos Aires.") }}</div>
                   </div>
                </div>
             </div>
@@ -25,7 +25,7 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-globe"></i>20K
                      </div>
-                     <div class="col card-description">Más de 20.000 participantes online durante las conferencias.</div>
+                     <div class="col card-description">{{ _("Más de 20.000 participantes online durante las conferencias.") }}</div>
                   </div>
                </div>
             </div>
@@ -37,7 +37,7 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-person-chalkboard"></i>200
                      </div>
-                     <div class="col card-description">Más de 200 speakers de más de 20 países.</div>
+                     <div class="col card-description">{{ _("Más de 200 speakers de más de 20 países.") }}</div>
                   </div>
                </div>
             </div>
@@ -49,7 +49,8 @@
                      <div class="col-5 card-icon-number">
                         <i class="fa-solid fa-money-bills"></i>100%
                      </div>
-                     <div class="col card-description">El evento es 100% gratuito, desde el día 0.</div>
+                     {# Aca se usan dos % en el 100%, porque asi funciona Flask Babel, necesita dos % para no entrar en error#}
+                     <div class="col card-description">{{ _("El evento es 100%% gratuito, desde el día 0.") }}</div>
                   </div>
                </div>
             </div>

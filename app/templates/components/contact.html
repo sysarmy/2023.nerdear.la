@@ -4,8 +4,10 @@
          href="{{ url_for('static', filename='css/mautic_form.css') }}">
    <div class="container-fluid py-5 mx-0">
       <div class="container">
-         <h1 class="text-center text-white mb-3 display-3 fw-semibold">Subscribite a nuestro newsletter</h1>
-         <p class="text-center text-white">Enterate de todas las novedades del evento, speakers, registro y mucho más.</p>
+         <h1 class="text-center text-white mb-3 display-3 fw-semibold">{{ _(" Subscribite a nuestro newsletter ") }}</h1>
+         <p class="text-center text-white">
+            {{ _("Enterate de todas las novedades del evento, speakers, registro y mucho más.") }}
+         </p>
          <script type="text/javascript"
                  src="https://mk4.sysarmy.com/form/generate.js?id=2"></script>
       </div>
