@@ -21,12 +21,12 @@ This is done for code manteinability and readability
    {% include "components/ubication.html" %}
    <div class="bg-trama bg-trama-fit bg-trama-black-1 py-5">
       {# This generates the FAQ #}
-      {% include "components/faq.html" %}
+      {# {% include "components/faq.html" %} #}
       {# Contact form like https://productschool.com/productcon/london-2024 #}
       {% include "components/contact.html" %}
    </div>
-   {% if not sponsors_error %}
+   {# {% if not sponsors_error %}
       <h1 class="text-center display-1 fw-bold mt-5 text-decoration-underline">{{ _('Conoce a nuestros sponsors')}}</h1>
       {% include "components/sponsors_generator.html" %}
-   {% endif %}
+   {% endif %} #}
 {% endblock content %}

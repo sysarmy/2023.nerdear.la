@@ -1,5 +1,10 @@
 {# This component displays the navbar at the top of the page #}
 {# Navbar start #}
+<style>
+:ul{
+--bs-dropdown-min-width: 3rem
+}
+</style>
 {% set languages = ['en','es'] %}
 <section id="navbar">
    <link rel="stylesheet"
@@ -21,29 +26,46 @@
                  aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
-         <div class="collapse navbar-collapse" id="collapsable-navbar-menu">
-            <div class="navbar-nav me-auto">
+         <div class="collapse navbar-collapse " id="collapsable-navbar-menu">
+            <div class="navbar-nav me-auto justify-content-center align-items-center">
                {# Put the items (apart of brand) of the navbar here #}
                <a class="nav-link nav-item"
                   href="{{ url_for('index', lang_code=lang_code ) }}">{{ _('Home') }}</a>
-               <a class="nav-link nav-item"
-                  href="{{ url_for('sponsors', lang_code=lang_code ) }}">{{ _('Sponsors') }}</a>
-               <a class="nav-link nav-item"
-                  href="{{ url_for('agenda', lang_code=lang_code ) }}">{{ _('Agenda') }}</a>
+               {# <a class="nav-link nav-item" href="{{ url_for('sponsors', lang_code=lang_code ) }}">{{ _('Sponsors') }}</a>
+               <a class="nav-link nav-item" href="{{ url_for('agenda', lang_code=lang_code ) }}">{{ _('Agenda') }}</a> #}
                {# TODO: Add the "Registrate" button #}
                {# <a class="nav-link nav-item" href="registro.nerd.la">{{ _('Registrate') }}</a> #}
             </div>
             {# Social icons #}
-            <div class="navbar-nav mx-lg-auto">
+            <div class="navbar-nav mx-lg-auto d-flex justify-content-center align-items-center">
                {# Register button #}
-               <a href="{{ url_for('sponsors', lang_code=lang_code ) }}"
+               <a href="mailto:sponsors@nerdear.la?Subject=Quiero%20ser%20sponsor%20de%20Nerdearla%202023"
                   class="custom_button">
                   <div class="button__line"></div>
                   <div class="button__line"></div>
                   <span class="button__text">{{ _('¡Convertite en Sponsor!') }}</span>
                </a>
             </div>
-            <div class="navbar-nav ms-auto d-flex align-items-center flex-row gap-4 gap-sm-2 gap-lg-1">
+            <div class=" d-flex justify-content-center align-content-center pt-3 pt-lg-0">
+               <div class="dropdown" data-bs-theme="dark">
+                  <button class="btn btn-dark dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                     <i class="fa-solid fa-language"></i>
+                  </button>
+                  <ul class="dropdown-menu justify-content-center align-content-center"
+                      style="--bs-dropdown-min-width: 4rem">
+                     <li>
+                        <a class="dropdown-item" href="{{ url_for('index', lang_code='es') }}">Español</a>
+                     </li>
+                     <li>
+                        <a class="dropdown-item" href="{{ url_for('index', lang_code='en') }}">English</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="navbar-nav ms-auto d-flex justify-content-center align-items-center flex-row gap-4 gap-sm-2 gap-lg-1">
                <!-- Icons -->
                <a class="nav-link nav-item" href="https://sysar.my/discord">
                   <i class="fab fa-discord text-white"></i>
