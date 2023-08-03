@@ -31,10 +31,15 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
             rel="stylesheet">
-      {# Load FontAwsesome icons #} {# FIXME Creo que esta cargando mi kit
-	personal (Krapp Ramiro), creo que no deberia ser así :S #}
-      <script src="https://kit.fontawesome.com/3ec9da0d5c.js"
-              crossorigin="anonymous"></script>
+      <!-- Load local installation of fontawesome -->
+      <link rel="stylesheet"
+            href="{{ url_for('static', filename='fontawesome/css/fontawesome.min.css') }}" />
+      <link rel="stylesheet"
+            href="{{ url_for('static', filename='fontawesome/css/solid.min.css') }}" />
+      <link rel="stylesheet"
+            href="{{ url_for('static', filename='fontawesome/css/regular.min.css') }}" />
+      <link rel="stylesheet"
+            href="{{ url_for('static', filename='fontawesome/css/brands.min.css') }}" />
       {# Load CSS Variables #}
       <link rel="stylesheet"
             href="{{ url_for('static', filename='css/variables.css') }}" />

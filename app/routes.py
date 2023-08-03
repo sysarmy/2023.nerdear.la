@@ -144,7 +144,7 @@ def code_of_conduct(lang_code):
     Returns:
         flask.Response: The rendered code of conduct HTML template.
     """
-    return render_template("code_of_conduct.html", title="Code of Conduct")
+    return render_template("code_of_conduct.html", title="Code of Conduct", lang_code=lang_code)
 
 
 # @app.route("/<lang_code>/agenda/")
