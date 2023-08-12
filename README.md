@@ -422,83 +422,11 @@ When you replace all text in html files with `{{ _('') }}`,
 ### How do i build the project
 
 1. Run python freeze.py
-2. Replace app/build/index.html with the following:
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<script>
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({
-					"gtm.start": new Date().getTime(),
-					event: "gtm.js",
-				});
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : "";
-				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", "GTM-W7TDQZ5");
-		</script>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nerdearla 10ma edición - 27 al 30 de septiembre</title>
-		<meta
-			name="description"
-			content="Nerdearla 2023, cuatro días con más de 150 charlas y talleres de tecnología, divulgación científica y una gran variedad de temas."
-		/>
-		<link rel="canonical" href="https://nerdear.la/" />
-		<meta property="og:locale" content="es_ES" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="#Nerdearla 2023 - 27 al 30 de septiembre" />
-		<meta
-			property="og:description"
-			content="Festejamos la décima edición del evento más nerd del año en el Konex, en Buenos Aires y online, con entrada libre y gratuita. 4 días con más de 150 charlas y talleres de tecnología, divulgación científica y una gran variedad de temas."
-		/>
-		<meta property="og:url" content="https://nerdear.la/" />
-		<meta property="og:site_name" content="nerdear.la" />
-		<meta property="article:publisher" content="https://facebook.com/nerdearla" />
-		<meta
-			property="og:image"
-			content="https://i.postimg.cc/8cQg1L78/nerdearla-2023-share.jpg"
-		/>
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="#Nerdearla 2023 - 27 al 30 de septiembre" />
-		<meta
-			name="twitter:description"
-			content="Festejamos la décima edición del evento más nerd del año en el Konex, en Buenos Aires y online, con entrada libre y gratuita. 4 días con más de 150 charlas y talleres de tecnología, divulgación científica y una gran variedad de temas."
-		/>
-		<meta
-			name="twitter:image"
-			content="https://i.postimg.cc/8cQg1L78/nerdearla-2023-share.jpg"
-		/>
-		<meta name="twitter:site" content="@nerdearla" />
-	</head>
-	<body>
-		<noscript
-			><iframe
-				src="https://www.googletagmanager.com/ns.html?id=GTM-W7TDQZ5"
-				height="0"
-				width="0"
-				style="display:none;
-               visibility:hidden"
-			></iframe
-		></noscript>
-		<script>
-			var userLang = navigator.language || navigator.userLanguage;
-			if (userLang == "es") {
-				window.location.href = "https://" + window.location.hostname + "/es/";
-			} else {
-				window.location.href = "https://" + window.location.hostname + "/en/";
-			}
-		</script>
-	</body>
-</html>
-```
+### What is index_override.html
+
+That file is part of the build of freeze.py, and replaces frozen flask's build/index.html with a custom index.html, which redirects the user to /en/ or /es/,
+and also has metatags
 
 ## Helpful information
 
