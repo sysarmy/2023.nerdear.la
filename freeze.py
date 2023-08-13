@@ -3,7 +3,8 @@ from app import app
 from flask import url_for
 from flask_babel import force_locale
 
-app.config["FREEZER_BASE_URL"] = "/2023.nerdear.la/"
+# Add base url for https://sysarmy.com/2023.nerdear.la/
+# app.config["FREEZER_BASE_URL"] = "/2023.nerdear.la/"
 
 freezer = Freezer(app, log_url_for=False)
 
