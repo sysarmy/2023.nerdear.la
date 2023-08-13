@@ -4,38 +4,43 @@ from flask import url_for
 from flask_babel import force_locale
 
 # Add base url for https://sysarmy.com/2023.nerdear.la/
-app.config["FREEZER_BASE_URL"] = "/2023.nerdear.la/"
-app.config["FREEZER_IGNORE_404_NOT_FOUND"] = True
+# app.config["FREEZER_BASE_URL"] = "/2023.nerdear.la/"
 
-freezer = Freezer(
-    app,
-)
+freezer = Freezer(app, log_url_for=False)
 
 
 @freezer.register_generator
 def redirect_index():
-    yield url_for("redirect_index")
+    generated_url = url_for("redirect_index")
+    print(f"Generated URL: {generated_url}")
+    yield generated_url
 
 
 @freezer.register_generator
 def index():
     for lang in ["en", "es"]:
         with force_locale(lang):
-            yield url_for("index", lang_code=lang)
+            generated_url = url_for("index", lang_code=lang)
+            print(f"Generated URL: {generated_url}")
+            yield generated_url
 
 
 @freezer.register_generator
 def code_of_conduct():
     for lang in ["en", "es"]:
         with force_locale(lang):
-            yield url_for("code_of_conduct", lang_code=lang)
+            generated_url = url_for("code_of_conduct", lang_code=lang)
+            print(f"Generated URL: {generated_url}")
+            yield generated_url
 
 
 @freezer.register_generator
 def sponsors():
     for lang in ["en", "es"]:
         with force_locale(lang):
-            yield url_for("sponsors", lang_code=lang)
+            generated_url = url_for("sponsors", lang_code=lang)
+            print(f"Generated URL: {generated_url}")
+            yield generated_url
 
 
 if __name__ == "__main__":
