@@ -3,3 +3,4 @@ app/build/
 *build*.zip
 logs/
 !sponsors.csv
+!messages.mo
