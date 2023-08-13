@@ -1,10 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-   <div class="hide-with-js-enabled">
-      <h1>You are seeing this because you have javascript disabled:</h1>
-      <a href="{{ url_for('index', lang_code=en) }}">Go to English</a>
-      <a href="{{ url_for('index', lang_code=es) }}">Ir a español</a>
-   </div>
+   {# Necessary for frozen flask#}
+   <a href="{{ url_for('index', lang_code=en) }}"></a>
+   <a href="{{ url_for('index', lang_code=es) }}"></a>
    <script>
        // Get the user's preferred language from the browser
        const userLanguage = navigator.language || navigator.userLanguage;
