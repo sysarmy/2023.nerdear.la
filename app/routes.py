@@ -11,10 +11,6 @@ AGENDA_FILE = "datasets/agenda.json"
 SPONSORS_FILE = "datasets/sponsors.csv"
 SPONSORS_CONFIG_FILE = "datasets/sponsors_config.json"
 
-# TODO: Please for the love of god change the secret key generation
-SECRET_KEY = os.urandom(32)
-app.config["SECRET_KEY"] = SECRET_KEY
-
 # Get the logger
 logger = app.logger
 
@@ -28,20 +24,8 @@ def extract_locale_from_url():
 
 
 @app.route("/")
-def nolang_index():
-    # Get the user's preferred language from the Accept-Language header
-    accept_language = request.headers.get("Accept-Language")
-    if accept_language:
-        user_language = accept_language.split(",")[0].strip().split("-")[0]
-
-        # Redirect to the appropriate language route
-        if user_language == "en":
-            return redirect("/en/")
-        elif user_language == "es":
-            return redirect("/es/")
-
-    # Default redirection if no Accept-Language header or unsupported language
-    return redirect("/en")
+def redirect_index():
+    return render_template("redirect_index.html")
 
 
 @app.route("/<lang_code>/")

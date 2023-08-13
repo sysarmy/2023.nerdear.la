@@ -1,0 +1,62 @@
+[
+	{
+		"title": "Stands Virtuales",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/exhibitors/RXZlbnRWaWV3XzM3ODQ1Nw==?showActions=true",
+		"ignore": false
+	},
+	{
+		"title": "Ofertas Laborales",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/products/RXZlbnRWaWV3XzM4NDU0MA==",
+		"ignore": false
+	},
+	{
+		"title": "On-demand",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU3Ng==",
+		"ignore": false
+	},
+	{
+		"title": "Agenda Full",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU2MQ==",
+		"ignore": false
+	},
+	{
+		"title": "DATA",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU3NQ==",
+		"ignore": false
+	},
+	{
+		"title": "DEV",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU1OA==",
+		"ignore": false
+	},
+	{
+		"title": "INFRA",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU3Nw==",
+		"ignore": false
+	},
+	{
+		"title": "UX",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU5Nw==",
+		"ignore": false
+	},
+	{
+		"title": "NERD",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU5NA==",
+		"ignore": false
+	},
+	{
+		"title": "SEC",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU5NQ==",
+		"ignore": false
+	},
+	{
+		"title": "TEST",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU5Ng==",
+		"ignore": false
+	},
+	{
+		"title": "Workshops",
+		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2022/plannings/RXZlbnRWaWV3XzM4NTU5OA==",
+		"ignore": false
+	}
+]

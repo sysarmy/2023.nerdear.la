@@ -4,14 +4,13 @@ This is the repository for Nerdearla, the Sysarmy event
 
 ## How to configure the enviroment for the project
 
-1. Install python-virtualenv
-2. Create a virtual enviroment in a folder called env/
-3. Source that virtual enviroment with `source /env/bin/activate`
-4. Install the packages in `requirements.txt`
+1. Create a virtual enviroment in a folder called `.venv/` running `python -m venv .venv/`
+2. Source that virtual enviroment with `source /.venv/bin/activate`
+3. Install the packages in `requirements.txt`
 
 ## How to run the project
 
-1. Source the python virtual enviroment with `source env/bin/active`
+1. Source the python virtual enviroment with `source .venv/bin/active`
 2. Run flask with `flask run`
 3. Enjoy
 
@@ -39,10 +38,10 @@ This is the repository for Nerdearla, the Sysarmy event
    -  [x] Basic structure and operation
    -  [x] Responsiveness
    -  [x] Final styling
--  [ ] Hero
+-  [x] Hero
    -  [x] Basic structure and operation
    -  [x] Responsiveness
-   -  [ ] Final styling
+   -  [x] Final styling
 -  [x] About
    -  [x] Basic structure and operation
    -  [x] Responsiveness
@@ -103,9 +102,9 @@ This is the repository for Nerdearla, the Sysarmy event
 -  [x] Error handling
    -  [x] routes.py
    -  [x] filters.py
--  [ ] Multilanguage support
-   -  [ ] en
-   -  [ ] es
+-  [x] Multilanguage support
+   -  [x] en
+   -  [x] es
 
 ## FAQ
 
