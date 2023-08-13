@@ -33,33 +33,14 @@ jobs:
          - name: Freeze application with frozen_flask
            run: |
               python freeze.py
-           # Upload the app/build/ folder as an artifact
-         - name: Upload Artifact
-           uses: actions/upload-artifact@v2
-           with:
-              name: build-artifact
-              path: app/build/
-
-   # This deploy job get the artifact from the build job
-   # And deploys it to github pages
-   deploy:
-      needs: build
-      environment:
-         name: github-pages
-         url: ${{ steps.deployment.outputs.page_url }}
-      runs-on: ubuntu-latest
-      steps:
+         # GITHUB PAGES HERE
          - name: Checkout
            uses: actions/checkout@v3
          - name: Setup Pages
-           uses: actions/configure-pages@v3
-         # Download the artifact from the build job
-         - name: Download Artifact
-           uses: actions/download-artifact@v2
+           uses: actions/configure-pages@v3 
+         - name: Upload Artifact
+           uses: actions/upload-pages-artifact@v2
            with:
-              name: build-artifact
-         - name: Deploy to GitHub Pages
-           id: deployment
+              path: "./app/build/"
+         - name: Deploy to Github Pages
            uses: actions/deploy-pages@v2
-           with:
-              artifact-dir: ./app/build/
