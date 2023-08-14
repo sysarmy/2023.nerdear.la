@@ -204,12 +204,16 @@ msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr "Your device does not support background video :("
 
 #: app/templates/components/hero.html:18
-msgid "Modalidad presencial y virtual."
-msgstr "In-person and virtual."
+msgid "26 y 27 - charlas virtuales."
+msgstr "26 and 27: virtual talks."
 
 #: app/templates/components/hero.html:20
-msgid "¡Entrada gratuita próximamente!"
-msgstr "Free tickets coming soon!"
+msgid "28 al 30 - evento presencial."
+msgstr "28 to 30: in-person event."
+
+#: app/templates/components/hero.html:22
+msgid "Todo el contenido contará con streaming."
+msgstr "All the content will be streamed live."
 
 #: app/templates/components/hero.html:26
 msgid "Recibí todas las novedades"
