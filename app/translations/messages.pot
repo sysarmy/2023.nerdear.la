@@ -267,19 +267,19 @@ msgstr "The event is"
 msgid "gratuito, desde el día 0."
 msgstr "free, from day 0."
 
-#: app/templates/components/location.html:4
+#: app/templates/components/ubication.html:4
 msgid "Evento presencial"
 msgstr "In-person event"
 
-#: app/templates/components/location.html:8
+#: app/templates/components/ubication.html:8
 msgid "Ciudad Cultural Konex"
 msgstr "Ciudad Cultural Konex"
 
-#: app/templates/components/location.html:8
+#: app/templates/components/ubication.html:8
 msgid "con streaming en vivo para todo el mundo."
 msgstr "with live streaming for the whole world."
 
-#: app/templates/components/location.html:11
+#: app/templates/components/ubication.html:11
 msgid "Sarmiento 3131, entre Anchorena y Jean Jaures, a unas cuadras de la estación Carlos Gardel (Abasto) del Subte B y estación Once de tren y línea A."
 msgstr "Sarmiento 3131, between Anchorena and Jean Jaures, a few blocks from Carlos Gardel subway station (Abasto) and Once train station (line A)."
 
