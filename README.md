@@ -22,7 +22,6 @@
       -  [Whats the purpose of the classes inside classes/ ?](#whats-the-purpose-of-the-classes-inside-classes-)
       -  [What is babel / How does translation work / Why do i see a lot of underscores \_() everywhere / How do i change translation/language?](#what-is-babel--how-does-translation-work--why-do-i-see-a-lot-of-underscores-_-everywhere--how-do-i-change-translationlanguage)
       -  [How do i build the project](#how-do-i-build-the-project)
-      -  [What is index_override.html](#what-is-index_overridehtml)
    -  [Helpful information](#helpful-information)
       -  [helpful links](#helpful-links)
       -  [recommended settings for `settings.json` in Visual Studio Code](#recommended-settings-for-settingsjson-in-visual-studio-code)
@@ -450,11 +449,6 @@ When you replace all text in html files with `{{ _('') }}`,
 ### How do i build the project
 
 1. Run python freeze.py
-
-### What is index_override.html
-
-That file is part of the build of freeze.py, and replaces frozen flask's build/index.html with a custom index.html, which redirects the user to /en/ or /es/,
-and also has metatags
 
 ## Helpful information
 
