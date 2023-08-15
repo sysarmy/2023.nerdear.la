@@ -286,4 +286,3 @@ msgstr "with live streaming for the whole world."
 #: app/templates/components/location.html:11
 msgid "Sarmiento 3131, entre Anchorena y Jean Jaures, a unas cuadras de la estación Carlos Gardel (Abasto) del Subte B y estación Once de tren y línea A."
 msgstr "Sarmiento 3131, between Anchorena and Jean Jaures, a few blocks from Carlos Gardel subway station (Abasto) and Once train station (line A)."
-
