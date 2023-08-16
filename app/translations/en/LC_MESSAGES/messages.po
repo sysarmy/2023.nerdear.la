@@ -216,8 +216,8 @@ msgid "Todo el contenido contará con streaming."
 msgstr "All the content will be streamed live."
 
 #: app/templates/components/hero.html:26
-msgid "Recibí todas las novedades"
-msgstr "Receive all the updates"
+msgid "Registrate gratis"
+msgstr "Get your free tickets"
 
 #: app/templates/components/intro.html:10
 msgid "3 veces más grande que cualquier otra conferencia en Buenos Aires"
@@ -236,8 +236,8 @@ msgid "Sponsors"
 msgstr "Sponsors"
 
 #: app/templates/components/navbar.html:47
-msgid "¡Convertite en Sponsor!"
-msgstr "Become a Sponsor!"
+msgid "¡Registrate gratis!"
+msgstr "Get your free tickets!"
 
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
