@@ -1,18 +1,24 @@
 name,category,file,link
+
 ICBC,Adamantium,icbc.png,https://sysar.my/icbc
 Openqube,Adamantium,openqube.png,https://sysar.my/openqube
+
 Telecom,Diamond,telecom.png,https://sysar.my/telecom
 BBVA,Diamond,bbva.png,https://sysar.my/bbva
 NEORIS,Diamond,neoris.png,https://sysar.my/neoris
 Galicia,Diamond,galicia.png,https://sysar.my/galicia
 AGEA (Clarín),Diamond,clarin.png,https://sysar.my/clarin
+
 Accenture,Platinum,accenture.png,https://sysar.my/accenture
 NTT Data,Platinum,nttdata.png,https://sysar.my/ntt
 Naranja X,Platinum,naranjax.png,https://sysar.my/naranjax
+
 Kopius,Gold,kopius.png,https://sysar.my/kopius
 Santander,Gold,santander.png,https://sysar.my/santander
 Mirgor,Gold,mirgor.png,https://sysar.my/mirgor
 IT Resources,Gold,itr.svg,https://sysar.my/itresources
+Linux Professional Institute,Gold,lpi.png,https://sysar.my/lpi
+
 Kin+Karta,Silver,kinkarta.svg,https://sysar.my/kinkarta
 Softtek,Silver,softtek.svg,https://sysar.my/softtek
 WeHouse,Silver,wehouse.svg,https://sysar.my/wehouse
@@ -20,28 +26,50 @@ EmiLabs,Silver,emilabs.png,https://sysar.my/emilabs
 Fu.do,Silver,fudo.svg,https://sysar.my/fudo
 Redbee,Silver,redbee.svg,https://sysar.my/redbee
 Svitla,Silver,svitla.svg,https://sysar.my/svitla
-Datalytics,Bronze,datalytics.png,https://sysar.my/datalytics
+UMA,Silver,uma.png,https://sysar.my/uma
+
+Datalytics,Bronze,datalytics.svg,https://sysar.my/datalytics
 Ordina,Bronze,ordina.svg,https://sysar.my/ordina
 Civo,Bronze,civo.svg,https://sysar.my/civo
+
 Computer History Museum,Nos apoyan,chm.png,https://sysar.my/chm
 Open Source Initiative,Nos apoyan,osi.png,https://sysar.my/osi
+ISOC,Nos apoyan,isoc.png,https://sysar.my/isoc
 The Linux Fundation,Nos apoyan,linuxfundation.png,https://sysar.my/tlf
-Linux Professional Institute,Nos apoyan,lpi.png,https://sysar.my/lpi
 Museo de Informática,Nos apoyan,museoinformatica.png,https://sysar.my/museoinformatica
+Huesped,Nos apoyan,huesped.svg,https://sysar.my/huesped
 Chicas en Tecnología,Nos apoyan,cet.svg,https://sysar.my/cet
+Mujeres en Tecnología,Nos apoyan,met.svg,https://sysar.my/met
+Incluyeme.com,Nos apoyan,incluyeme.com.svg,https://sysar.my/incluyeme
+Eidos,Nos apoyan,eidos.svg,https://sysar.my/eidos
 ADVA,Nos apoyan,adva.svg,https://sysar.my/adva
 Fundación FLOR,Nos apoyan,flor.svg,https://sysar.my/fundflor
 Transistemas,Nos apoyan,transistemas.png,https://sysar.my/transistemas
 BungeBorn,Nos apoyan,bungeborn.png,https://sysar.my/bungeborn
+Nahual Argentina,Nos apoyan,nahual_argentina.svg,https://syasr.my/nahualar
+Nahual Uruguay,Nos apoyan,nahual_uruguay.svg,https://sysar.my/nahualuy
+Mocha Celis,Nos apoyan,mocha.svg,https://sysar.my/mochacelis
+Wingu,Nos apoyan,wingu.svg,https://sysar.my/wingu
+UADE,Nos apoyan,uade.png,https://sysar.my/uade
+ORT,Nos apoyan,ort.svg,https://sysar.my/ort
+TransTI,Nos apoyan,transti.svg,https://sysar.my/transti
+
+
 Sysarmy México,Comunidades,sysarmymx.png,https://sysar.my/sysarmymx
 AWS Girls,Comunidades,awsgirls.svg,https://sysar.my/awsgirls
 Doctarmy,Comunidades,doctarmy.png,https://sysar.my/doctarmy
 Las De Sistemas,Comunidades,lasdesistemas.png,https://sysar.my/lds
 Frontend Café,Comunidades,frontendcafe.png,https://sysar.my/fec
+Enfoque Lúdico,Comunidades,enfoque_ludico.svg,https://sysar.my/enfoqueludico
 Geekout,Comunidades,geekout.png,https://sysar.my/geekout
+Speedcube,Comunidades,speedcube.svg,https://sysar.my/speedcube
+DVBahía,Comunidades,dvbahia.svg,https://sysar.my/dvbahia
 CanalDBA,Comunidades,canaldba.png,https://sysar.my/canaldba
 Hamping,Comunidades,hamping.png,https://sysar.my/hamping
 PyAR,Comunidades,pyar.png,https://sysar.my/pyar
 SJNHS,Comunidades,sjnhs.svg,https://sysar.my/sjnhs
+Recruitment Latam,Comunidades,recruitment_latam.svg,https://sysar.my/recruitmentlatam
+Mermelada Tech,Comunidades,mermelada_tech.svg,https://sysar.my/mermeladatech
+Diseño Ético,Comunidades,diseno_etico.svg,https://sysar.my/disenoetico
 TestingUY,Comunidades,testinguy.svg,https://sysar.my/testinguy
 Software Gurú,Media partners,softwareguru.svg,https://sysar.my/softwareguru
