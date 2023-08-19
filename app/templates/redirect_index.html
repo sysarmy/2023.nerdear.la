@@ -6,18 +6,12 @@
    <script>
        // Get the user's preferred language from the browser
        const userLanguage = navigator.language || navigator.userLanguage;
+       let redirect = 'es/'
 
        // Check if the user's preferred language is Spanish
-       if (userLanguage.startsWith('es')) {
-           window.location.href += 'es/'; // Redirect to Spanish version
-       } else {
-           window.location.href += 'en/'; // Redirect to English version (default)
+       if (userLanguage.startsWith('en')) {
+           redirect = 'en/'
        }
-   </script>
-   <script>
-       document.addEventListener("DOMContentLoaded", (event) => {
-           const hideElement = document.querySelector("#hide-with-js-enabled");
-           hideElement.style.display = 'none';
-       });
+       window.location.href += redirect; // Redirect to English version (default)
    </script>
 {% endblock content %}
