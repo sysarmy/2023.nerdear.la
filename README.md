@@ -21,6 +21,7 @@
       -  [What logs do i have? How do them work?](#what-logs-do-i-have-how-do-them-work)
       -  [Whats the purpose of the classes inside classes/ ?](#whats-the-purpose-of-the-classes-inside-classes-)
       -  [What is babel / How does translation work / Why do i see a lot of underscores \_() everywhere / How do i change translation/language?](#what-is-babel--how-does-translation-work--why-do-i-see-a-lot-of-underscores-_-everywhere--how-do-i-change-translationlanguage)
+      -  [How are categories translated in sponsors_generator?](#how-are-categories-translated-in-sponsors_generator)
       -  [How do i build the project](#how-do-i-build-the-project)
    -  [Helpful information](#helpful-information)
       -  [helpful links](#helpful-links)
@@ -445,6 +446,27 @@ When you replace all text in html files with `{{ _('') }}`,
 5. Run `scripts/generate_language_output.sh`
 
 6. Stop flask from running and run it again. Flask does not seem to notice when the messages.po file changes, so you wont see the changes until you reload the server.
+
+### How are categories translated in sponsors_generator?
+
+Its currently hardcoded like this into sponsors_generator.html
+
+Remember that categories are automatically converted into lowercase when retrieved from the csv
+
+```
+{# HACK: This hardcoded thing here translates special categories titles into other languages #}
+{% if lang_code == "en" %}
+	{# HACK: The special categories are here #}
+	{% if category == "nos apoyan" %}
+		{% set category = "supported by" %}
+	{% endif %}
+	{% if category == "comunidades" %}
+		{% set category = "communities" %}
+	{% endif %}
+{% endif %}
+
+<h1> {{category}} </h1>
+```
 
 ### How do i build the project
 
