@@ -68,6 +68,19 @@ def index(lang_code):
     )
 
 
+
+@app.route("/<lang_code>/donation/")
+def donation(lang_code):
+    """
+    Shows the donation page
+
+    Returns:
+        flask.Response: The rendered donation HTML template.
+    """
+    return render_template("donation.html", title="Donation", lang_code=lang_code)
+
+
+
 @app.route("/<lang_code>/sponsors/")
 def sponsors(lang_code):
     """
@@ -118,7 +131,6 @@ def sponsors(lang_code):
         sponsors_error=sponsors_error,
         lang_code=lang_code,
     )
-
 
 @app.route("/<lang_code>/code_of_conduct/")
 def code_of_conduct(lang_code):
