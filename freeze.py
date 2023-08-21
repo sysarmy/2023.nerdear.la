@@ -42,6 +42,14 @@ def sponsors():
             print(f"Generated URL: {generated_url}")
             yield generated_url
 
+@freezer.register_generator
+def donation():
+    for lang in ["en", "es"]:
+        with force_locale(lang):
+            generated_url = url_for("donation", lang_code=lang)
+            print(f"Generated URL: {generated_url}")
+            yield generated_url
+
 
 if __name__ == "__main__":
     freezer.freeze()
