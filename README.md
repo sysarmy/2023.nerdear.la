@@ -34,8 +34,8 @@ This is the repository for Nerdearla, the Sysarmy event
 ## How to configure the enviroment for the project
 
 1. Create a virtual enviroment in a folder called `.venv/` running `python -m venv .venv/`
-2. Source that virtual enviroment with `source /.venv/bin/activate`
-3. Install the packages in `requirements.txt`
+2. Source that virtual enviroment with `source .venv/bin/activate`, or `source .venv/Scripts/activate` if you are in windows. If you are using powershell, replace / with \
+3. Install the packages in `requirements.txt` running `pip install -r requirements.txt`
 
 ## How to run the project
 
