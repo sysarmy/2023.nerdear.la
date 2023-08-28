@@ -127,7 +127,7 @@ button#cta:active {
             color: white;
 			font-family: "Rift Soft";
             font-size: 2rem;
-			letter-spacing: .05em;
+			letter-spacing: .03em;
             margin: 10% auto 3rem;
 			padding: .2rem 1.8rem;
             text-align: center;
@@ -137,7 +137,7 @@ button#cta:active {
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     .blurb {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
 @media screen and (max-width: 768px) {
