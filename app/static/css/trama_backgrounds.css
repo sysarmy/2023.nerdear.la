@@ -97,3 +97,7 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 .bg-trama-yellow-2 {
 	background-image: url(../img/svg/tramas/trama-yellow-2.svg);
 }
+
+.bg-nerd-yellow {
+	background-color: var(--nerd-yellow);
+}

@@ -7,6 +7,12 @@ This is done for code manteinability and readability
          href="{{ url_for('static', filename='css/dark_custom_button.css') }}">
    {# Hero with the title and a CTA #}
    {% include "components/hero.html" %}
+   <div class="bg-nerd-yellow px-5 py-3">
+      {# This generates the FAQ #}
+      {# {% include "components/faq.html" %} #}
+      {# Contact form like https://productschool.com/productcon/london-2024 #}
+      {% include "components/contact.html" %}
+   </div>
    {# Countdown till the start of the event #}
    {% include "components/countdown.html" %}
    <div class="bg-trama bg-trama-fit bg-trama-orange-3 py-5">
@@ -21,12 +27,6 @@ This is done for code manteinability and readability
    {# {% include "components/speakers.html" %} #}
    {# Directions to the event and Google maps iframe #}
    {% include "components/location.html" %}
-   <div class="bg-trama bg-trama-fit bg-trama-black-1 py-5">
-      {# This generates the FAQ #}
-      {# {% include "components/faq.html" %} #}
-      {# Contact form like https://productschool.com/productcon/london-2024 #}
-      {% include "components/contact.html" %}
-   </div>
    {% if not sponsors_error %}
       <h2 class="text-center fw-bold mt-5">{{ _("Nerdearla 2023 es posible gracias a") }}</h2>
       {% include "components/sponsors_generator.html" %}

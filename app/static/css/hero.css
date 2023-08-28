@@ -1,7 +1,7 @@
 section#hero {
 	/*background: url(../img/hero-background.jpeg) no-repeat center center;*/
 	background-size: cover;
-	height: 44vw;
+	height: 40vw;
 }
 #event-info {
 	background-color: rgb(203, 195, 195, 0.1);
@@ -77,7 +77,7 @@ button#cta:active {
   .video-container {
             position: relative;
             width: 100vw;
-            height: 44vw; /* 16:9 Aspect Ratio */
+            height: 40vw; /* 16:9 Aspect Ratio */
             overflow: hidden;
             display: flex;
             align-items: center;
