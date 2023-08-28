@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		console.log(`Adding load indicator to ${iframe.id}`);
 
 		// Set an interval to add a dot to the loading indicator every second
-		setInterval(() => {
-			loading.textContent += ".";
-		}, 1000);
+		// setInterval(() => {
+		// 	loading.textContent += ".";
+		// }, 1000);
 
 		// Add an event listener to the iframe's load event
 		iframe.addEventListener("load", function () {

@@ -18,9 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
+
+#: app/templates/agenda.html:20
+msgid "Conocé la agenda del evento"
+msgstr "Nerdearla 2023 schedule"
+
+#: app/templates/agenda.html:25
+msgid "Te traemos una selección de más de 150 charlas, talleres y actividades de primer nivel."
+msgstr "We are bringing you a selection of 150+ world-class talks, workshops and activities."
+
+#: app/templates/agenda.html:27
+msgid "Martes 26 y miércoles 27: solo charlas virtuales"
+msgstr "Sept 26 and 27: virtual talks only"
+
+#: app/templates/agenda.html:28
+msgid "Jueves 28 al sábado 30: presencial en el Konex"
+msgstr "Sept 28 - 30: in-person event in Buenos Aires"
+
 #: app/templates/agenda.html:29
-msgid "Cargando agenda, por favor espere..."
-msgstr "Loading agenda, please wait..."
+msgid "Los talleres son solamente de manera virtual"
+msgstr "Workshops are only held in virtual format"
+
+#: app/templates/agenda.html:31
+msgid "Todo el contenido va a estar disponible vía streaming en vivo, para que no te pierdas de nada."
+msgstr "All the conference content will be available via live streaming, so you won't miss anything."
+
+#: app/templates/agenda.html:41
+msgid "Desplegá los ítems para conocer la agenda de cada track"
+msgstr "Click on each item to see the full track schedule"
+
+#: app/templates/agenda.html:61
+msgid "Cargando agenda..."
+msgstr "Loading schedule..."
+
+#: app/templates/agenda.html:81
+msgid "Sacá tu entrada gratuita!"
+msgstr "Get your free tickets!"
+
 
 #: app/templates/base.html:57
 msgid "Nerdearla 10ma edición - 26 al 30 de septiembre"
@@ -204,20 +238,16 @@ msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr "Your device does not support background video :("
 
 #: app/templates/components/hero.html:18
-msgid "26 y 27 - charlas virtuales."
-msgstr "26 and 27: virtual talks."
+msgid "Modalidad presencial y virtual."
+msgstr "In-person and virtual."
 
 #: app/templates/components/hero.html:20
-msgid "28 al 30 - evento presencial."
-msgstr "28 to 30: in-person event."
-
-#: app/templates/components/hero.html:22
-msgid "Todo el contenido contará con streaming."
-msgstr "All the content will be streamed live."
+msgid "¡Entrada gratuita próximamente!"
+msgstr "Free tickets coming soon!"
 
 #: app/templates/components/hero.html:26
-msgid "Registrate gratis"
-msgstr "Get your free tickets"
+msgid "Recibí todas las novedades"
+msgstr "Receive all the updates"
 
 #: app/templates/components/intro.html:10
 msgid "3 veces más grande que cualquier otra conferencia en Buenos Aires"
@@ -236,8 +266,8 @@ msgid "Sponsors"
 msgstr "Sponsors"
 
 #: app/templates/components/navbar.html:47
-msgid "¡Registrate gratis!"
-msgstr "Get your free tickets!"
+msgid "¡Convertite en Sponsor!"
+msgstr "Become a Sponsor!"
 
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
@@ -271,18 +301,19 @@ msgstr "The event is"
 msgid "gratuito, desde el día 0."
 msgstr "free, from day 0."
 
-#: app/templates/components/location.html:4
+#: app/templates/components/ubication.html:4
 msgid "Evento presencial"
 msgstr "In-person event"
 
-#: app/templates/components/location.html:8
+#: app/templates/components/ubication.html:8
 msgid "Ciudad Cultural Konex"
 msgstr "Ciudad Cultural Konex"
 
-#: app/templates/components/location.html:8
+#: app/templates/components/ubication.html:8
 msgid "con streaming en vivo para todo el mundo."
 msgstr "with live streaming for the whole world."
 
-#: app/templates/components/location.html:11
+#: app/templates/components/ubication.html:11
 msgid "Sarmiento 3131, entre Anchorena y Jean Jaures, a unas cuadras de la estación Carlos Gardel (Abasto) del Subte B y estación Once de tren y línea A."
 msgstr "Sarmiento 3131, between Anchorena and Jean Jaures, a few blocks from Carlos Gardel subway station (Abasto) and Once train station (line A)."
+

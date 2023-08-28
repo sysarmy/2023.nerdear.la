@@ -143,15 +143,15 @@ def code_of_conduct(lang_code):
     return render_template("code_of_conduct.html", title="Code of Conduct", lang_code=lang_code)
 
 
-# @app.route("/<lang_code>/agenda/")
-# def agenda(lang_code):
-#     agenda = Datasets.read_json_file(AGENDA_FILE)
-#     return render_template(
-#         "agenda.html",
-#         title="Agenda",
-#         agenda=agenda,
-#         lang_code=lang_code,
-#     )
+@app.route("/<lang_code>/agenda/")
+def agenda(lang_code):
+ agenda = Datasets.read_json_file(AGENDA_FILE)
+ return render_template(
+     "agenda.html",
+     title="Agenda",
+     agenda=agenda,
+     lang_code=lang_code,
+ )
 
 
 # TODO: Add 404 page
