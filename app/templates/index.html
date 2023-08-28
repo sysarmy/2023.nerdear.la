@@ -27,16 +27,28 @@ This is done for code manteinability and readability
    {# {% include "components/speakers.html" %} #}
    {# Directions to the event and Google maps iframe #}
    {% include "components/location.html" %}
+   <div class="bg-nerd-yellow px-5 py-3">
    {% if not sponsors_error %}
-      <h2 class="text-center fw-bold mt-5">{{ _("Nerdearla 2023 es posible gracias a") }}</h2>
-      {% include "components/sponsors_generator.html" %}
-      <div class="d-flex flex-column align-items-center justify-content-center ">
-         <a href='{{ url_for("sponsors", lang_code=lang_code) }}'
-            class="dark_custom_button my-3">
-            <div class="dark_button__line"></div>
-            <div class="dark_button__line"></div>
-            <span class="dark_button__text">{{ _("Conocé todos los sponsors") }}</span>
-         </a>
+      <h2 class="text-center fw-bold my-5">{{ _("Nerdearla 2023 es posible gracias a") }}</h2>
+      <div class="container bg-white py-1">
+         {% include "components/sponsors_generator.html" %}
+         <div class="d-flex flex-column align-items-center justify-content-center mb-5">
+            <a href='{{ url_for("sponsors", lang_code=lang_code) }}'
+               class="custom_button my-3">
+              {{ _("Conocé todos los sponsors") }}
+            </a>
+         </div>
       </div>
+      
    {% endif %}
+
+   <div class="d-flex align-items-center justify-content-center m-4 me-md-auto">
+      <a href="https://sysarmy.com" target="_blank" rel="noopener noreferrer">
+         <img src="{{ url_for('static', filename='img/logos/sysarmy-10anios.png') }}"
+               alt="logo"
+               height="100px">
+      </a>
+      
+   </div>
+</div>
 {% endblock content %}

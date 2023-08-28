@@ -139,6 +139,7 @@ button#cta:active {
     .blurb {
         font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
+}
 
 @media screen and (max-width: 768px) {
     .logo {

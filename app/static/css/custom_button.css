@@ -21,8 +21,8 @@
 	font-size: 1.5rem;
 	font-weight: bold;
 	letter-spacing: .03em;
-	margin: 1rem auto;
-	padding: .1rem 1.8rem;
+	margin: .5rem auto;
+	padding: .2rem 1.8rem;
 	text-decoration: none;
 	transition: all 0.3s ease;
 	z-index: 0;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: 992px) {
-	.custom_button {
+	.navbar-nav .custom_button {
 		margin-left: 2rem;
 	}
 }
