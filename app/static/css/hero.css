@@ -80,7 +80,6 @@ button#cta:active {
             height: 44vw; /* 16:9 Aspect Ratio */
             overflow: hidden;
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-direction: column;
             z-index: 1 !important;
@@ -112,21 +111,26 @@ button#cta:active {
         }
 
         .logo {
-            width: 30%; /* relative size */
-		    max-width: 500px; /* maximum size */
-		    min-width: 100px; /* minimum size */
-		    height: 100px;
-            background: url('/static/img/logos/nerdearla-full.svg') no-repeat center center;
+            width: 60%; /* relative size */
+		    max-width: 1100px; /* maximum size */
+		    min-width: 150px; /* minimum size */
+		    height: 150px;
+            background: url('/static/img/logos/nerdearla-detailed-no-bg.svg') no-repeat top center;
             background-size: contain;
             z-index:2;
         }
 
    
         .blurb {
-            font-size: 1.5rem;
+			border: 2px solid;
+			border-radius: 50px;
             color: white;
+			font-family: "Rift Soft";
+            font-size: 2rem;
+			letter-spacing: .05em;
+            margin: 10% auto 3rem;
+			padding: .2rem 1.8rem;
             text-align: center;
-            margin: 1rem;
             z-index:2;
         }
 
