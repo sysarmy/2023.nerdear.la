@@ -308,6 +308,22 @@ msgstr "Register for free!"
 msgid "Recap del año pasado"
 msgstr "Recap of last year"
 
+#: app/templates/components/register.html:6
+msgid "Registrate a Nerdearla 2023"
+msgstr "Register to Nerdearla 2023"
+
+#: app/templates/components/register.html:8
+msgid "El evento gratuito de ciencia y tecnología más grande de Latinoamérica."
+msgstr "The largest free science and technology event in Latin America."
+
+#: app/templates/components/register.html:17
+msgid "Por favor ingresá un email válido"
+msgstr "Please enter a valid email address"
+
+#: app/templates/components/register.html:19
+msgid "Registrarme"
+msgstr "Register"
+
 #: app/templates/components/statistics.html:6
 msgid "Nerdearla en números"
 msgstr "Nerdearla in numbers"

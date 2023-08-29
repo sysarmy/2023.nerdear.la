@@ -113,6 +113,9 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 .bg-nerd-darkblue {
 	background-color: var(--nerd-dark-blue);
 }
+.bg-nerd-black {
+	background-color: black;
+}
 
 .bg-pattern {
 	background-image: url(../img/svg/tramas/pattern.svg);

@@ -11,7 +11,7 @@ This is done for code manteinability and readability
       {# This generates the FAQ #}
       {# {% include "components/faq.html" %} #}
       {# Contact form like https://productschool.com/productcon/london-2024 #}
-      {% include "components/contact.html" %}
+      {% include "components/register.html" %}
    </div>
    {# Countdown till the start of the event #}
    <div class="bg-nerd-darkblue py-5">
@@ -30,6 +30,12 @@ This is done for code manteinability and readability
    <div class="bg-nerd-green bg-pattern-2">
    {# Directions to the event and Google maps iframe #}
       {% include "components/location.html" %}
+   </div>
+   <div class="bg-trama-black-1 px-5 py-3">
+      {# This generates the FAQ #}
+      {# {% include "components/faq.html" %} #}
+      {# Contact form like https://productschool.com/productcon/london-2024 #}
+      {% include "components/contact.html" %}
    </div>
    <div class="bg-nerd-yellow px-5 py-3">
    {% if not sponsors_error %}

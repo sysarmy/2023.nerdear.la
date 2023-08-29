@@ -1,43 +1,42 @@
-.mauticform-label {
-	color: white;
+.mauticform_wrapper { max-width: 600px; margin: 10px auto; }    
+.mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }    
+.mauticform-description { margin-top: 2px; margin-bottom: 10px; }    
+.mauticform-error { margin-bottom: 10px; color: red; font-weight: bold; }    
+.mauticform-message { margin-bottom: 10px;color: green; font-weight: bold; }    
+.mauticform-row { display: block; margin-bottom: 20px; }    
+.mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; }    
+.mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: \" *\"; display: inline; }    
+.mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }    
+.mauticform-errormsg { display: block; color: red; margin-top: 2px; font-weight: bold; }    
+.mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 100%; padding: 0.5em 0.5em; border: 1px solid #CCC; background: #fff; box-shadow: 0px 0px 0px #fff inset; border-radius: 4px; box-sizing: border-box; }    
+.mauticform-checkboxgrp-label { font-weight: normal; }     
+.mauticform-radiogrp-label { font-weight: normal; }
+.mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default { color: #5d6c7c;background-color: #ffffff;border-color: #dddddd;}    
+.mauticform-button-wrapper .mauticform-button, .mauticform-pagebreak-wrapper .mauticform-pagebreak { display: inline-block;margin-bottom: 0;font-weight: 600;text-align: center;vertical-align: middle;cursor: pointer;background-image: none;border: 1px solid transparent;white-space: nowrap;padding: 6px 12px;font-size: 13px;line-height: 1.3856;border-radius: 3px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}    
+.mauticform-button-wrapper .mauticform-button.btn-default[disabled], .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default[disabled] { background-color: #ffffff; border-color: #dddddd; opacity: 0.75; cursor: not-allowed; }    
+.mauticform-pagebreak-wrapper .mauticform-button-wrapper {  display: inline; }  
+.mauticform-field-hidden { display:none }
+
+input::placeholder {
+	font-style: italic;
+	font-size: 1.2rem;
+	opacity: 0.8;
 }
-.mauticform-errormsg,
-.mauticform-error,
-.mauticform-message {
-	font-weight: bold;
-}
+
 .mauticform-errormsg {
 	position: absolute;
+	bottom: -.8rem;
 }
 .mauticform-message {
 	color: --var(--nerd-green);
 }
-
+.mauticform-row.mauticform-email {
+	position: relative;
+}
 
 .mauticform-button {
-	display: block;
-	width: 60%;
 	font-size: 1rem !important;
 	padding: 8px 12px !important;
-	border-radius: 6px !important;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#mauticform_webnerdearla_nombre, #mauticform_webnerdearla_apellido { display: none;}
-
-#contact .mauticform_wrapper {
-	max-width: 100%;
-	width: 100%;
-}
-.mauticform-page-wrapper {
-	align-items: flex-end;
-	display: flex!important;
-	max-width: 100%;
-}
-.mauticform-page-wrapper > div {
-	flex: 0 0 0;
-	width: 0;
 }
 
 #contact .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default {
@@ -52,20 +51,9 @@
 	border-color: var(--nerd-red);
 	transition: all .2s;
 }
-.mauticform-row.mauticform-button-wrapper {
-    flex: 1 0 40%;
-}
-.mauticform-row.mauticform-email {
-    flex: 1 0 60%;
-}
-.mauticform-selectbox, .mauticform-input, .mauticform-textarea {
-	border-radius: 0!important;
-	border: 1px solid white!important;
-}
 
-@media (min-width: 992px) {
-	#contact .mauticform_wrapper {
-		margin-right: 0;
-		max-width: 40%;
-	}
+.mauticform-selectbox, .mauticform-input, .mauticform-textarea {
+	border-radius: 0;
+	border: 1px solid white;
+	margin-bottom: 1rem;
 }

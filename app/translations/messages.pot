@@ -55,7 +55,6 @@ msgstr "Loading schedule..."
 msgid "Sacá tu entrada gratuita!"
 msgstr "Get your free tickets!"
 
-
 #: app/templates/base.html:57
 msgid "Nerdearla 10ma edición - 26 al 30 de septiembre"
 msgstr "Nerdearla 10th edition - September 26 to 30"
@@ -289,6 +288,22 @@ msgstr "Register for free!"
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
 msgstr "Recap of last year"
+
+#: app/templates/components/register.html:6
+msgid "Registrate a Nerdearla 2023"
+msgstr "Register to Nerdearla 2023"
+
+#: app/templates/components/register.html:8
+msgid "El evento gratuito de ciencia y tecnología más grande de Latinoamérica."
+msgstr "The largest free science and technology event in Latin America."
+
+#: app/templates/components/register.html:17
+msgid "Por favor ingresá un email válido"
+msgstr "Please enter a valid email address"
+
+#: app/templates/components/register.html:19
+msgid "Registrarme"
+msgstr "Register"
 
 #: app/templates/components/statistics.html:6
 msgid "Nerdearla en números"
