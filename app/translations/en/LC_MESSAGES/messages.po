@@ -217,6 +217,7 @@ msgid "Segundos"
 msgstr "Seconds"
 
 #: app/templates/components/countdown.html:36
+
 #: app/templates/components/hero.html:16
 msgid "26 al 30 de septiembre, 2023"
 msgstr "September 26 - 30, 2023"
@@ -237,9 +238,22 @@ msgstr "Code of Conduct"
 msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr "Your device does not support background video :("
 
-#: app/templates/components/hero.html:18
-msgid "Modalidad presencial y virtual."
-msgstr "In-person and virtual."
+#: app/templates/components/hero.html:22
+msgid "26 y 27 - charlas virtuales."
+msgstr "Sept 26 and 27 - virtual talks only."
+
+#: app/templates/components/hero.html:22
+msgid "28 al 30 - evento presencial."
+msgstr "Sept 28 30 - in-person event in Buenos Aires."
+
+#: app/templates/components/hero.html:22
+msgid "Todo el contenido saldrá vía streaming en vivo."
+msgstr "All content will be streamed live."
+
+
+#: app/templates/components/hero.html:29
+msgid "Registrate gratis"
+msgstr "Get your free tickets!"
 
 #: app/templates/components/hero.html:20
 msgid "¡Entrada gratuita próximamente!"
