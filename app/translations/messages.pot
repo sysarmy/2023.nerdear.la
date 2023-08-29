@@ -196,23 +196,36 @@ msgstr " Subscribe to our newsletter "
 msgid "Enterate de todas las novedades del evento, speakers, registro y mucho más."
 msgstr "Get all the updates about the event, speakers, registration, and much more."
 
+
 #: app/templates/components/countdown.html:10
+msgid "Todo el contenido en streaming"
+msgstr "All the content via live streaming"
+
+#: app/templates/components/countdown.html:15
+msgid "Charlas virtuales"
+msgstr "Virtual talks"
+
+#: app/templates/components/countdown.html:19
+msgid "Evento presencial"
+msgstr "In-person event"
+
+#: app/templates/components/countdown.html:26
 msgid "Cuanto Falta para Nerdearla 2023?"
 msgstr "How long until Nerdearla 2023?"
 
-#: app/templates/components/countdown.html:16
+#: app/templates/components/countdown.html:30
 msgid "Días"
 msgstr "Days"
 
-#: app/templates/components/countdown.html:20
+#: app/templates/components/countdown.html:34
 msgid "Horas"
 msgstr "Hours"
 
-#: app/templates/components/countdown.html:24
+#: app/templates/components/countdown.html:38
 msgid "Minutos"
 msgstr "Minutes"
 
-#: app/templates/components/countdown.html:28
+#: app/templates/components/countdown.html:42
 msgid "Segundos"
 msgstr "Seconds"
 

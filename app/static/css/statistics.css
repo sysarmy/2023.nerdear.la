@@ -25,12 +25,15 @@
 }
 .css-tabs .flex-tabs .panel {
 	color: white;
-    display: none;
-	font-size: 3rem;
+	display: none;
+	font-size: 2.5rem;
 	line-height: 1;
 	min-height: 12rem;
+	opacity: 0;
 	padding-top: 3rem;
-    width: 100%;
+	transform: translateX(10000px);
+	transition: opacity .2s, transform .2s, display .2s;    
+	width: 100%;
 }
 
 #tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label, #tab-three:checked ~ .tabs #tab-three-label, #tab-four:checked ~ .tabs #tab-four-label {
@@ -38,7 +41,9 @@
 }
 
 #tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel, #tab-three:checked ~ .tabs #tab-three-panel, #tab-four:checked ~ .tabs #tab-four-panel {
-    display: block;
+	display: block;
+	opacity: 1;
+	transform: translateX(0);
 }
 .sticker {
 	display: none;
@@ -72,12 +77,42 @@
 	}
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 992px) {
 	.css-tabs .flex-tabs .panel {
 		background: url(../img/svg/line-arrow.svg) repeat-x top;
 		background-size: cover;
 		min-height: 14rem;
 	}
+	#tab-one:checked ~ .tabs #tab-one-panel {
+		background-position: -200px 0;
+	}
+	#tab-two:checked ~ .tabs #tab-two-panel {
+		background-position: 40px 0;
+	}
+	#tab-three:checked ~ .tabs #tab-three-panel {
+		background-position: 310px 0;
+	}
+	#tab-four:checked ~ .tabs #tab-four-panel {
+		background-position: 590px 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#tab-one:checked ~ .tabs #tab-one-panel {
+		background-position: -240px 0;
+	}
+	#tab-two:checked ~ .tabs #tab-two-panel {
+		background-position: 60px 0;
+	}
+	#tab-three:checked ~ .tabs #tab-three-panel {
+		background-position: 390px 0;
+	}
+	#tab-four:checked ~ .tabs #tab-four-panel {
+		background-position: 730px 0;
+	}
+}
+
+@media screen and (min-width: 1400px) {
 	#tab-one:checked ~ .tabs #tab-one-panel {
 		background-position: -290px 0;
 	}

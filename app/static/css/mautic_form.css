@@ -47,6 +47,11 @@
 	color: var(--nerd-black);
 	width: 100%;
 }
+#contact .mauticform-button-wrapper .mauticform-button.btn-default:hover, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default:hover {
+	background-color: var(--nerd-red);
+	border-color: var(--nerd-red);
+	transition: all .2s;
+}
 .mauticform-row.mauticform-button-wrapper {
     flex: 1 0 40%;
 }

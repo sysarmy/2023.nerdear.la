@@ -197,26 +197,39 @@ msgid "Enterate de todas las novedades del evento, speakers, registro y mucho m�
 msgstr "Get all the updates about the event, speakers, registration, and much more."
 
 #: app/templates/components/countdown.html:10
+msgid "Todo el contenido en streaming"
+msgstr "All the content via live streaming"
+
+#: app/templates/components/countdown.html:15
+msgid "Charlas virtuales"
+msgstr "Virtual talks"
+
+#: app/templates/components/countdown.html:19
+msgid "Evento presencial"
+msgstr "In-person event"
+
+#: app/templates/components/countdown.html:26
 msgid "Cuanto Falta para Nerdearla 2023?"
 msgstr "How long until Nerdearla 2023?"
 
-#: app/templates/components/countdown.html:16
+#: app/templates/components/countdown.html:30
 msgid "Días"
 msgstr "Days"
 
-#: app/templates/components/countdown.html:20
+#: app/templates/components/countdown.html:34
 msgid "Horas"
 msgstr "Hours"
 
-#: app/templates/components/countdown.html:24
+#: app/templates/components/countdown.html:38
 msgid "Minutos"
 msgstr "Minutes"
 
-#: app/templates/components/countdown.html:28
+#: app/templates/components/countdown.html:42
 msgid "Segundos"
 msgstr "Seconds"
 
 #: app/templates/components/countdown.html:36
+
 #: app/templates/components/hero.html:16
 msgid "26 al 30 de septiembre, 2023"
 msgstr "September 26 - 30, 2023"
@@ -237,9 +250,22 @@ msgstr "Code of Conduct"
 msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr "Your device does not support background video :("
 
-#: app/templates/components/hero.html:18
-msgid "Modalidad presencial y virtual."
-msgstr "In-person and virtual."
+#: app/templates/components/hero.html:22
+msgid "26 y 27 - charlas virtuales."
+msgstr "Sept 26 and 27 - virtual talks only."
+
+#: app/templates/components/hero.html:22
+msgid "28 al 30 - evento presencial."
+msgstr "Sept 28 30 - in-person event in Buenos Aires."
+
+#: app/templates/components/hero.html:22
+msgid "Todo el contenido saldrá vía streaming en vivo."
+msgstr "All content will be streamed live."
+
+
+#: app/templates/components/hero.html:29
+msgid "Registrate gratis"
+msgstr "Get your free tickets!"
 
 #: app/templates/components/hero.html:20
 msgid "¡Entrada gratuita próximamente!"
@@ -265,9 +291,14 @@ msgstr "Home"
 msgid "Sponsors"
 msgstr "Sponsors"
 
+#: app/templates/components/navbar.html:36
+msgid "Agenda"
+msgstr "Schedule"
+
+
 #: app/templates/components/navbar.html:47
-msgid "¡Convertite en Sponsor!"
-msgstr "Become a Sponsor!"
+msgid "¡Registrate gratis!"
+msgstr "Get your free tickets!"
 
 #: app/templates/components/navbar.html:69
 msgid "¡Registrate gratis!"

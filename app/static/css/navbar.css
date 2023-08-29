@@ -5,6 +5,7 @@
 	position: absolute;
 	top: 1rem;
 	left: 1rem;
+	height: 60px;
 	z-index: 2;
 }
 .nav-link{
@@ -18,15 +19,19 @@
 .lang-nav .lang-item {
 	color: white;
 }
-html:lang(es) .lang-es { 
+/* html:lang(es) .lang-es { 
 	opacity: .6;
 	text-decoration: none;
 }
 html:lang(en) .lang-en { 
 	opacity: .6;
 	text-decoration: none;
+} */
+@media (min-width: 576px) {
+	.navbar-brand img {
+		height: 90px;
+	}
 }
-
 @media (min-width: 992px) {
 	.lang-nav {
 		margin: 1rem 3rem 1rem auto;
