@@ -271,8 +271,8 @@ msgstr "Schedule"
 
 
 #: app/templates/components/navbar.html:47
-msgid "¡Convertite en Sponsor!"
-msgstr "Become a Sponsor!"
+msgid "¡Registrate gratis!"
+msgstr "Get your free tickets!"
 
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
