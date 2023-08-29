@@ -1,66 +1,93 @@
-.card {
-	height: 200px;
-	border-radius: 15px;
-	-webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
-	box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
-	border: none;
-	margin-bottom: 30px;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.5s ease-in-out;
+.title-container {
+	color: #fe812a;
+	font-size: 2rem;
+	line-height: 1;
+	padding: .5rem;
+	text-align: center;
 }
 
-.card-body {
-	padding: 10px 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.card-body * {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.css-tabs .state {
+    position: absolute;
+    left: -10000px;
 }
 
-.card-body .row i {
-	margin-right: 10px;
+.css-tabs .flex-tabs {
+    display: flex;
+    flex-wrap: wrap;
+	font-family: "Rift Soft";
+    font-weight: bold;
+    justify-content: space-between;
 }
-
-.card-icon-number {
-	font-family: "Barlow Condensed", Helvetica, Arial, sans-serif;
-	font-weight: 700;
-	letter-spacing: 0.02rem;
+.css-tabs .tab {
+    cursor: pointer;
+    font-size: 3rem;
+	line-height: 1;
+}
+.css-tabs .flex-tabs .panel {
+	color: white;
+    display: none;
 	font-size: 3rem;
+	line-height: 1;
+	min-height: 12rem;
+	padding-top: 3rem;
+    width: 100%;
+}
+
+#tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label, #tab-three:checked ~ .tabs #tab-three-label, #tab-four:checked ~ .tabs #tab-four-label {
 	color: white;
 }
 
-.card-description {
-	text-align: right;
-	font-size: 1.35rem;
-	color: white;
-	font-weight: 500;
+#tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel, #tab-three:checked ~ .tabs #tab-three-panel, #tab-four:checked ~ .tabs #tab-four-panel {
+    display: block;
+}
+.sticker {
+	display: none;
+	opacity: .8;
+	position: absolute;
+	mix-blend-mode: multiply;
+	width: 100px;
+}
+.sticker1 {
+	left: 0;
+	top: 2%
+}
+.sticker2 {
+	bottom: 3%;
+	right: 0;
+	width: 120px;
 }
 
-@media (min-width: 360px) {
-	.card-number {
-		font-size: 3rem;
+@media screen and (min-width: 576px) {
+	#tab-one:checked ~ .tabs #tab-one-panel.flex-cols, #tab-two:checked ~ .tabs #tab-two-panel.flex-cols, #tab-three:checked ~ .tabs #tab-three-panel.flex-cols, #tab-four:checked ~ .tabs #tab-four-panel.flex-cols, #tab-five:checked ~ .tabs #tab-five-panel.flex-cols {
+		display: flex;
+	}
+	.css-tabs .tab {
+		font-size: 7rem;
+	}
+	.css-tabs .flex-tabs .panel {
+		font-size: 5rem;
+	}
+	.sticker {
+		display: block;
 	}
 }
 
-@media (min-width: 576px) {
-	.card-body {
-		padding: 20px 40px 20px 20px;
+@media screen and (min-width: 1400px) {
+	.css-tabs .flex-tabs .panel {
+		background: url(../img/svg/line-arrow.svg) repeat-x top;
+		background-size: cover;
+		min-height: 14rem;
 	}
-	.card-number {
-		font-size: 3.75rem;
+	#tab-one:checked ~ .tabs #tab-one-panel {
+		background-position: -290px 0;
 	}
-}
-@media (min-width: 992px) {
-	.card-chopped-right {
-		border-bottom-right-radius: 15%75px;
-		border-top-right-radius: 15%75px;
+	#tab-two:checked ~ .tabs #tab-two-panel {
+		background-position: 70px 0;
 	}
-	.card-chopped-left {
-		border-bottom-left-radius: 15%75px;
-		border-top-left-radius: 15%75px;
+	#tab-three:checked ~ .tabs #tab-three-panel {
+		background-position: 460px 0;
+	}
+	#tab-four:checked ~ .tabs #tab-four-panel {
+		background-position: 860px 0;
 	}
 }

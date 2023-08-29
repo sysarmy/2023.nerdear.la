@@ -8,6 +8,7 @@ h1 {
 h2 {
 	font-family: "Rift Soft";
 	font-size:4em;
+	letter-spacing: .02em;
 }
 .responsive-image {
 	max-width: 100%;

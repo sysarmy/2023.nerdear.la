@@ -6,9 +6,13 @@
 .mauticform-message {
 	font-weight: bold;
 }
+.mauticform-errormsg {
+	position: absolute;
+}
 .mauticform-message {
 	color: --var(--nerd-green);
 }
+
 
 .mauticform-button {
 	display: block;
@@ -28,7 +32,12 @@
 }
 .mauticform-page-wrapper {
 	align-items: flex-end;
-	display: flex;
+	display: flex!important;
+	max-width: 100%;
+}
+.mauticform-page-wrapper > div {
+	flex: 0 0 0;
+	width: 0;
 }
 
 #contact .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default {
@@ -36,9 +45,10 @@
 	border: 2px solid var(--nerd-green);
 	border-radius: 0!important;
 	color: var(--nerd-black);
+	width: 100%;
 }
 .mauticform-row.mauticform-button-wrapper {
-    flex: 1 0 70%;
+    flex: 1 0 40%;
 }
 .mauticform-row.mauticform-email {
     flex: 1 0 60%;
@@ -51,6 +61,6 @@
 @media (min-width: 992px) {
 	#contact .mauticform_wrapper {
 		margin-right: 0;
-		max-width: 450px;
+		max-width: 40%;
 	}
 }

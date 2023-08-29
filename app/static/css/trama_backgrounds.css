@@ -101,3 +101,20 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 .bg-nerd-yellow {
 	background-color: var(--nerd-yellow);
 }
+.bg-nerd-green {
+	background-color: var(--nerd-green);
+}
+.bg-container {
+	background-image: url(../img/bg-container.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: repeat;
+	position: relative;
+}
+.bg-pattern-2 {
+	background-image: url(../img/svg/tramas/patter-2.svg);
+	background-size: 50%;
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	padding-bottom: 5rem;
+}
