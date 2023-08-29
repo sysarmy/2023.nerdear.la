@@ -265,6 +265,11 @@ msgstr "Home"
 msgid "Sponsors"
 msgstr "Sponsors"
 
+#: app/templates/components/navbar.html:36
+msgid "Agenda"
+msgstr "Schedule"
+
+
 #: app/templates/components/navbar.html:47
 msgid "¡Convertite en Sponsor!"
 msgstr "Become a Sponsor!"
