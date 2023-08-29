@@ -3,7 +3,6 @@ name,category,file,link
 ICBC,Adamantium,icbc.svg,https://sysar.my/icbc
 Openqube,Adamantium,openqube.svg,https://sysar.my/openqube
 
-Telecom,Diamond,telecom.png,https://sysar.my/telecom
 BBVA,Diamond,bbva.svg,https://sysar.my/bbva
 NEORIS,Diamond,neoris.svg,https://sysar.my/neoris
 Galicia,Diamond,galicia.svg,https://sysar.my/galicia
@@ -12,6 +11,7 @@ AGEA (Clarín),Diamond,clarin.svg,https://sysar.my/clarin
 Accenture,Platinum,accenture.svg,https://sysar.my/accenture
 NTT Data,Platinum,nttdata.svg,https://sysar.my/ntt
 Naranja X,Platinum,naranjax.svg,https://sysar.my/naranjax
+Telecom,Platinum,telecom.png,https://sysar.my/telecom
 
 Kopius,Gold,kopius.svg,https://sysar.my/kopius
 Santander,Gold,santander.svg,https://sysar.my/santander
@@ -19,10 +19,10 @@ Mirgor,Gold,mirgor.svg,https://sysar.my/mirgor
 IT Resources,Gold,itr.svg,https://sysar.my/itresources
 Linux Professional Institute,Gold,lpi.svg,https://sysar.my/lpi
 
-Kin+Karta,Silver,kinkarta.svg,https://sysar.my/kinandcarta
+Kin+Carta,Silver,kincarta.svg,https://sysar.my/kinandcarta
 Softtek,Silver,softtek.svg,https://sysar.my/softtek
 WeHouse,Silver,wehouse.svg,https://sysar.my/wehouse
-EmiLabs,Silver,emilabs.png,https://sysar.my/emilabs
+EmiLabs,Silver,emilabs.svg,https://sysar.my/emilabs
 Fu.do,Silver,fudo.svg,https://sysar.my/fudo
 Redbee,Silver,redbee_studio.svg,https://sysar.my/redbee
 Ekumen,Silver,ekumen.svg,https://sysar.my/ekumen
