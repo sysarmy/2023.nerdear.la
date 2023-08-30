@@ -304,6 +304,7 @@ msgstr "Get your free tickets!"
 msgid "¡Registrate gratis!"
 msgstr "Register for free!"
 
+
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
 msgstr "Recap of last year"
