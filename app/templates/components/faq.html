@@ -27,7 +27,7 @@ accordion_dataset = [
       <div class="row">
          <div class="col-sm-3">
             <h1 class="me-3 text-white text-center">
-               {{ _('Preguntas frecuentes sobre') }} <strong>{{ _('Nerdearla') }}</strong>
+               {{ _("Preguntas frecuentes sobre") }} <strong>{{ _("Nerdearla") }}</strong>
             </h1>
          </div>
          <div class="col-sm-9 bg-">
@@ -41,9 +41,7 @@ accordion_dataset = [
                                 data-bs-toggle="collapse"
                                 data-bs-target="#panel-{{ item.title|whitespace_to_dash }}"
                                 aria-expanded="false"
-                                aria-controls="panel-{{ item.title|whitespace_to_dash }}">
-                           {{ _(item.title) }}
-                        </button>
+                                aria-controls="panel-{{ item.title|whitespace_to_dash }}">{{ _(item.title) }}</button>
                      </h2>
                      <div id="panel-{{ item.title|whitespace_to_dash }}"
                           class="accordion-collapse collapse">

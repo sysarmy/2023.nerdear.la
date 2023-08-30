@@ -35,12 +35,15 @@
                   href="{{ url_for('index', lang_code=lang_code) }}">{{ _("Home") }}</a>
                <a class="nav-link nav-item"
                   href="{{ url_for('sponsors', lang_code=lang_code) }}">{{ _("Sponsors") }}</a>
-               <a class="nav-link nav-item" href="{{ url_for('agenda', lang_code=lang_code ) }}">{{ _('Agenda') }}</a>
+               <a class="nav-link nav-item"
+                  href="{{ url_for('agenda', lang_code=lang_code) }}">{{ _("Agenda") }}</a>
             </div>
             {# Lang menu #}
             <div class="lang-nav ms-auto">
-               <a class="lang-item lang-es" href="{{ url_for('index', lang_code='es') }}">ES</a> |
-               <a class="lang-item lang-en" href="{{ url_for('index', lang_code='en') }}">EN</a>
+               <a class="lang-item lang-es"
+                  href="{{ url_for('index', lang_code='es') }}">ES</a> |
+               <a class="lang-item lang-en"
+                  href="{{ url_for('index', lang_code='en') }}">EN</a>
             </div>
             {# Social icons #}
             <div class="navbar-nav d-flex justify-content-center align-items-center flex-row gap-4 gap-sm-2 gap-lg-1">
@@ -48,7 +51,8 @@
                <a class="nav-link nav-item" href="https://sysar.my/discord">
                   <i class="fab fa-discord text-white"></i>
                </a>
-               <a class="nav-link nav-item" href="https://www.instagram.com/nerdear_la/">
+               <a class="nav-link nav-item"
+                  href="https://www.instagram.com/nerdear_la/">
                   <i class="fab fa-instagram text-white"></i>
                </a>
                <a class="nav-link nav-item"
@@ -65,9 +69,7 @@
             <div class="navbar-nav d-flex justify-content-center align-items-center">
                {# Register button #}
                <a href="https://registro.nerdear.la/?utm_source=navbar"
-                  class="custom_button">
-                  {{ _("¡Registrate gratis!") }}
-               </a>
+                  class="custom_button">{{ _("¡Registrate gratis!") }}</a>
             </div>
          </div>
       </div>

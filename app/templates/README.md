@@ -13,10 +13,7 @@ An example of a component could be:
 <!-- This file holds the section that talks about the speakers -->
 <section id="speakers">
 	<!-- Get the css file using jinja-html syntax -->
-	<link
-		rel="stylesheet"
-		href="{{ url_for('static', filename='css/speakers.css') }}"
-	/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/speakers.css') }}" />
 
 	<!-- Main content of the html -->
 	<div class="container">
