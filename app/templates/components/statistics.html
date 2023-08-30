@@ -1,59 +1,43 @@
 {# Este componente muestra algunas estadísticas sobre Nerdearla y sus números, incluyendo la última edición #}
-<section id="statistics" class="y-spaced-section">
+<section id="statistics" class="bg-container">
    <link rel="stylesheet"
          href="{{ url_for('static', filename='css/statistics.css') }}">
    <div class="container d-flex flex-column">
-      <h1 class="display-1 mx-auto">{{ _("Nerdearla en números") }}</h1>
-      <h2 class="mx-auto mb-5 text-muted">{{ _("Así fue nuestro evento de 2022") }}</h2>
-      <div class="row">
-         <div class="col-lg-6 ">
-            <div class="card bg-trama bg-trama-blue-1 card-chopped-right">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-5 card-icon-number">
-                        <i class="fa-solid fa-user-group"></i>7k
-                     </div>
-                     <div class="col card-description">{{ _("Más de 7.000 participantes presenciales en Buenos Aires.") }}</div>
-                  </div>
+      <img src="{{ url_for('static', filename='img/sticker-nasa.png') }}"
+               alt="nasa"
+               class="sticker sticker1">
+
+      <img src="{{ url_for('static', filename='img/sticker-this-is-fine.png') }}"
+               alt="this is fine"
+               class="sticker sticker2">
+      {# <h1 class="display-1 mx-auto">{{ _("Nerdearla en números") }}</h1> #}
+      <h2 class="mx-auto my-4 bg-black px-5 title-container">{{ _("Así fue nuestro evento de 2022") }}</h2>
+      <div class="css-tabs">
+            <input class="state" type="radio" title="tab-one" name="tabs-state" id="tab-one" checked>
+            <input class="state" type="radio" title="tab-two" name="tabs-state" id="tab-two">
+            <input class="state" type="radio" title="tab-three" name="tabs-state" id="tab-three" />
+            <input class="state" type="radio" title="tab-four" name="tabs-state" id="tab-four">
+      
+            <div class="tabs flex-tabs">
+               <label for="tab-one" id="tab-one-label" class="tab">7k</label>
+               <label for="tab-two" id="tab-two-label" class="tab">20K</label>
+               <label for="tab-three" id="tab-three-label" class="tab">200</label>
+               <label for="tab-four" id="tab-four-label" class="tab">100%</label>
+
+               <div id="tab-one-panel" class="panel active">
+                  <p>{{ _("Más de 7.000 participantes presenciales en Buenos Aires.") }}</p>
+               </div>
+               <div id="tab-two-panel" class="panel">
+                  <p>{{ _("Más de 20.000 participantes online durante las conferencias.") }}</p>
+               </div>
+               <div id="tab-three-panel" class="panel">
+                  <p>{{ _("Más de 200 speakers de más de 20 países.") }}</p>
+               </div>
+               <div id="tab-four-panel" class="panel">
+                  <p>{{ _("El evento es") }} 100% {{ _("gratuito, desde el día 0.") }}</p>
                </div>
             </div>
-         </div>
-         <div class="col-lg-6 ">
-            <div class="card bg-trama bg-trama-red-1 card-chopped-left">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-5 card-icon-number">
-                        <i class="fa-solid fa-globe"></i>20K
-                     </div>
-                     <div class="col card-description">{{ _("Más de 20.000 participantes online durante las conferencias.") }}</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6 ">
-            <div class="card bg-trama bg-trama-purple-1 card-chopped-right">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-5 card-icon-number">
-                        <i class="fa-solid fa-person-chalkboard"></i>200
-                     </div>
-                     <div class="col card-description">{{ _("Más de 200 speakers de más de 20 países.") }}</div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="col-lg-6 ">
-            <div class="card bg-trama bg-trama-green-4 card-chopped-left">
-               <div class="card-body">
-                  <div class="row">
-                     <div class="col-5 card-icon-number">
-                        <i class="fa-solid fa-money-bills"></i>100%
-                     </div>
-                     <div class="col card-description">{{ _("El evento es") }} 100% {{ _("gratuito, desde el día 0.") }}</div>
-                  </div>
-               </div>
-            </div>
-         </div>
       </div>
+
    </div>
 </section>

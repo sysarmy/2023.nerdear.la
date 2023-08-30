@@ -55,7 +55,6 @@ msgstr "Loading schedule..."
 msgid "Sacá tu entrada gratuita!"
 msgstr "Get your free tickets!"
 
-
 #: app/templates/base.html:57
 msgid "Nerdearla 10ma edición - 26 al 30 de septiembre"
 msgstr "Nerdearla 10th edition - September 26 to 30"
@@ -196,23 +195,36 @@ msgstr " Subscribe to our newsletter "
 msgid "Enterate de todas las novedades del evento, speakers, registro y mucho más."
 msgstr "Get all the updates about the event, speakers, registration, and much more."
 
+
 #: app/templates/components/countdown.html:10
+msgid "Todo el contenido en streaming"
+msgstr "All the content via live streaming"
+
+#: app/templates/components/countdown.html:15
+msgid "Charlas virtuales"
+msgstr "Virtual talks"
+
+#: app/templates/components/countdown.html:19
+msgid "Evento presencial"
+msgstr "In-person event"
+
+#: app/templates/components/countdown.html:26
 msgid "Cuanto Falta para Nerdearla 2023?"
 msgstr "How long until Nerdearla 2023?"
 
-#: app/templates/components/countdown.html:16
+#: app/templates/components/countdown.html:30
 msgid "Días"
 msgstr "Days"
 
-#: app/templates/components/countdown.html:20
+#: app/templates/components/countdown.html:34
 msgid "Horas"
 msgstr "Hours"
 
-#: app/templates/components/countdown.html:24
+#: app/templates/components/countdown.html:38
 msgid "Minutos"
 msgstr "Minutes"
 
-#: app/templates/components/countdown.html:28
+#: app/templates/components/countdown.html:42
 msgid "Segundos"
 msgstr "Seconds"
 
@@ -257,11 +269,11 @@ msgstr "3 times larger than any other conference in Buenos Aires"
 msgid "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 msgstr "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 
-#: app/templates/components/navbar.html:33
+#: app/templates/components/navbar.html:35
 msgid "Home"
 msgstr "Home"
 
-#: app/templates/components/navbar.html:35
+#: app/templates/components/navbar.html:37
 msgid "Sponsors"
 msgstr "Sponsors"
 
@@ -269,9 +281,29 @@ msgstr "Sponsors"
 msgid "¡Convertite en Sponsor!"
 msgstr "Become a Sponsor!"
 
+#: app/templates/components/navbar.html:69
+msgid "¡Registrate gratis!"
+msgstr "Register for free!"
+
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
 msgstr "Recap of last year"
+
+#: app/templates/components/register.html:6
+msgid "Registrate a Nerdearla 2023"
+msgstr "Register to Nerdearla 2023"
+
+#: app/templates/components/register.html:8
+msgid "El evento gratuito de ciencia y tecnología más grande de Latinoamérica."
+msgstr "The largest free science and technology event in Latin America."
+
+#: app/templates/components/register.html:17
+msgid "Por favor ingresá un email válido"
+msgstr "Please enter a valid email address"
+
+#: app/templates/components/register.html:19
+msgid "Registrarme"
+msgstr "Register"
 
 #: app/templates/components/statistics.html:6
 msgid "Nerdearla en números"

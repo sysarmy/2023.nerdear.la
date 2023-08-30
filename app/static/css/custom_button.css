@@ -13,17 +13,31 @@
 }
 
 .custom_button {
-	position: relative;
-	z-index: 0;
-	width: 260px;
-	height: 56px;
-	text-decoration: none;
-	font-size: 14px;
+	background-color: var(--nerd-green);
+	border: 0;
+	border-radius: 50px;
+	color: var(--nerd-black);
+	font-family: "Rift Soft";
+	font-size: 1.5rem;
 	font-weight: bold;
-	color: var(--custom_button_line_color);
-	letter-spacing: 2px;
+	letter-spacing: .03em;
+	margin: .5rem auto;
+	padding: .2rem 1.8rem;
+	text-decoration: none;
 	transition: all 0.3s ease;
+	z-index: 0;
 }
+.custom_button:hover {
+	background-color: var(--nerd-yellow);
+}
+
+@media (min-width: 992px) {
+	.navbar-nav .custom_button {
+		margin-left: 2rem;
+	}
+}
+
+/*
 .button__text {
 	display: flex;
 	justify-content: center;
@@ -86,16 +100,13 @@
 .button__line:nth-child(2),
 .button__line:nth-child(2)::before {
 	right: 0;
-}
-.custom_button:hover {
-	letter-spacing: 2.5px;
-	/* color: var(--nerd-green); */
-}
-.custom_button:hover::before,
+} */
+
+/* .custom_button:hover::before,
 .custom_button:hover .button__text::before {
 	width: 8px;
 }
 .custom_button:hover::after,
 .custom_button:hover .button__text::after {
 	width: calc(100% - 56px * 2 - 16px);
-}
+} */

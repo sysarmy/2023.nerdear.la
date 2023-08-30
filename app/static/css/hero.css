@@ -1,7 +1,7 @@
 section#hero {
 	/*background: url(../img/hero-background.jpeg) no-repeat center center;*/
 	background-size: cover;
-	height: 44vw;
+	height: 40vw;
 }
 #event-info {
 	background-color: rgb(203, 195, 195, 0.1);
@@ -77,10 +77,9 @@ button#cta:active {
   .video-container {
             position: relative;
             width: 100vw;
-            height: 44vw; /* 16:9 Aspect Ratio */
+            height: 40vw; /* 16:9 Aspect Ratio */
             overflow: hidden;
             display: flex;
-            justify-content: center;
             align-items: center;
             flex-direction: column;
             z-index: 1 !important;
@@ -112,29 +111,35 @@ button#cta:active {
         }
 
         .logo {
-            width: 30%; /* relative size */
-		    max-width: 500px; /* maximum size */
-		    min-width: 100px; /* minimum size */
-		    height: 100px;
-            background: url('/static/img/logos/nerdearla-full.svg') no-repeat center center;
+            width: 60%; /* relative size */
+		    max-width: 1100px; /* maximum size */
+		    min-width: 150px; /* minimum size */
+		    height: 150px;
+            background: url('/static/img/logos/nerdearla-detailed-no-bg.svg') no-repeat top center;
             background-size: contain;
             z-index:2;
         }
 
    
         .blurb {
-            font-size: 1.5rem;
+			border: 2px solid;
+			border-radius: 50px;
             color: white;
+			font-family: "Rift Soft";
+            font-size: 2rem;
+			letter-spacing: .03em;
+            margin: 10% auto 3rem;
+			padding: .2rem 1.8rem;
             text-align: center;
-            margin: 1rem;
             z-index:2;
         }
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
     .blurb {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
+}
 
 @media screen and (max-width: 768px) {
     .logo {

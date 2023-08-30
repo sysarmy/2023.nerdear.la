@@ -97,3 +97,49 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 .bg-trama-yellow-2 {
 	background-image: url(../img/svg/tramas/trama-yellow-2.svg);
 }
+
+.bg-nerd-yellow {
+	background-color: var(--nerd-yellow);
+}
+.bg-nerd-green {
+	background-color: var(--nerd-green);
+}
+.bg-nerd-red {
+	background-color: var(--nerd-red);
+}
+.bg-nerd-orange {
+	background-color: var(--nerd-orange);
+}
+.bg-nerd-darkblue {
+	background-color: var(--nerd-dark-blue);
+}
+.bg-nerd-black {
+	background-color: black;
+}
+
+.bg-pattern {
+	background-image: url(../img/svg/tramas/pattern.svg);
+	background-size: 100%;
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+.bg-pattern-1 {
+	background-image: url(../img/svg/tramas/pattern-1.svg);
+	background-size: 70%;
+	background-position: bottom center;
+	background-repeat: repeat-x;
+}
+.bg-container {
+	background-image: url(../img/bg-container.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: repeat;
+	position: relative;
+}
+.bg-pattern-2 {
+	background-image: url(../img/svg/tramas/pattern-2.svg);
+	background-size: 50%;
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	padding-bottom: 5rem;
+}
