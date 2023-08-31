@@ -17,6 +17,7 @@ Kopius,Gold,kopius.svg,https://sysar.my/kopius
 Santander,Gold,santander.svg,https://sysar.my/santander
 Mirgor,Gold,mirgor.svg,https://sysar.my/mirgor
 IT Resources,Gold,itr.svg,https://sysar.my/itresources
+IPLAN,Gold,iplan.svg,https://sysar.my/iplan
 Linux Professional Institute,Gold,lpi.svg,https://sysar.my/lpi
 
 Kin+Carta,Silver,kincarta.svg,https://sysar.my/kinandcarta
@@ -27,7 +28,9 @@ Fu.do,Silver,fudo.svg,https://sysar.my/fudo
 Redbee,Silver,redbee_studio.svg,https://sysar.my/redbee
 Ekumen,Silver,ekumen.svg,https://sysar.my/ekumen
 Svitla,Silver,svitla.svg,https://sysar.my/svitla
+Galileo+Technisys,Silver,galileo+technisys.svg,https://sysar.my/galileo
 UMA,Silver,uma.svg,https://sysar.my/uma
+
 
 Datalytics,Bronze,datalytics.svg,https://sysar.my/datalytics
 Caylent,Bronze,caylent.svg,https://sysar.my/caylent
@@ -44,7 +47,9 @@ Museo de Informática,Nos apoyan,museoinformatica.png,https://sysar.my/museoinfo
 Huesped,Nos apoyan,huesped.svg,https://www.huesped.org.ar/
 UADE,Nos apoyan,uade.png,https://sysar.my/uade
 ORT,Nos apoyan,ort.svg,https://sysar.my/ort
+Investigaciones UBA,Nos apoyan,ubainvestigacion.png,https://cyt.rec.uba.ar
 Chicas en Tecnología,Nos apoyan,cet.svg,https://chicasentecnologia.org/
+Departamento de Computación de Exactas-UBA,Nos apoyan,deptocomputacionuba.png,https://www.dc.uba.ar
 Mujeres en Tecnología,Nos apoyan,met.svg,https://mujeresentecnologia.org/
 Incluyeme.com,Nos apoyan,incluyeme.com.svg,https://incluyeme.com/
 Eidos,Nos apoyan,eidos.svg,https://www.eidosglobal.org/
@@ -57,31 +62,35 @@ Nahual Argentina,Nos apoyan,nahual_argentina.svg,http://www.nahual.com.ar/
 Nahual Uruguay,Nos apoyan,nahual_uruguay.svg,https://nahual.uy/
 Mocha Celis,Nos apoyan,mocha.svg,https://mochacelis.org
 Metadocencia,Nos apoyan,metadocencia.png,https://www.metadocencia.org
-Wingu,Nos apoyan,wingu.svg,https://winguweb.org/
+Wingu,Nos apoyan,wingu.svg,https://winguweb.org
 TINC,Nos apoyan,tinc.png,https://sysar.my/tinc
-TransTI,Nos apoyan,transti.svg,https://trans-ti.com/
-Comité de Mujeres en Tecnología,Nos apoyan,comitemujeresentec.png,https://www.linkedin.com/company/comit%C3%A9-mujeres-en-tecnolog%C3%ADa/
-Media Pila,Nos apoyan,mediapila.svg,https://mediapila.org.ar/
+TransTI,Nos apoyan,transti.svg,https://trans-ti.com
+Comité de Mujeres en Tecnología,Nos apoyan,comitemujeresentec.png,https://www.linkedin.com/company/comit%C3%A9-mujeres-en-tecnolog%C3%ADa
+Media Pila,Nos apoyan,mediapila.svg,https://mediapila.org.ar
+Roboteam,Nos apoyan,roboteam.png,https://ewh.ieee.org/r9/argentina/roboteam/
 
 
 Sysarmy México,Comunidades,sysarmymx.png,https://sysar.my/sysarmymx
 AWS Girls,Comunidades,awsgirls.svg,https://www.linkedin.com/company/awsgirlsargentina
 Doctarmy,Comunidades,doctarmy.png,https://sysar.my/doctarmy
-Las De Sistemas,Comunidades,lasdesistemas.png,https://lasdesistemas.org/
-Frontend Café,Comunidades,frontendcafe.png,https://frontend.cafe/
-Enfoque Lúdico,Comunidades,enfoque_ludico.svg,https://enfoqueludico.com/
+Las De Sistemas,Comunidades,lasdesistemas.png,https://lasdesistemas.org
+Frontend Café,Comunidades,frontendcafe.png,https://frontend.cafe
+Enfoque Lúdico,Comunidades,enfoque_ludico.svg,https://enfoqueludico.com
 Speedcube,Comunidades,speedcube.svg,http://linktr.ee/asa_speedcubing
 DVBahía,Comunidades,dvbahia.svg,https://instagram.com/dvbahia
-RLadies,Comunidades,rladies.svg,https://rladiesba.netlify.app/
-Más Mujeres en UX,Comunidades,masmujeresux.svg,https://www.instagram.com/masmujeresux.ar/
+RLadies,Comunidades,rladies.svg,https://rladiesba.netlify.app
+Más Mujeres en UX,Comunidades,masmujeresux.svg,https://www.instagram.com/masmujeresux.ar
 CanalDBA,Comunidades,canaldba.png,https://sysar.my/canaldba
 Hamping,Comunidades,hamping.png,https://sysar.my/hamping
 PyAR,Comunidades,pyar.svg,https://sysar.my/pyar
 SJNHS,Comunidades,sjnhs.svg,http://sinjrnohaysr.com/
 Recruitment Latam,Comunidades,recruitment_latam.svg,https://www.linkedin.com/company/recruitment-latam
 Mermelada Tech,Comunidades,mermelada_tech.svg,https://www.youtube.com/channel/UCu4iiIYfIQKEYP7TH_-R9KQ
-Diseño Ético,Comunidades,diseno_etico.svg,https://www.instagram.com/disenoetico.comunidad/
-TestingUY,Comunidades,testinguy.svg,https://testinguy.org/
+Diseño Ético,Comunidades,diseno_etico.svg,https://www.instagram.com/disenoetico.comunidad
+TestingUY,Comunidades,testinguy.svg,https://testinguy.org
+Mujeres en Crypto,Comunidades,mujeresencrypto.png,https://linktr.ee/mujeresencrypto
+Misiones IT,Comunidades,misionesit.svg,https://comit.ar
+
 
 
 CienciaHoy,Media partners,cienciahoy.svg,https://www.chicosdecienciahoy.org.ar/
