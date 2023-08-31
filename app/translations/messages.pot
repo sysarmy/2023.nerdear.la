@@ -185,6 +185,10 @@ msgstr ""
 msgid "Convertite en sponsor hoy!"
 msgstr ""
 
+#: app/templates/components/about.html:8
+msgid "gratis"
+msgstr ""
+
 #: app/templates/components/about.html:11
 msgid "Sobre Nerdearla"
 msgstr ""

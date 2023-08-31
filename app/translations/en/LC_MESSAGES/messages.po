@@ -186,6 +186,10 @@ msgstr "free tickets. That would not be possible without our sponsors and suppor
 msgid "Convertite en sponsor hoy!"
 msgstr "Become a sponsor today!"
 
+#: app/templates/components/about.html:8
+msgid "gratis"
+msgstr "free"
+
 #: app/templates/components/about.html:11
 msgid "Sobre Nerdearla"
 msgstr "About Nerdearla"
