@@ -5,13 +5,13 @@
    <div class="text-center text-white">
       <div>
          <h2 class="display-6 fw-semibold m-0">{{ _(" Subscribite a nuestro newsletter ") }}</h2>
-         <p class="fs-5">{{ _("Enterate de todas las novedades del evento, speakers, registro y mucho más.") }}</p>
+         <p class="fs-5">{{ _("¡Enterate de todas las novedades del evento!") }}</p>
       </div>
       <div id="mauticform_wrapper_webnerdearla" class="mauticform_wrapper">
          <form autocomplete="false"
                role="form"
                method="post"
-               action="https://mk4.sysarmy.com/form/submit?formId=2"
+               action="https://mk4.sysarmy.com/form/submit?formId=5"
                id="mauticform_webnerdearla"
                data-mautic-form="webnerdearla"
                enctype="multipart/form-data">
@@ -26,12 +26,12 @@
                        class="mauticform-row mauticform-email mauticform-field-3 mauticform-required">
                      <label id="mauticform_label_webnerdearla_email"
                             for="mauticform_input_webnerdearla_email"
-                            class="mauticform-label">Email</label>
+                            class="mauticform-label">{{ _("Tu e-mail") }}</label>
                      <input id="mauticform_input_webnerdearla_email"
                             name="mauticform[email]"
                             value=""
                             class="mauticform-input"
-                            placeholder="example@mail.com"
+                            placeholder='{{ _("tunombre@gmail.com") }}'
                             type="email">
                      <span class="mauticform-errormsg" style="display: none;">Por favor ingresá un email válido</span>
                   </div>
@@ -41,7 +41,7 @@
                              name="mauticform[submit]"
                              id="mauticform_input_webnerdearla_submit"
                              value=""
-                             class="mauticform-button btn btn-default">Suscribirme</button>
+                             class="mauticform-button btn btn-default">{{ _("Suscribirme") }}</button>
                   </div>
                </div>
             </div>

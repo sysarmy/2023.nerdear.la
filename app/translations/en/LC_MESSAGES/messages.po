@@ -203,20 +203,45 @@ msgid " Subscribite a nuestro newsletter "
 msgstr " Subscribe to our newsletter "
 
 #: app/templates/components/contact.html:8
-msgid "Enterate de todas las novedades del evento, speakers, registro y mucho más."
-msgstr "Get all the updates about the event, speakers, registration, and much more."
+msgid "¡Enterate de todas las novedades del evento!"
+msgstr "Get all the updates about the event!"
+
+#: app/templates/components/contact.html:29
+msgid "Tu e-mail"
+msgstr "Your email address"
+
+#: app/templates/components/contact.html:34
+#: app/templates/components/register.html:21
+msgid "tunombre@gmail.com"
+msgstr "yourname@gmail.com"
+
+#: app/templates/components/contact.html:44
+msgid "Suscribirme"
+msgstr "Subscribe"
+
+#: app/templates/components/countdown.html:10
+msgid "26 al 30"
+msgstr "September"
 
 #: app/templates/components/countdown.html:12
 msgid "Septiembre"
-msgstr "September"
+msgstr "26 - 30"
 
 #: app/templates/components/countdown.html:14
 msgid "Todo el contenido en streaming"
 msgstr "All the content via live streaming"
 
+#: app/templates/components/countdown.html:18
+msgid "26 y 27"
+msgstr "26 & 27"
+
 #: app/templates/components/countdown.html:19
 msgid "Charlas virtuales"
 msgstr "Virtual talks"
+
+#: app/templates/components/countdown.html:22
+msgid "28 al 30"
+msgstr "28 - 30"
 
 #: app/templates/components/countdown.html:23
 #: app/templates/components/location.html:4
@@ -224,7 +249,7 @@ msgid "Evento presencial"
 msgstr "In-person event"
 
 #: app/templates/components/countdown.html:30
-msgid "Cuanto Falta para Nerdearla 2023?"
+msgid "Cuánto Falta para Nerdearla 2023?"
 msgstr "How long until Nerdearla 2023?"
 
 #: app/templates/components/countdown.html:34
@@ -306,11 +331,12 @@ msgstr "Recap of last year"
 
 #: app/templates/components/register.html:6
 msgid "Registrate a Nerdearla 2023"
-msgstr "Register to Nerdearla 2023"
+msgstr "Register for Nerdearla 2023"
 
 #: app/templates/components/register.html:7
 msgid "El evento gratuito de ciencia y tecnología más grande de Latinoamérica."
 msgstr "The largest free science and technology event in Latin America."
+
 
 #: app/templates/components/register.html:23
 msgid "Por favor ingresá un email válido"
