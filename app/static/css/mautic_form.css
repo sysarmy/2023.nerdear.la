@@ -25,25 +25,28 @@ input::placeholder {
 
 .mauticform-errormsg {
 	position: absolute;
-	bottom: -.8rem;
+	bottom: -1.8rem;
 }
 .mauticform-message {
 	color: --var(--nerd-green);
 }
 .mauticform-row.mauticform-email {
+	flex: 1 1 60%;
+	margin-bottom: 2.2rem;
 	position: relative;
+	text-align: left;
 }
-
-.mauticform-button {
-	font-size: 1rem !important;
-	padding: 8px 12px !important;
+.mauticform-row.mauticform-button-wrapper {
+	flex: 1 1 40%;
 }
 
 #contact .mauticform-button-wrapper .mauticform-button.btn-default, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default {
 	background-color: var(--nerd-green);
 	border: 2px solid var(--nerd-green);
-	border-radius: 0!important;
+	border-radius: 0;
 	color: var(--nerd-black);
+	font-size: 1rem;
+	padding: 8px 12px;
 	width: 100%;
 }
 #contact .mauticform-button-wrapper .mauticform-button.btn-default:hover, .mauticform-pagebreak-wrapper .mauticform-pagebreak.btn-default:hover {
@@ -55,5 +58,18 @@ input::placeholder {
 .mauticform-selectbox, .mauticform-input, .mauticform-textarea {
 	border-radius: 0;
 	border: 1px solid white;
-	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+	.mauticform-page-wrapper {
+		align-items: flex-end;
+		display: flex;
+		justify-content: center;
+	}
+	.mauticform-row.mauticform-email {
+		flex: 1 1 60%;
+		margin-bottom: 20px;
+		position: relative;
+		text-align: left;
+	}
 }

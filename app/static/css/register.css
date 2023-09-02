@@ -8,8 +8,6 @@
 	width: 100%;
 }
 .register-wrapper form {
-	align-items: flex-end;
-	display: flex;
 	font-size: 1.2rem;
 }
 .register-label {
@@ -27,11 +25,13 @@
 	display: flex;
 	flex-direction: column;
 	flex: 1 1 60%;
+	margin-bottom: 1.6rem;
 	position: relative;
 }
 
 .register-input {
 	border: 1px solid white;
+	border-radius: 0;
     flex: 1 0 60%;
 	letter-spacing: 0.05em;
 	padding: .5rem;
@@ -66,7 +66,21 @@ input.register-input:placeholder-shown + .register-errormsg {
 	border-color: var(--nerd-red);
 	transition: all .2s;
 }
+@media screen and (max-width: 576px) {
+	.bg-nerd-yellow {
+		padding: 1rem 2rem!important;
+	}
+}
 
+@media screen and (min-width: 576px) {
+	.register-wrapper form {
+		align-items: flex-end;
+		display: flex;
+	}
+	.register-email {
+		margin-bottom: 0;
+	}
+}
 
 @media (min-width: 992px) {
 	.register-wrapper {

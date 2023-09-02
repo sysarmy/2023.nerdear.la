@@ -119,7 +119,7 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 
 .bg-pattern {
 	background-image: url(../img/svg/tramas/pattern.svg);
-	background-size: 100%;
+	background-size: cover;
 	background-position: top center;
 	background-repeat: repeat-x;
 }
@@ -142,4 +142,10 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 	background-position: bottom center;
 	background-repeat: repeat-x;
 	padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 576px) {
+	.bg-pattern-2 {
+		background-size: 100%;		
+	}
 }

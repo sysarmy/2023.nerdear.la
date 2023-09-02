@@ -21,8 +21,10 @@
 	font-size: 1.5rem;
 	font-weight: bold;
 	letter-spacing: .03em;
+	line-height: 1.2;
 	margin: .5rem auto;
-	padding: .2rem 1.8rem;
+	padding: .4rem 1.8rem;
+	text-align: center;
 	text-decoration: none;
 	transition: all 0.3s ease;
 	z-index: 0;

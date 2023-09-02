@@ -7,6 +7,7 @@
 	background-size: cover;
 	background-position: top center;
 	background-repeat: repeat-x;
+	border-bottom: 1px solid;
 	mix-blend-mode: multiply;
 	position: absolute;
 	top: 0;
@@ -40,6 +41,7 @@
 }
 .highlight-yellow {
 	background: url('data:image/svg+xml,<svg width="941" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M940 36V1H1v35" stroke="%23FFBA00" stroke-width="2"/></svg>') no-repeat center 10rem;
+	background-size: 80%;
 	padding-bottom: 2rem;
 }
 

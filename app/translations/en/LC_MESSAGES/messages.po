@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: krappramiro@disroot.org\n"
-"POT-Creation-Date: 2023-08-30 17:35-0300\n"
+"POT-Creation-Date: 2023-09-02 19:37-0300\n"
 "PO-Revision-Date: 2023-08-14 01:22-0300\n"
 "Last-Translator: Krapp Ramiro <krappramiro@disroot.org>\n"
 "Language: en\n"
@@ -59,6 +59,7 @@ msgid "Nerdearla 10ma edición - 26 al 30 de septiembre"
 msgstr "Nerdearla 10th edition - September 26 to 30"
 
 #: app/templates/code_of_conduct.html:16
+#: app/templates/components/footer.html:34
 msgid "Código de Conducta"
 msgstr "Code of Conduct"
 
@@ -186,6 +187,10 @@ msgstr "free tickets. That would not be possible without our sponsors and suppor
 msgid "Convertite en sponsor hoy!"
 msgstr "Become a sponsor today!"
 
+#: app/templates/components/about.html:8
+msgid "gratis"
+msgstr "free"
+
 #: app/templates/components/about.html:11
 msgid "Sobre Nerdearla"
 msgstr "About Nerdearla"
@@ -198,26 +203,17 @@ msgstr "Nerdearla is a social experience, both in-person and online, with cowork
 msgid "Desde 2014 nos dedicamos a organizar una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
 msgstr "Since 2014, we have been dedicated to organizing a world-class conference, completely free, with cutting-edge content in science and technology."
 
-#: app/templates/components/contact.html:7
+#: app/templates/components/contact.html:6
+msgid "¡Muchas gracias por suscribirte!"
+msgstr "Thank you for subscribing!"
+
+#: app/templates/components/contact.html:8
 msgid " Subscribite a nuestro newsletter "
 msgstr " Subscribe to our newsletter "
 
-#: app/templates/components/contact.html:8
+#: app/templates/components/contact.html:9
 msgid "¡Enterate de todas las novedades del evento!"
 msgstr "Get all the updates about the event!"
-
-#: app/templates/components/contact.html:29
-msgid "Tu e-mail"
-msgstr "Your email address"
-
-#: app/templates/components/contact.html:34
-#: app/templates/components/register.html:21
-msgid "tunombre@gmail.com"
-msgstr "yourname@gmail.com"
-
-#: app/templates/components/contact.html:44
-msgid "Suscribirme"
-msgstr "Subscribe"
 
 #: app/templates/components/countdown.html:10
 msgid "26 al 30"
@@ -281,10 +277,6 @@ msgstr "Frequently asked questions about"
 msgid "Nerdearla"
 msgstr "Nerdearla"
 
-#: app/templates/components/footer.html:32
-msgid "Codigo de Conducta"
-msgstr "Code of Conduct"
-
 #: app/templates/components/hero.html:11
 msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr "Your device does not support background video :("
@@ -337,6 +329,9 @@ msgstr "Register for Nerdearla 2023"
 msgid "El evento gratuito de ciencia y tecnología más grande de Latinoamérica."
 msgstr "The largest free science and technology event in Latin America."
 
+#: app/templates/components/register.html:21
+msgid "tunombre@gmail.com"
+msgstr "yourname@gmail.com"
 
 #: app/templates/components/register.html:23
 msgid "Por favor ingresá un email válido"
@@ -393,4 +388,10 @@ msgstr "free, from day 0."
 
 #~ msgid "Nerdearla en números"
 #~ msgstr "Nerdearla in numbers"
+
+#~ msgid "Tu e-mail"
+#~ msgstr "Your email address"
+
+#~ msgid "Suscribirme"
+#~ msgstr "Subscribe"
 

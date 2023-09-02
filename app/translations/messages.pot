@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-30 17:35-0300\n"
+"POT-Creation-Date: 2023-09-02 19:37-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,6 +58,7 @@ msgid "Nerdearla 10ma edición - 26 al 30 de septiembre"
 msgstr ""
 
 #: app/templates/code_of_conduct.html:16
+#: app/templates/components/footer.html:34
 msgid "Código de Conducta"
 msgstr ""
 
@@ -185,6 +186,10 @@ msgstr ""
 msgid "Convertite en sponsor hoy!"
 msgstr ""
 
+#: app/templates/components/about.html:8
+msgid "gratis"
+msgstr ""
+
 #: app/templates/components/about.html:11
 msgid "Sobre Nerdearla"
 msgstr ""
@@ -197,12 +202,20 @@ msgstr ""
 msgid "Desde 2014 nos dedicamos a organizar una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
 msgstr ""
 
-#: app/templates/components/contact.html:7
-msgid " Subscribite a nuestro newsletter "
+#: app/templates/components/contact.html:6
+msgid "¡Muchas gracias por suscribirte!"
 msgstr ""
 
 #: app/templates/components/contact.html:8
-msgid "Enterate de todas las novedades del evento, speakers, registro y mucho más."
+msgid " Subscribite a nuestro newsletter "
+msgstr ""
+
+#: app/templates/components/contact.html:9
+msgid "¡Enterate de todas las novedades del evento!"
+msgstr ""
+
+#: app/templates/components/countdown.html:10
+msgid "26 al 30"
 msgstr ""
 
 #: app/templates/components/countdown.html:12
@@ -213,8 +226,16 @@ msgstr ""
 msgid "Todo el contenido en streaming"
 msgstr ""
 
+#: app/templates/components/countdown.html:18
+msgid "26 y 27"
+msgstr ""
+
 #: app/templates/components/countdown.html:19
 msgid "Charlas virtuales"
+msgstr ""
+
+#: app/templates/components/countdown.html:22
+msgid "28 al 30"
 msgstr ""
 
 #: app/templates/components/countdown.html:23
@@ -223,7 +244,7 @@ msgid "Evento presencial"
 msgstr ""
 
 #: app/templates/components/countdown.html:30
-msgid "Cuanto Falta para Nerdearla 2023?"
+msgid "Cuánto Falta para Nerdearla 2023?"
 msgstr ""
 
 #: app/templates/components/countdown.html:34
@@ -253,10 +274,6 @@ msgstr ""
 
 #: app/templates/components/faq.html:30
 msgid "Nerdearla"
-msgstr ""
-
-#: app/templates/components/footer.html:32
-msgid "Codigo de Conducta"
 msgstr ""
 
 #: app/templates/components/hero.html:11
@@ -309,6 +326,10 @@ msgstr ""
 
 #: app/templates/components/register.html:7
 msgid "El evento gratuito de ciencia y tecnología más grande de Latinoamérica."
+msgstr ""
+
+#: app/templates/components/register.html:21
+msgid "tunombre@gmail.com"
 msgstr ""
 
 #: app/templates/components/register.html:23
