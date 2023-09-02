@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-09-02 19:37-0300\n"
+"POT-Creation-Date: 2023-09-02 19:55-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,19 +186,19 @@ msgstr ""
 msgid "Convertite en sponsor hoy!"
 msgstr ""
 
-#: app/templates/components/about.html:8
+#: app/templates/components/about.html:11
 msgid "gratis"
 msgstr ""
 
-#: app/templates/components/about.html:11
+#: app/templates/components/about.html:14
 msgid "Sobre Nerdearla"
 msgstr ""
 
-#: app/templates/components/about.html:22
+#: app/templates/components/about.html:25
 msgid "Nerdearla es una experiencia social, tanto en el formato en persona como online, con espacio de coworking y chats en vivo, charlas, talleres y muchas oportunidades para aprender de líderes de la industria."
 msgstr ""
 
-#: app/templates/components/about.html:26
+#: app/templates/components/about.html:29
 msgid "Desde 2014 nos dedicamos a organizar una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
 msgstr ""
 
@@ -212,6 +212,14 @@ msgstr ""
 
 #: app/templates/components/contact.html:9
 msgid "¡Enterate de todas las novedades del evento!"
+msgstr ""
+
+#: app/templates/components/contact.html:64
+msgid "¿Sos una persona?"
+msgstr ""
+
+#: app/templates/components/contact.html:79
+msgid "Suscribirme"
 msgstr ""
 
 #: app/templates/components/countdown.html:10
@@ -239,7 +247,7 @@ msgid "28 al 30"
 msgstr ""
 
 #: app/templates/components/countdown.html:23
-#: app/templates/components/location.html:4
+#: app/templates/components/location.html:9
 msgid "Evento presencial"
 msgstr ""
 
@@ -292,15 +300,15 @@ msgstr ""
 msgid "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 msgstr ""
 
-#: app/templates/components/location.html:9
+#: app/templates/components/location.html:14
 msgid "Ciudad Cultural Konex"
 msgstr ""
 
-#: app/templates/components/location.html:9
+#: app/templates/components/location.html:14
 msgid "con streaming en vivo para todo el mundo."
 msgstr ""
 
-#: app/templates/components/location.html:11
+#: app/templates/components/location.html:16
 msgid "Sarmiento 3131, entre Anchorena y Jean Jaures, a unas cuadras de la estación Carlos Gardel (Abasto) del Subte B y estación Once de tren y línea A."
 msgstr ""
 
@@ -337,7 +345,7 @@ msgid "Por favor ingresá un email válido"
 msgstr ""
 
 #: app/templates/components/register.html:29
-msgid "Registrarme"
+msgid "Registrate gratis"
 msgstr ""
 
 #: app/templates/components/statistics.html:13

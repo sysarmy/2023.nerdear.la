@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: krappramiro@disroot.org\n"
-"POT-Creation-Date: 2023-09-02 19:37-0300\n"
+"POT-Creation-Date: 2023-09-02 19:55-0300\n"
 "PO-Revision-Date: 2023-08-14 01:22-0300\n"
 "Last-Translator: Krapp Ramiro <krappramiro@disroot.org>\n"
 "Language: en\n"
@@ -187,19 +187,19 @@ msgstr "free tickets. That would not be possible without our sponsors and suppor
 msgid "Convertite en sponsor hoy!"
 msgstr "Become a sponsor today!"
 
-#: app/templates/components/about.html:8
+#: app/templates/components/about.html:11
 msgid "gratis"
 msgstr "free"
 
-#: app/templates/components/about.html:11
+#: app/templates/components/about.html:14
 msgid "Sobre Nerdearla"
 msgstr "About Nerdearla"
 
-#: app/templates/components/about.html:22
+#: app/templates/components/about.html:25
 msgid "Nerdearla es una experiencia social, tanto en el formato en persona como online, con espacio de coworking y chats en vivo, charlas, talleres y muchas oportunidades para aprender de líderes de la industria."
 msgstr "Nerdearla is a social experience, both in-person and online, with coworking space and live chats, talks, workshops, and many opportunities to learn from industry leaders."
 
-#: app/templates/components/about.html:26
+#: app/templates/components/about.html:29
 msgid "Desde 2014 nos dedicamos a organizar una conferencia de clase mundial, completamente gratuita, con contenido de vanguardia en ciencia y tecnología."
 msgstr "Since 2014, we have been dedicated to organizing a world-class conference, completely free, with cutting-edge content in science and technology."
 
@@ -214,6 +214,14 @@ msgstr " Subscribe to our newsletter "
 #: app/templates/components/contact.html:9
 msgid "¡Enterate de todas las novedades del evento!"
 msgstr "Get all the updates about the event!"
+
+#: app/templates/components/contact.html:64
+msgid "¿Sos una persona?"
+msgstr "¿Are you a human being?"
+
+#: app/templates/components/contact.html:79
+msgid "Suscribirme"
+msgstr "Subscribe"
 
 #: app/templates/components/countdown.html:10
 msgid "26 al 30"
@@ -240,7 +248,7 @@ msgid "28 al 30"
 msgstr "28 - 30"
 
 #: app/templates/components/countdown.html:23
-#: app/templates/components/location.html:4
+#: app/templates/components/location.html:9
 msgid "Evento presencial"
 msgstr "In-person event"
 
@@ -293,15 +301,15 @@ msgstr "3 times larger than any other conference in Buenos Aires"
 msgid "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 msgstr "Access cutting-edge Product Management industry trends and networking opportunities at ProductCon London, organized by Product School. Get the European perspective on Product during a time when the field is spreading throughout the continent"
 
-#: app/templates/components/location.html:9
+#: app/templates/components/location.html:14
 msgid "Ciudad Cultural Konex"
 msgstr "Ciudad Cultural Konex"
 
-#: app/templates/components/location.html:9
+#: app/templates/components/location.html:14
 msgid "con streaming en vivo para todo el mundo."
 msgstr "with live streaming for the whole world."
 
-#: app/templates/components/location.html:11
+#: app/templates/components/location.html:16
 msgid "Sarmiento 3131, entre Anchorena y Jean Jaures, a unas cuadras de la estación Carlos Gardel (Abasto) del Subte B y estación Once de tren y línea A."
 msgstr "Sarmiento 3131, between Anchorena and Jean Jaures, a few blocks from Carlos Gardel subway station (Abasto) and Once train station (line A)."
 
@@ -338,8 +346,8 @@ msgid "Por favor ingresá un email válido"
 msgstr "Please enter a valid email address"
 
 #: app/templates/components/register.html:29
-msgid "Registrarme"
-msgstr "Register"
+msgid "Registrate gratis"
+msgstr "Register for free!"
 
 #: app/templates/components/statistics.html:13
 msgid "Así fue nuestro evento de 2022"
@@ -394,4 +402,7 @@ msgstr "free, from day 0."
 
 #~ msgid "Suscribirme"
 #~ msgstr "Subscribe"
+
+#~ msgid "Registrarme"
+#~ msgstr "Register"
 
