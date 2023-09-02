@@ -2,25 +2,25 @@
 	color: #fe812a;
 	font-size: 2rem;
 	line-height: 1;
-	padding: .5rem;
+	padding: 0.5rem;
 	text-align: center;
 }
 
 .css-tabs .state {
-    position: absolute;
-    left: -10000px;
+	position: absolute;
+	left: -10000px;
 }
 
 .css-tabs .flex-tabs {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 	font-family: "Rift Soft";
-    font-weight: bold;
-    justify-content: space-between;
+	font-weight: bold;
+	justify-content: space-between;
 }
 .css-tabs .tab {
-    cursor: pointer;
-    font-size: 3rem;
+	cursor: pointer;
+	font-size: 3rem;
 	line-height: 1;
 }
 .css-tabs .flex-tabs .panel {
@@ -32,29 +32,35 @@
 	opacity: 0;
 	padding-top: 3rem;
 	transform: translateX(10000px);
-	transition: opacity .2s, transform .2s, display .2s;    
+	transition: opacity 0.2s, transform 0.2s, display 0.2s;
 	width: 100%;
 }
 
-#tab-one:checked ~ .tabs #tab-one-label, #tab-two:checked ~ .tabs #tab-two-label, #tab-three:checked ~ .tabs #tab-three-label, #tab-four:checked ~ .tabs #tab-four-label {
+#tab-one:checked ~ .tabs #tab-one-label,
+#tab-two:checked ~ .tabs #tab-two-label,
+#tab-three:checked ~ .tabs #tab-three-label,
+#tab-four:checked ~ .tabs #tab-four-label {
 	color: white;
 }
 
-#tab-one:checked ~ .tabs #tab-one-panel, #tab-two:checked ~ .tabs #tab-two-panel, #tab-three:checked ~ .tabs #tab-three-panel, #tab-four:checked ~ .tabs #tab-four-panel {
+#tab-one:checked ~ .tabs #tab-one-panel,
+#tab-two:checked ~ .tabs #tab-two-panel,
+#tab-three:checked ~ .tabs #tab-three-panel,
+#tab-four:checked ~ .tabs #tab-four-panel {
 	display: block;
 	opacity: 1;
 	transform: translateX(0);
 }
 .sticker {
 	display: none;
-	opacity: .8;
+	opacity: 0.8;
 	position: absolute;
 	mix-blend-mode: multiply;
 	width: 100px;
 }
 .sticker1 {
 	left: 0;
-	top: 2%
+	top: 2%;
 }
 .sticker2 {
 	bottom: 3%;
@@ -63,7 +69,11 @@
 }
 
 @media screen and (min-width: 576px) {
-	#tab-one:checked ~ .tabs #tab-one-panel.flex-cols, #tab-two:checked ~ .tabs #tab-two-panel.flex-cols, #tab-three:checked ~ .tabs #tab-three-panel.flex-cols, #tab-four:checked ~ .tabs #tab-four-panel.flex-cols, #tab-five:checked ~ .tabs #tab-five-panel.flex-cols {
+	#tab-one:checked ~ .tabs #tab-one-panel.flex-cols,
+	#tab-two:checked ~ .tabs #tab-two-panel.flex-cols,
+	#tab-three:checked ~ .tabs #tab-three-panel.flex-cols,
+	#tab-four:checked ~ .tabs #tab-four-panel.flex-cols,
+	#tab-five:checked ~ .tabs #tab-five-panel.flex-cols {
 		display: flex;
 	}
 	.css-tabs .tab {

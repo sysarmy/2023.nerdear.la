@@ -20,10 +20,10 @@
 	font-family: "Rift Soft";
 	font-size: 1.5rem;
 	font-weight: bold;
-	letter-spacing: .03em;
+	letter-spacing: 0.03em;
 	line-height: 1.2;
-	margin: .5rem auto;
-	padding: .4rem 1.8rem;
+	margin: 0.5rem auto;
+	padding: 0.4rem 1.8rem;
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.3s ease;

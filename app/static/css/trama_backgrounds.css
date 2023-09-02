@@ -146,6 +146,6 @@ You should ALWAYS use the .bg-trama class because it configures the position of 
 
 @media screen and (max-width: 576px) {
 	.bg-pattern-2 {
-		background-size: 100%;		
+		background-size: 100%;
 	}
 }

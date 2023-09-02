@@ -3,20 +3,19 @@ like the colors and fonts */
 :root {
 	/* Definition of Nerdearla colors */
 	/* PS: I named the colors myself, maybe their names are not exactly right */
-	--nerd-red: #FF323C;
-	--nerd-green: #00ACA8;
-	--nerd-yellow: #FFBA00;
+	--nerd-red: #ff323c;
+	--nerd-green: #00aca8;
+	--nerd-yellow: #ffba00;
 	--nerd-black: #000000;
 	/* nerdearla secondary palette */
-	--nerd-orange: #FF2D00;
+	--nerd-orange: #ff2d00;
 	--nerd-mustard: #ff8d00;
 	--nerd-persian-green: #00a7a3;
-	--nerd-light-blue: #00B6FF;
-	--nerd-blue: #236EE2;
+	--nerd-light-blue: #00b6ff;
+	--nerd-blue: #236ee2;
 	--nerd-purple: #7a00db;
-	--nerd-dark-blue: #34495E;
-	--nerd-gray: #849F9D;
-	--nerd-lightgrey: #D8E3E6;
-	--nerd-lightgreen: #00B253;
+	--nerd-dark-blue: #34495e;
+	--nerd-gray: #849f9d;
+	--nerd-lightgrey: #d8e3e6;
+	--nerd-lightgreen: #00b253;
 }
-

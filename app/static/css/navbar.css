@@ -8,13 +8,13 @@
 	height: 60px;
 	z-index: 2;
 }
-.nav-link{
+.nav-link {
 	color: white;
 }
 .lang-nav {
 	color: white;
 	margin: 1rem auto;
-    text-align: center;
+	text-align: center;
 }
 .lang-nav .lang-item {
 	color: white;

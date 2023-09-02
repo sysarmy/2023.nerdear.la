@@ -32,9 +32,9 @@
 .register-input {
 	border: 1px solid white;
 	border-radius: 0;
-    flex: 1 0 60%;
+	flex: 1 0 60%;
 	letter-spacing: 0.05em;
-	padding: .5rem;
+	padding: 0.5rem;
 }
 input.register-input::placeholder {
 	font-style: italic;
@@ -51,24 +51,24 @@ input.register-input:placeholder-shown + .register-errormsg {
 .btn-register {
 	background-color: var(--nerd-green);
 	border: 2px solid var(--nerd-green);
-	border-radius: 0!important;
+	border-radius: 0 !important;
 	color: var(--nerd-black);
-    flex: 1 0 40%;
+	flex: 1 0 40%;
 	font-family: "Rift Soft";
 	font-size: 1.2rem;
 	font-weight: bold;
-	letter-spacing: .05em;
-	padding: .5rem;
+	letter-spacing: 0.05em;
+	padding: 0.5rem;
 	width: 100%;
 }
 .btn-register:hover {
 	background-color: var(--nerd-red);
 	border-color: var(--nerd-red);
-	transition: all .2s;
+	transition: all 0.2s;
 }
 @media screen and (max-width: 576px) {
 	.bg-nerd-yellow {
-		padding: 1rem 2rem!important;
+		padding: 1rem 2rem !important;
 	}
 }
 
