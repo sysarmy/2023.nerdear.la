@@ -17,37 +17,44 @@
 	{
 		"title": "Track DATA",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjEwNw==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "data"
 	},
 	{
 		"title": "Track DEV",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjEwOA==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "dev"
 	},
 	{
 		"title": "Track INFRA",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjEwOQ==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "infra"
 	},
 	{
 		"title": "Track NERD",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjExMQ==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "nerd"
 	},
 	{
 		"title": "Track SEC",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjExMg==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "sec"
 	},
 	{
 		"title": "Track TEST",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjExMw==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "test"
 	},
 	{
 		"title": "Track UX",
 		"iframe_url": "https://app.swapcard.com/widget/event/nerdearla-2023/plannings/RXZlbnRWaWV3XzYwMjExMA==",
-		"ignore": false
+		"ignore": false,
+		"cssName": "ux"
 	},
 	{
 		"title": "Workshops",

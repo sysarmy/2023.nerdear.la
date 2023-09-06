@@ -68,7 +68,6 @@ def index(lang_code):
     )
 
 
-
 @app.route("/<lang_code>/donation/")
 def donation(lang_code):
     """
@@ -78,7 +77,6 @@ def donation(lang_code):
         flask.Response: The rendered donation HTML template.
     """
     return render_template("donation.html", title="Donation", lang_code=lang_code)
-
 
 
 @app.route("/<lang_code>/sponsors/")
@@ -132,6 +130,7 @@ def sponsors(lang_code):
         lang_code=lang_code,
     )
 
+
 @app.route("/<lang_code>/code_of_conduct/")
 def code_of_conduct(lang_code):
     """
@@ -145,13 +144,13 @@ def code_of_conduct(lang_code):
 
 @app.route("/<lang_code>/agenda/")
 def agenda(lang_code):
- agenda = Datasets.read_json_file(AGENDA_FILE)
- return render_template(
-     "agenda.html",
-     title="Agenda",
-     agenda=agenda,
-     lang_code=lang_code,
- )
+    agenda = Datasets.read_json_file(AGENDA_FILE)
+    return render_template(
+        "agenda.html",
+        title="Agenda",
+        agenda=agenda,
+        lang_code=lang_code,
+    )
 
 
 # TODO: Add 404 page

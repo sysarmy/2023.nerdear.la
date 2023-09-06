@@ -5,6 +5,8 @@ the event, using embeds from swapcard #}
 {% block content %}
    <link rel="stylesheet"
          href="{{ url_for('static', filename='css/dark_custom_button.css') }}">
+   <link rel="stylesheet"
+         href="{{ url_for('static', filename='css/agenda-accordion-colors.css') }}">
    <section id="agenda">
       <div class="container-fluid bg-trama bg-trama-fit bg-trama-purple-1"
            id="sponsors-thanks">
@@ -40,9 +42,9 @@ the event, using embeds from swapcard #}
          <div class="accordion">
             {% for item in agenda %}
                {% if not item.ignore %}
-                  <div class="accordion-item">
-                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed"
+                  <div class="accordion-item ">
+                     <h2 class="accordion-header ">
+                        <button class="accordion-button agenda-bg-{{ item.cssName }} collapsed"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#panel-{{ item.title|whitespace_to_dash }}"
