@@ -1,0 +1,69 @@
+{# Esta página contiene información sobre UADE Deep Racer Grand Prix #}
+{% extends "base.html" %}
+{% block content %}
+   <style>
+	h3 {
+		font-family: "Rift Soft";
+		font-size: 2rem;
+	}
+	h1{
+		font-size: 4rem;
+	}
+   </style>
+   <section id="uade-deep-racer" class="y-spaced-section">
+      <div class="container">
+         <div class="d-flex align-items-center justify-content-center text-center">
+            <h1>{{ _("UADE Deep Racer Grand Prix") }}</h1>
+         </div>
+         <h3>{{ _("¡Aprendé, entrená y competí con tu modelo de machine learning!") }}</h3>
+         <p>
+            {{ _("AWS DeepRacer le ofrece una forma interesante y divertida de comenzar a utilizar el aprendizaje por refuerzo (RL). El RL es una técnica avanzada de aprendizaje automático (ML) que adopta un enfoque muy diferente respecto de otros modelos de ML. Su principal cualidad consiste en aprender comportamientos muy complejos sin necesidad de utilizar datos de entrenamiento etiquetados y en tomar decisiones a corto plazo, al mismo tiempo que optimiza el sistema para cumplir objetivos a largo plazo.") }}
+            <br />
+            {{ _("La Universidad Argentina de la Empresa (UADE) organiza una competencia de AWS DeepRacer en el marco de Nerdearla, los días 28, 29 y 30 de septiembre de 2023. ") }}
+            <br />
+            {{ _("La competencia está abierta a equipos de 3 personas, que quieran demostrar sus habilidades en el desarrollo de modelos de aprendizaje automático para autos de carrera autónomos. ") }}
+            <br />
+            {{ _("Para participar, los equipos deben registrarse en:") }} <a href="https://forms.office.com/r/mMTXXfi3TE">este formulario</a> {{ _("y aceptar los términos y condiciones de la competencia. Finalizada la inscripción, se enviará por mail los materiales y links para participar. ") }}
+         </p>
+         <h3>{{ _("APRENDÉ") }}</h3>
+         <p>
+            {{ _("UADE ofrecerá un workshop virtual no-arancelado, de preparación para la competencia, con una duración de 4hs, a realizarse en modalidad virtual.") }}
+            <br />
+            {{ _("El mismo se realizará los días 12, 13 y 15/9 a las 16hs y comprenderá los siguientes temas: ") }}
+          <ul>
+            <li>
+               {{ _("Introducción al aprendizaje por refuerzos") }}
+            </li>
+            <li>
+               {{ _("DeepRacer: Introducción a los autos y modos de funcionamiento") }}
+            </li>
+            <li>
+               {{ _("DeepRacer: Función de recompensa / Espacio de acción") }}
+            </li>
+         </ul>
+         </p>
+        <p>
+            {{ _("Finalmente, el día 19/9 a las 16hs, se realizará un simulacro de carrera.") }}
+        </p>
+        <p>
+            {{ _("Los participantes del workshop tendrán la oportunidad de armar sus propios modelos, entrenarlos para competir en una carrera virtual.") }}
+            <br />
+            {{ _("El workshop será impartido por Matias Kreder y Tomas Bind, graduado y estudiante de UADE respectivamente. Matías es finalista de la liga latinoamericana de Deep Racer.") }}
+        </p>
+        <h3>{{ _("ENTRENÁ") }}</h3>
+        <p>
+            {{ _("El registro estará abierto hasta el martes 26 de septiembre de 2023. Una vez registrados, los equipos tendrán tiempo para entrenar sus modelos y enviarlos por mail hasta el martes 26/9 a las 23.59 horas.") }}
+            <br />
+            {{ _("El entrenamiento del modelo se realiza en modalidad virtual accediendo a la página ")}} <a href="https://student.deepracer.com/home">Student Deep Racer</a>.  
+        </p>
+        <h3>{{ _("COMPETÍ") }}</h3>
+        <p>
+            {{ _("La competencia consta de dos rondas clasificatorias que se realizarán el jueves 28 y el viernes 29 de septiembre de 15 a 18hs. Los corredores deben participar presencialmente para manejar la intensidad de energía de sus autos.  ") }}
+            <br />
+            {{ _("En cada ronda, competirán 12 equipos. Luego, los 12 equipos con los mejores tiempos por avanzarán a la final, que se realizará el sábado 30 de septiembre en el mismo lugar. ") }}
+            <br />
+            {{ _("Tanto las clasificatorias como la final serán carreras de 3 minutos. El equipo que registre el menor tiempo por vuelta será el ganador la competencia.") }}
+         </p>
+      </div>
+   </section>
+{% endblock content %}
