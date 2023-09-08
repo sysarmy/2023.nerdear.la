@@ -58,6 +58,15 @@ def agenda():
             print(f"Generated URL: {generated_url}")
             yield generated_url
 
+@freezer.register_generator
+def uade():
+    for lang in ["en", "es"]:
+        with force_locale(lang):
+            generated_url = url_for("uade_deep_racer", lang_code=lang)
+            print(f"Generated URL: {generated_url}")
+            yield generated_url
+
+
 
 
 if __name__ == "__main__":
