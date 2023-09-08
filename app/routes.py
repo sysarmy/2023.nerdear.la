@@ -141,6 +141,15 @@ def code_of_conduct(lang_code):
     """
     return render_template("code_of_conduct.html", title="Code of Conduct", lang_code=lang_code)
 
+@app.route("/<lang_code>/uade_deep_racer/")
+def uade_deep_racer(lang_code):
+    """
+    Shows the uade deep racer page
+
+    Returns:
+        flask.Response: The rendered code of conduct HTML template.
+    """
+    return render_template("uade_deep_racer.html", title="UADE Deep Racer Grand Prix", lang_code=lang_code)
 
 @app.route("/<lang_code>/agenda/")
 def agenda(lang_code):
