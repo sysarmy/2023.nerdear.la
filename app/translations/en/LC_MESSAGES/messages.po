@@ -325,6 +325,16 @@ msgstr "Sponsors"
 msgid "Agenda"
 msgstr "Schedule"
 
+#: app/templates/components/navbar.html:41
+msgid "Stands virtuales"
+msgstr "Virtual booths"
+
+#: app/templates/components/navbar.html:43
+msgid "Búsquedas laborales"
+msgstr "Job offers"
+
+
+
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
 msgstr "Recap of last year"

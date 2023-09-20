@@ -2,6 +2,7 @@
 	--DATA: #ffba00;
 	--DEV: #ff323c;
 	--INFRA: #236ee2;
+	--KIDS: #f9a70c;
 	--NERD: #7a00e2;
 	--SEC: #030507;
 	--TEST: #00aca8;
@@ -23,6 +24,9 @@
 .accordion-button.agenda-bg-infra {
 	background-color: var(--INFRA);
 	color: white;
+}
+.accordion-button.agenda-bg-kids {
+	background-color: var(--KIDS);
 }
 .accordion-button.agenda-bg-nerd {
 	background-color: var(--NERD);
