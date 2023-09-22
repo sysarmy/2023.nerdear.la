@@ -2,58 +2,76 @@
 {% extends "base.html" %}
 {% block content %}
    <style>
-    h3 {
-      font-family: "Rift Soft";
-      font-size: 2rem;
-    }
     h1{
-      font-size: 4rem;
+      color: #fff;
+      font-size: 5rem;
+      margin: 0 auto 2rem;
+      padding-bottom: 4rem;
     }
-    p{
-      font-size: 0.9rem;
+    h3 {
+      color: #1a3067;
+      font-family: "Rift Soft";
+      font-size: 3rem;
+      margin: 2rem auto 1rem;
+      text-align: center;
+    }
+    p, ul li {
+      color: #333;
+      font-size: 1.2rem;
+    }
+    ul li {
+      color: #1a3067;
+    }
+    ul {
+      margin: 2rem auto;
+    }
+    .top {
+      background: #1a3067;
+      text-align: center;
+    }
+    .top img {
+      filter: invert(1) brightness(2);
+      max-width: 450px;
+      width: 100%;
+    }
+    .image-column {
+      margin: auto;
+      max-width: 1200px;
     }
     .image-column img {
-  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
-}
+      filter: contrast(1.2);
+      object-fit: cover;
+      object-position: bottom;
+      max-height: 600px;
+      width: 100%;
+    }
     .container {
-      display: flex;
-      flex-direction: column;
+      max-width: 920px;
     }
     .full-width {
       width: 100%;
       padding: 20px;
       box-sizing: border-box;
     }
-    .two-columns {
-      display: flex;
-      justify-content: space-between;
-    }
     .text-column, .image-column {
-      padding: 40px;
+      padding: 0 2rem;
       box-sizing: border-box;
-    }
-    .text-column {
-      flex: 2;
-    }
-    .image-column {
-      flex: 1;
     }
   </style>
 
 
-  <section id="uade-deep-racer" class="y-spaced-section">
-    <div class="container">
-
-      <div class="full-width">
-        <div style="text-align: center;">
-          <h1><img decoding="async"
+  <section id="uade-deep-racer">
+        <div class="top">
+          <img decoding="async"
                loading="lazy"
-               src="/static/img/sponsors/uade.png"
-           /></h1>
-        </div>
-        <div class="d-flex align-items-center justify-content-center text-center">
+               src="/static/img/sponsors/uade.png" alt="Fundación UADE"
+           />
           <h1>{{ ("Deep Racer Grand Prix") }}</h1>
         </div>
+                
+    <div class="container">
+
+        <div class="full-width">
            <h3>{{ _("¡Aprendé, entrená y competí con tu modelo de machine learning!") }}</h3>
             <p>
                {{ _("AWS DeepRacer te ofrece una forma interesante y divertida de comenzar a utilizar el aprendizaje por refuerzo (RL). El RL es una técnica avanzada de aprendizaje automático (ML) que adopta un enfoque muy diferente respecto de otros modelos de ML. Su principal cualidad consiste en aprender comportamientos muy complejos sin necesidad de utilizar datos de entrenamiento etiquetados y en tomar decisiones a corto plazo, al mismo tiempo que optimiza el sistema para cumplir objetivos a largo plazo.") }}
@@ -64,13 +82,25 @@
                <br />
                {{ _("Para participar, deben registrarse en") }} <a href="https://forms.office.com/r/mMTXXfi3TE">este formulario</a> {{ _("y aceptar los términos y condiciones de la competencia. Finalizada la inscripción, se enviará por mail los materiales y links.") }}
             </p>
-      </div>
+       </div>
+    </div>
 
-      <div class="two-columns">
+        <div class="image-column">
+          <div style="text-align: center;">
+              <img decoding="async"
+                  loading="lazy"
+                  src="/static/img/sponsors/uade_deep_racer_track.jpeg"
+              />
+          </div>
+         </div>
+
+      <div class="container">
         <div class="text-column">
+
           <h3>{{ _("APRENDÉ") }}</h3>
          <p>
             {{ _("UADE ofrecerá un workshop virtual no-arancelado con una duración de 2hs, en modalidad virtual el <strong>18 de septiembre a las 16hs</strong> y comprenderá los siguientes temas: ") }}
+         </p>
           <ul>
             <li>
                {{ _("Introducción al aprendizaje por refuerzos") }}
@@ -82,6 +112,7 @@
                {{ _("DeepRacer: Función de recompensa / Espacio de acción") }}
             </li>
          </ul>
+         <p>
          {{ _("Recordá que para participar del workshop y del torneo, deben registrarse en") }} <a href="https://forms.office.com/r/mMTXXfi3TE">este formulario</a> {{ _("y aceptar los términos y condiciones de la competencia. Finalizada la inscripción, se enviará por mail los materiales y links.") }}
          <br />
           {{ _("Durante el primer dia de Nerdearla, también se va a dictar el mismo taller, para confirmar el horario revisá ") }} <a href="https://nerdear.la/es/agenda/">la agenda del evento</a> {{ _("en la sección de workshops.") }}
@@ -108,14 +139,7 @@
             {{ _("Tanto las clasificatorias como la final serán carreras de 3 minutos. El equipo que registre el menor tiempo por vuelta será el ganador.") }}
          </p>
         </div>
-        <div class="image-column">
-         <div style="text-align: center;padding-top:140px">
-            <img decoding="async"
-                 loading="lazy"
-                 src="/static/img/sponsors/uade_deep_racer_track.jpeg"
-             />
-         </div>
-         </div>
+
       </div>
    </section>
 {% endblock content %}
