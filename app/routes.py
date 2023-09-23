@@ -141,6 +141,16 @@ def code_of_conduct(lang_code):
     """
     return render_template("code_of_conduct.html", title="Code of Conduct", lang_code=lang_code)
 
+@app.route("/<lang_code>/captioner/")
+def captioner(lang_code):
+    """
+    Shows the code of conduct page
+
+    Returns:
+        flask.Response: The rendered code of conduct HTML template.
+    """
+    return render_template("captioner.html", title="Live captioner", lang_code=lang_code)
+
 
 @app.route("/<lang_code>/transcription/")
 def transcription(lang_code):
