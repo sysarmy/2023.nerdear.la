@@ -70,7 +70,7 @@
 	padding: 0.6rem 2.5rem;
 }
 .timer-wrapper .custom_button:hover {
-	background-color: var(--nerd-green);
+	background-color: var(--nerd-red);
 }
 
 .timer-wrapper h2 {
