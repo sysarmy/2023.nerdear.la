@@ -288,7 +288,11 @@ msgstr ""
 msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr ""
 
-#: app/templates/components/hero.html:14
+#: app/templates/components/hero.html:20
+msgid "Estamos en vivo!"
+msgstr ""
+
+#: app/templates/components/hero.html:22
 msgid "26 al 30 de septiembre de 2023"
 msgstr ""
 
