@@ -12,11 +12,11 @@ msgstr ""
 "Last-Translator: Krapp Ramiro <krappramiro@disroot.org>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.12.1\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: app/templates/agenda.html:18
 msgid "Conocé la agenda del evento"
@@ -120,8 +120,9 @@ msgid "CONTACTA A LA ORGANIZACIÓN"
 msgstr "CONTACT THE ORGANIZATION"
 
 #: app/templates/code_of_conduct.html:52
+#, fuzzy
 msgid "Si observas y/o experimentas que estos principios no están siendo respetados, contacta con la organización. (durante el evento proporcionaremos un número de teléfono) que garantizará la atención necesaria."
-msgstr "If you observe and/or experience that these principles are not being respected, contact the organization. (During the event, we will provide a phone number) that will ensure the necessary attention."
+msgstr "If you observe and/or experience that these principles are not being respected, contact the organization on WhatsApp: +54 9 11 2342-0868 and we will provide the necessary attention."
 
 #: app/templates/code_of_conduct.html:55
 msgid "Ante comportamientos de acoso, discriminación o agresión, se espera que cesen de inmediato. Dependiendo del caso, se procederá a sancionar, expulsar y/o revisar la permanencia en futuros eventos de la comunidad."
@@ -329,16 +330,6 @@ msgstr "Sponsors"
 msgid "Agenda"
 msgstr "Schedule"
 
-#: app/templates/components/navbar.html:41
-msgid "Stands virtuales"
-msgstr "Virtual booths"
-
-#: app/templates/components/navbar.html:43
-msgid "Búsquedas laborales"
-msgstr "Job offers"
-
-
-
 #: app/templates/components/recap.html:4
 msgid "Recap del año pasado"
 msgstr "Recap of last year"
@@ -419,4 +410,10 @@ msgstr "free, from day 0."
 
 #~ msgid "Registrarme"
 #~ msgstr "Register"
+
+#~ msgid "Stands virtuales"
+#~ msgstr "Virtual booths"
+
+#~ msgid "Búsquedas laborales"
+#~ msgstr "Job offers"
 
