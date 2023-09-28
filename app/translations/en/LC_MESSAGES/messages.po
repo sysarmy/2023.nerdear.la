@@ -289,11 +289,11 @@ msgstr "Nerdearla"
 msgid "Tu dispositivo no soporta el video de fondo :("
 msgstr "Your device does not support background video :("
 
-#: app/templates/components/hero.html:20
-msgid "Estamos en vivo!"
+#: app/templates/components/hero.html:15
+msgid "¡Estamos en vivo!"
 msgstr "We are live!"
 
-#: app/templates/components/hero.html:22
+#: app/templates/components/hero.html:17
 msgid "26 al 30 de septiembre de 2023"
 msgstr "September 26 - 30, 2023"
 
