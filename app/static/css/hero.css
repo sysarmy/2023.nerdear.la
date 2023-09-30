@@ -115,6 +115,7 @@ video {
 	background: url("/static/img/logos/nerdearla-detailed-no-bg.svg") no-repeat top center;
 	background-size: contain;
 	z-index: 2;
+	margin-top:5rem;
 }
 
 .blurb {
@@ -130,6 +131,24 @@ video {
 	z-index: 2;
 }
 
+.custom_button_qr {
+	background-color: var(--nerd-green);
+	border: 0;
+	border-radius: 50px;
+	color: var(--nerd-black);
+	font-family: "Rift Soft";
+	font-size: 2.5rem;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	line-height: 1.2;
+	margin: 1.8rem auto 0.2rem;
+	padding: 0.4rem 1.8rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	z-index: 0;
+}
+
 .custom_button_vivo {
 	background-color: var(--nerd-red);
 	border: 0;
@@ -140,7 +159,7 @@ video {
 	font-weight: bold;
 	letter-spacing: 0.03em;
 	line-height: 1.2;
-	margin: 3rem auto 5rem;
+	margin: 1.8rem auto 0.2rem;
 	padding: 0.4rem 1.8rem;
 	text-align: center;
 	text-decoration: none;
