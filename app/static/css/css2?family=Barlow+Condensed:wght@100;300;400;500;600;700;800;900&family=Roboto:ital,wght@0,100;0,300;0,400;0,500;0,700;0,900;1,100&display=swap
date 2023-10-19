@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxxL3I-JCGChYJ8VI-L6OO_au7B43LT3w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B47rx_3E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTx3L3I-JCGChYJ8VI-L6OO_au7B2xY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B4-Lw_3E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B4873_3E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2_3E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1_3E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxwL3I-JCGChYJ8VI-L6OO_au7B45L0_3E.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOiCnqEu92Fr1Mu51QrIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgWxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtvAw.ttf) format('truetype');
+}

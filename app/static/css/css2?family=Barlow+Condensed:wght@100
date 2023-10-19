@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/barlowcondensed/v12/HTxxL3I-JCGChYJ8VI-L6OO_au7B43LT3w.ttf) format('truetype');
+}
