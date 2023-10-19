@@ -35,21 +35,26 @@
                   href="{{ url_for('index', lang_code=lang_code) }}">{{ _("Home") }}</a>
                <a class="nav-link nav-item"
                   href="{{ url_for('sponsors', lang_code=lang_code) }}">{{ _("Sponsors") }}</a>
-               <a class="nav-link nav-item"
-                  href="{{ url_for('agenda', lang_code=lang_code) }}">{{ _("Agenda") }}</a>
-                  <a class="nav-link nav-item"
-                  href="https://nerdear.live/sponsors">{{ _("Stands virtuales") }}</a>
-                  <a class="nav-link nav-item"
-                  href="https://nerdear.live/jobs">{{ _("Búsquedas laborales") }}</a>
-                  <a class="nav-link nav-item"
-                  href="https://nerdear.la/qr"><span style="color:#ffaf00">{{ _("Ingresá con QR") }}</span></a>
+               <a href="{{ url_for('code_of_conduct', lang_code=lang_code) }}"
+                  class="nav-item nav-link px-2 text-white">{{ _("Código de Conducta") }}</a>
+               <a href="https://2023.nerdear.la"
+                  class="nav-item nav-link px-2 text-white">{{ _("Edición anterior") }}</a>
+               {# <a class="nav-link nav-item"
+                  href="{{ url_for('agenda', lang_code=lang_code) }}">{{ _("Agenda") }}</a> #}
+               {#   <a class="nav-link nav-item"
+                  href="https://nerdear.live/sponsors">{{ _("Stands virtuales") }}</a> #}
+               {#   <a class="nav-link nav-item"
+                  href="https://nerdear.live/jobs">{{ _("Búsquedas laborales") }}</a> #}
+               {#   <a class="nav-link nav-item"
+                  href="https://nerdear.la/qr"><span style="color:#ffaf00">{{ _("Ingresá con QR") }}</span></a> #}
             </div>
             {# Lang menu #}
+             {#
             <div class="lang-nav ms-auto">
                <a class="lang-item lang-es"
                   href="{{ url_for('index', lang_code='es') }}">ES</a> |
                <a class="lang-item lang-en"
-                  href="{{ url_for('index', lang_code='en') }}">EN</a>
+                  href="{{ url_for('index', lang_code='en') }}">EN</a> #}
             </div>
             {# Social icons #}
             <div class="navbar-nav d-flex justify-content-center align-items-center flex-row gap-4 gap-sm-2 gap-lg-1">
@@ -74,8 +79,8 @@
             </div>
             <div class="navbar-nav d-flex justify-content-center align-items-center">
                {# Register button #}
-               <a href="https://registro.nerdear.la/?utm_source=navbar"
-                  class="custom_button">{{ _("¡Registrate gratis!") }}</a>
+               {# <a href="https://registro.nerdear.la/?utm_source=navbar"
+                  class="custom_button">{{ _("¡Registrate gratis!") }}</a> #}
             </div>
          </div>
       </div>

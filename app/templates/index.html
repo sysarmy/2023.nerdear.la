@@ -7,11 +7,16 @@ This is done for code manteinability and readability
          href="{{ url_for('static', filename='css/dark_custom_button.css') }}">
    {# Hero with the title and a CTA #}
    {% include "components/hero.html" %}
+
+   {# When registration gets enabled
    <div class="bg-nerd-yellow px-5 py-3">
+      {% include "components/register.html" %}
+   </div>
+   #}
+   <div class="bg-trama-black-1 px-5 py-3">
       {# This generates the FAQ #}
       {# {% include "components/faq.html" %} #}
-      {# Contact form like https://productschool.com/productcon/london-2024 #}
-      {% include "components/register.html" %}
+     {% include "components/contact.html" %}
    </div>
    {# Countdown till the start of the event #}
    <div class="bg-nerd-darkblue py-5">{% include "components/countdown.html" %}</div>
@@ -29,15 +34,14 @@ This is done for code manteinability and readability
       {# Directions to the event and Google maps iframe #}
       {% include "components/location.html" %}
    </div>
-   <div class="bg-trama-black-1 px-5 py-3">
+   {# <div class="bg-trama-black-1 px-5 py-3"> #}
       {# This generates the FAQ #}
       {# {% include "components/faq.html" %} #}
-      {# Contact form like https://productschool.com/productcon/london-2024 #}
-      {% include "components/contact.html" %}
-   </div>
+     {# {% include "components/contact.html" %} #}
+   {# </div> #}
    <div class="bg-nerd-yellow px-5 py-3">
       {% if not sponsors_error %}
-         <h2 class="text-center fw-bold my-5">{{ _("Nerdearla 2023 es posible gracias a") }}</h2>
+         <h2 class="text-center fw-bold my-5">{{ _("Nerdearla 101 es posible gracias a") }}</h2>
          <div class="container bg-white py-1">
             {% include "components/sponsors_generator.html" %}
             <div class="d-flex flex-column align-items-center justify-content-center mb-5">

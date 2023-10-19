@@ -131,6 +131,17 @@ video {
 	z-index: 2;
 }
 
+.blurb-borderless {
+	color: white;
+	font-family: "Rift Soft";
+	font-size: 2rem;
+	letter-spacing: 0.03em;
+	margin: 1% auto 1rem;
+	padding: 0.2rem 1.8rem;
+	text-align: center;
+	z-index: 2;
+}
+
 .custom_button_qr {
 	background-color: var(--nerd-green);
 	border: 0;

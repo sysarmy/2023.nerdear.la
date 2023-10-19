@@ -29,7 +29,7 @@
       {# Load fonts from Google Fonts #}
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="/static/css/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      <link href="{{ url_for('static', filename='css/css2?family=Barlow+Condensed:wght@100;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap') }}"
             rel="stylesheet">
       <!-- Load local installation of fontawesome -->
       <link rel="stylesheet"
@@ -59,16 +59,20 @@
       {#
 			Jolo metatags
 		#}
-      <title>{{ _("Nerdearla 10ma edición - 26 al 30 de septiembre") }}</title>
+      <title>{{ _("Nerdearla 101 - 3ra edición - 22 al 24 de noviembre") }}</title>
       <meta name="description"
-            content="Nerdearla 2023, cinco días con más de 150 charlas y talleres de tecnología, divulgación científica y una gran variedad de temas." />
+            content="Nerdearla 101, tres días con más de 60 charlas y talleres pensados para quienes están comenzando su carrera IT." />
       <link rel="canonical" href="https://nerdear.la/" />
       <meta property="og:locale" content="es_ES" />
       <meta property="og:type" content="website" />
       <meta property="og:title"
-            content="#Nerdearla 2023 - 26 al 30 de septiembre" />
+            content="#Nerdearla101 - 22 al 24 de noviembre" />
       <meta property="og:description"
-            content="Festejamos la décima edición del evento más nerd del año en el Konex, en Buenos Aires y online, con entrada libre y gratuita. 5 días con más de 150 charlas y talleres de tecnología, divulgación científica y una gran variedad de temas." />
+            content="La tercera edición de Nerdearla 101 llega a
+            Santiago de Chile, con streaming en vivo y entrada
+            100% gratuita.
+            3 días con más de 60 charlas y talleres de tecnología,
+            para quienes están comenzando su carrera en IT." />
       <meta property="og:url" content="https://nerdear.la/" />
       <meta property="og:site_name" content="nerdear.la" />
       <meta property="article:publisher" content="https://facebook.com/nerdearla" />
@@ -76,9 +80,13 @@
             content="https://i.postimg.cc/8cQg1L78/nerdearla-2023-share.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title"
-            content="#Nerdearla 2023 - 26 al 30 de septiembre" />
+            content="#Nerdearla101 - 22 al 24 de noviembre" />
       <meta name="twitter:description"
-            content="Festejamos la décima edición del evento más nerd del año en el Konex, en Buenos Aires y online, con entrada libre y gratuita. 5 días con más de 150 charlas y talleres de tecnología, divulgación científica y una gran variedad de temas." />
+            content="La tercera edición de Nerdearla 101 llega a
+            Santiago de Chile, con streaming en vivo y entrada
+            100% gratuita.
+            3 días con más de 60 charlas y talleres de tecnología,
+            para quienes están comenzando su carrera en IT." />
       <meta name="twitter:image"
             content="https://i.postimg.cc/8cQg1L78/nerdearla-2023-share.jpg" />
       <meta name="twitter:site" content="@nerdearla" />
